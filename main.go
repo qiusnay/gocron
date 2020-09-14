@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/qiusnay/gocron/config"
+	"github.com/qiusnay/gocron"
 	"fmt"
 	"github.com/labstack/echo"
 	"net/http"
