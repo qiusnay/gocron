@@ -1,5 +1,5 @@
-module github.com/qiusnay/gocron
+module gocron
 
-go 1.12
+go 1.15
 
-require gorm.io/driver/mysql v1.0.1 // indirect
+require github.com/qiusnay/gocron v0.0.0-20200916084533-a46412c1a2e1 // indirect
