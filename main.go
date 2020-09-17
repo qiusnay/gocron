@@ -6,6 +6,10 @@ import (
 )
 
 func main() {
-	model.init();
-	fmt.Println("连接DB实例")
+	model := mysql{}
+	model.DBinit()
+	model.Getcron()
+	// var cron []model.Cron
+	// model.DB().First(&cron)
+	fmt.Printf("1111")
 }
