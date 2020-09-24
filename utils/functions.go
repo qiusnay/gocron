@@ -1,4 +1,4 @@
-package comm
+package utils
 
 import (
 	"fmt"
@@ -17,7 +17,7 @@ type Config struct {
 func GetConfig(section, feilds string) map[string]string {
 	//读取配置
 	c := new(Config)
-	c.filepath = "./conf/conf.ini"
+	c.filepath = "../conf/conf.ini"
 	conf := c.ReadList()
 	if feilds == "" { //如果不传具体的feilds
 		for _, v := range conf {
