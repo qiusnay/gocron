@@ -9,7 +9,6 @@ gocron 任务高度系统基于coffman的cron库搭建.DB框架采用gorm,底层
 `go run server.go`
 
 #### 配置: /conf/conf.ini
-
 [database]
   * username = root
   * password = root
