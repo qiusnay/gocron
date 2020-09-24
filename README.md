@@ -21,7 +21,7 @@ gocron 任务高度系统基于coffman的cron库搭建.DB框架采用gorm,底层
 #### 环境要求
 >  MySQL, MAC
 
-## 程序使用的组件
+#### 程序使用的组件
 * Web框架 [Macaron](http://go-macaron.com/)
 * 定时任务调度 [Cron](https://github.com/jakecoffman/cron)
 * GORM [gorm](https://github.com/go-gorm/gorm)
