@@ -1217,3 +1217,582 @@ INFO : 2020/09/24 15:02:48.004578 cron.go:146: 开始执行任务#test cron#命�
 INFO : 2020/09/24 15:02:48.017038 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
 INFO : 2020/09/24 15:02:49.003716 cron.go:146: 开始执行任务#test cron#命令-echo 233333
 INFO : 2020/09/24 15:02:49.013764 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:02:50.004253 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:02:50.015417 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:02:51.003713 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:02:51.016546 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:02:52.003866 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:02:52.016166 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:02:53.004598 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:02:53.018320 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:02:54.004615 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:02:54.014602 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:02:55.005144 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:02:55.016665 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:02:56.004333 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:02:56.017643 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:02:57.004387 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:02:57.016186 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:02:58.004451 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:02:58.014226 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:02:59.004722 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:02:59.017807 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:00.003284 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:00.014114 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:01.004513 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:01.016500 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:02.004750 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:02.017112 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:03.003495 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:03.013748 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:04.004981 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:04.018164 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:05.005181 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:05.016837 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:06.005329 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:06.018503 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:07.001417 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:07.011427 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:08.004225 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:08.016138 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:09.004264 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:09.017684 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:10.004832 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:10.016828 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:11.005034 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:11.017101 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:12.003350 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:12.013925 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:13.004658 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:13.016594 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:14.002297 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:14.011927 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:15.000335 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:15.011203 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:16.002277 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:16.013157 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:17.000166 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:17.010446 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:18.004652 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:18.013665 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:19.002253 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:19.012654 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:20.002695 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:20.015499 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:21.004357 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:21.017109 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:22.003379 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:22.012913 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:23.004547 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:23.018530 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:24.005284 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:24.017219 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:25.005345 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:25.017269 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:26.005090 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:26.014786 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:27.004139 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:27.013005 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:28.003494 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:28.014792 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:29.005112 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:29.014399 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:30.002719 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:30.015023 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:31.004481 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:31.018571 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:32.005005 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:32.018491 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:33.005062 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:33.018979 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:34.002686 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:34.016100 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:35.003993 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:35.017188 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:36.003926 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:36.014835 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:37.004991 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:37.017213 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:38.002707 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:38.013561 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:39.004186 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:39.015541 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:40.004286 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:40.016142 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:41.003781 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:41.017919 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:42.004183 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:42.014562 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:43.004803 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:43.015082 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:44.005029 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:44.017625 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:45.003746 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:45.016777 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:46.004299 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:46.017523 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:47.004553 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:47.015872 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:48.004209 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:48.017992 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:49.005023 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:49.015529 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:50.004501 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:50.017579 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:51.004142 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:51.017483 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:52.004070 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:52.015986 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:53.003804 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:53.016552 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:54.005215 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:54.018358 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:55.003899 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:55.016175 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:56.003488 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:56.013261 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:57.004047 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:57.016604 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:58.004497 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:58.017292 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:03:59.004897 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:03:59.018519 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:00.003466 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:00.016864 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:01.005006 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:01.018563 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:02.004072 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:02.015171 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:03.005006 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:03.018102 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:04.005099 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:04.016288 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:05.003648 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:05.014296 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:06.005069 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:06.016561 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:07.003077 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:07.015817 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:08.002279 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:08.016511 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:09.004832 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:09.017954 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:10.004284 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:10.017612 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:11.005089 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:11.019190 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:12.002122 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:12.014368 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:13.003612 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:13.014439 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:14.004880 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:14.018546 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:15.002798 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:15.016996 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:16.003055 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:16.016190 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:16.117644 db.go:52: database ping sucess
+INFO : 2020/09/24 15:04:17.005257 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:17.017723 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:18.004694 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:18.018190 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:19.004847 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:19.016905 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:20.002163 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:20.011771 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:21.003787 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:21.017939 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:22.004127 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:22.017141 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:23.004552 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:23.018884 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:24.000888 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:24.015111 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:25.003843 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:25.016523 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:26.003687 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:26.014816 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:27.004181 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:27.017137 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:28.004282 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:28.018165 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:29.004864 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:29.018038 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:30.003621 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:30.013121 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:31.004647 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:31.016916 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:32.004262 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:32.015671 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:33.002813 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:33.015104 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:34.005227 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:34.019517 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:35.004904 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:35.019027 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:36.003351 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:36.016731 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:37.004360 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:37.017660 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:38.003433 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:38.015218 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:39.004279 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:39.016620 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:40.005637 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:40.019808 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:41.005234 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:41.019235 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:42.004413 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:42.015081 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:43.003959 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:43.017704 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:44.004790 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:44.017095 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:45.003012 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:45.014706 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:46.002547 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:46.014960 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:47.004374 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:47.014528 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:48.004551 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:48.015504 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:49.000753 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:49.010243 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:50.004650 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:50.018549 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:51.004131 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:51.016813 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:52.004403 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:52.015223 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:53.001902 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:53.011786 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:54.005142 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:54.015618 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:55.005003 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:55.019191 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:56.003735 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:56.016460 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:57.004975 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:57.015595 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:58.003471 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:58.016019 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:04:59.004675 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:04:59.018486 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:00.002980 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:00.014695 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:01.005105 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:01.018534 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:02.004227 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:02.013749 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:03.004412 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:03.015039 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:04.004741 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:04.016715 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:05.004351 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:05.015867 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:06.004586 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:06.016981 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:07.004767 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:07.016764 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:08.004800 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:08.016039 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:09.004800 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:09.016484 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:10.004761 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:10.015185 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:11.004726 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:11.018281 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:12.004552 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:12.018697 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:13.004141 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:13.015139 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:14.004452 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:14.014140 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:15.000841 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:15.011553 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:16.004969 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:16.015531 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:17.004263 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:17.014749 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:18.003440 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:18.017809 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:19.005114 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:19.015325 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:20.003709 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:20.018045 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:21.003905 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:21.016733 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:22.004344 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:22.018336 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:23.003487 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:23.017490 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:24.003407 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:24.014221 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:25.004389 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:25.018562 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:26.004561 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:26.017506 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:27.004422 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:27.015998 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:28.003921 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:28.017146 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:29.004406 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:29.017587 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:30.003660 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:30.015651 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:31.004017 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:31.015171 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:32.004436 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:32.015330 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:33.003929 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:33.013775 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:34.004714 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:34.014847 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:35.003689 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:35.016058 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:36.005122 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:36.017179 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:37.004323 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:37.013711 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:38.003766 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:38.015408 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:39.002891 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:39.015663 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:40.002896 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:40.012706 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:41.004038 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:41.014628 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:42.004465 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:42.016984 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:43.004461 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:43.013773 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:44.004173 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:44.017313 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:45.004121 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:45.016374 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:46.002781 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:46.014866 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:46.115136 db.go:52: database ping sucess
+INFO : 2020/09/24 15:05:47.004658 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:47.016346 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:48.004791 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:48.014424 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:49.004384 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:49.016462 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:50.004873 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:50.015697 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:51.004768 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:51.018436 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:52.004658 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:52.014429 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:53.004004 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:53.014364 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:54.004830 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:54.018390 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:55.003062 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:55.015687 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:56.004987 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:56.016890 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:57.004709 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:57.018915 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:58.004681 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:58.016627 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:05:59.004139 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:05:59.018074 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:00.004614 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:00.017468 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:01.003184 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:01.015961 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:02.002513 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:02.013708 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:03.004923 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:03.016401 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:04.004411 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:04.017930 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:05.003801 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:05.016981 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:06.004480 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:06.017394 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:07.004433 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:07.018435 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:08.004663 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:08.015446 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:09.004744 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:09.016294 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:10.002500 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:10.013863 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:11.004732 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:11.018788 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:12.003534 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:12.014232 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:13.003425 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:13.014776 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:14.004017 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:14.016051 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:15.003482 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:15.014114 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:16.004465 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:16.018282 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:17.000451 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:17.014453 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:18.003852 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:18.016091 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:19.004398 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:19.017191 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:20.003995 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:20.015634 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:21.002440 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:21.014208 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:22.003820 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:22.013143 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:23.003310 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:23.012957 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:24.004586 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:24.015106 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:25.004270 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:25.016489 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:26.004077 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:26.014656 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:27.002582 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:27.012893 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:28.001939 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:28.014487 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:29.003804 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:29.015681 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:30.003315 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:30.015574 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:31.004520 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:31.016225 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:32.003570 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:32.017871 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:33.004721 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:33.018525 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:34.004520 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:34.015957 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:35.003368 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:35.016044 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:36.002775 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:36.014788 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:37.003352 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:37.012591 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:38.004374 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:38.015979 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:39.000962 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:39.015155 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:40.004588 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:40.017272 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:41.005235 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:41.017791 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:42.003797 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:42.016793 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:43.004254 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:43.015295 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:44.004901 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:44.016172 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:45.001725 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:45.013193 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:46.004666 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:46.015330 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:47.002737 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:47.014815 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:48.004224 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:48.015281 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:49.004687 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:49.018212 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:50.001053 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:50.011582 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:51.000793 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:51.010056 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:52.003203 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:52.013247 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:53.004637 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:53.014901 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:54.003986 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:54.015717 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:55.000791 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:55.012974 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:56.004616 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:56.017758 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:57.003355 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:57.016484 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:58.002726 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:58.016944 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:06:59.003368 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:06:59.016543 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:00.004495 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:00.016097 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:01.003856 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:01.014999 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:02.004031 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:02.016840 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:03.003943 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:03.017971 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:04.004523 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:04.016044 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:05.004085 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:05.016521 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:06.004490 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:06.015806 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:07.004818 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:07.017440 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:08.004223 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:08.016735 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:09.002919 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:09.012957 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:10.005153 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:10.018217 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:11.002883 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:11.013820 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:12.003577 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:12.014188 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:13.002775 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:13.013281 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:14.003177 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:14.014097 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:15.000787 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:15.015106 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:16.004308 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:16.014894 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:16.109231 db.go:52: database ping sucess
+INFO : 2020/09/24 15:07:17.004996 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:17.015276 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:18.003203 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:18.014008 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:19.004152 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:19.014159 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:20.002403 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:20.014784 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:21.005148 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:21.016387 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:22.000994 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:22.011640 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:23.003576 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:23.014864 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:24.005105 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:24.016003 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:25.003954 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:25.014467 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:26.002827 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:26.013563 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:27.002632 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:27.016721 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:28.004517 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:28.016319 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:29.004442 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:29.016417 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:30.002152 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:30.011961 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:31.003808 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:31.017192 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:32.004304 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:32.016593 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:33.003124 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:33.015622 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:34.003091 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:34.015355 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:35.002076 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:35.012602 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:36.003572 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:36.017059 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/24 15:07:37.002010 cron.go:146: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/24 15:07:37.015671 cron.go:148: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
