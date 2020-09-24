@@ -11,12 +11,12 @@ gocron 任务高度系统基于coffman的cron库搭建.DB框架采用gorm,底层
 #### 配置: /conf/conf.ini
 
 [database]
-- username = root
-- password = root
-- host     = localhost
-- port     = 3306
-- database = cron
-- charset  = utf8
+  * username = root
+  * password = root
+  * host     = localhost
+  * port     = 3306
+  * database = cron
+  * charset  = utf8
 
 
 #### 环境要求
