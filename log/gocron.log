@@ -1,0 +1,1409 @@
+INFO : 2020/09/28 18:35:51.376960 cron.go:73: 开始初始化定时任务
+INFO : 2020/09/28 18:35:51.382820 cron.go:82: 定时任务初始化完成
+INFO : 2020/09/28 18:35:52.002719 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:35:52.011309 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:35:53.004452 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:35:53.012891 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:35:54.004764 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:35:54.011391 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:35:55.004497 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:35:55.013075 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:35:56.004678 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:35:56.011412 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:35:57.004826 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:35:57.013088 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:35:58.005249 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:35:58.013797 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:35:59.002680 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:35:59.010430 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:00.003091 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:00.017242 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:01.004936 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:01.012054 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:02.004083 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:02.012104 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:03.003007 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:03.009104 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:04.003166 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:04.009301 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:05.004970 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:05.011238 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:06.004971 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:06.013379 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:07.003659 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:07.011128 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:08.004622 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:08.011066 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:09.005217 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:09.012497 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:10.004743 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:10.010831 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:11.004912 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:11.012046 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:12.003615 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:12.012556 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:13.002019 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:13.009595 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:14.003578 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:14.014794 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:15.002839 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:15.011013 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:16.004828 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:16.011149 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:17.003559 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:17.009641 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:18.004585 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:18.012333 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:19.004665 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:19.011869 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:20.004224 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:20.010527 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:21.003440 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:21.010192 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:22.004066 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:22.011437 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:23.004678 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:23.013255 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:24.004985 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:24.011924 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:25.004001 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:25.011330 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:26.003984 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:26.012449 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:27.004529 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:27.012356 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:28.003136 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:28.010256 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:29.004017 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:29.011727 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:30.005134 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:30.013262 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:31.004545 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:31.012420 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:32.004427 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:32.012603 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:33.004410 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:33.012906 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:34.003737 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:34.011279 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:35.003942 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:35.010738 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:36.005088 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:36.013824 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:37.004784 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:37.013010 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:38.005097 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:38.012673 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:39.004653 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:39.011628 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:40.004116 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:40.010829 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:41.003698 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:41.010829 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:42.004035 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:42.011950 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:43.003937 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:43.011697 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:44.004103 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:44.011724 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:45.004246 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:45.012181 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:46.004761 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:46.012787 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:47.003977 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:47.010843 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:48.004478 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:48.012834 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:49.004959 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:49.012448 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:50.004180 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:50.014612 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:51.004064 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:51.012407 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:52.000704 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:52.008280 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:53.004753 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:53.013096 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:54.004904 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:54.013206 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:55.002770 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:55.010834 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:56.001989 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:56.010273 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:57.003962 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:57.011612 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:58.004125 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:58.012228 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:36:59.004170 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:36:59.012229 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:00.003836 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:00.011082 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:01.004633 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:01.012647 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:02.004600 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:02.015580 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:03.004041 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:03.011917 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:04.001798 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:04.010456 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:05.001953 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:05.009997 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:06.002880 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:06.012041 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:07.002577 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:07.009203 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:08.004459 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:08.012888 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:09.002718 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:09.011707 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:10.003620 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:10.010213 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:11.003797 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:11.012824 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:12.001565 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:12.010518 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:13.001561 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:13.010096 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:14.000651 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:14.009309 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:15.004911 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:15.012671 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:16.003910 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:16.012468 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:17.005100 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:17.012750 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:18.002663 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:18.011372 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:19.003371 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:19.012180 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:20.002555 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:20.010853 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:21.004411 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:21.012162 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:21.384114 db.go:52: database ping sucess
+INFO : 2020/09/28 18:37:22.000990 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:22.010065 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:23.004055 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:23.013286 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:24.003948 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:24.011795 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:25.000898 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:25.009385 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:26.004665 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:26.013774 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:27.001750 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:27.009849 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:28.001818 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:28.010371 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:29.003440 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:29.011281 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:30.004518 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:30.013735 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:31.003071 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:31.011458 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:32.004033 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:32.013829 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:33.004855 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:33.014506 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:34.004659 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:34.014650 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:35.002659 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:35.011490 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:36.003183 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:36.011526 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:37.005058 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:37.013735 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:38.003469 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:38.012153 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:39.001975 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:39.010739 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:40.004309 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:40.012917 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:41.003256 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:41.010435 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:42.003258 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:42.011706 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:43.004082 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:43.012041 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:44.002910 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:44.009366 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:45.003963 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:45.010023 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:46.003476 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:46.010347 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:47.004130 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:47.012666 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:48.000636 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:48.007293 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:49.002913 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:49.011159 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:50.004399 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:50.011680 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:51.002073 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:51.010539 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:52.004698 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:52.013332 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:53.002988 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:53.008610 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:54.002956 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:54.009223 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:55.003865 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:55.011561 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:56.003319 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:56.011001 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:57.002003 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:57.010298 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:58.002869 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:58.011241 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:37:59.003591 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:37:59.010359 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:00.004881 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:00.013320 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:01.002105 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:01.010699 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:02.005153 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:02.013594 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:03.002716 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:03.010472 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:04.004923 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:04.012316 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:05.002746 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:05.011440 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:06.003793 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:06.010601 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:07.004432 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:07.013128 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:08.004727 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:08.012038 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:09.004954 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:09.013718 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:10.003047 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:10.010944 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:11.004596 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:11.012102 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:12.003252 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:12.011217 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:13.004225 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:13.012226 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:14.004904 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:14.012558 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:15.004657 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:15.013301 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:16.002406 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:16.008930 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:17.003724 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:17.011861 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:18.004070 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:18.012487 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:19.000938 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:19.009090 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:20.003802 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:20.012059 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:21.004817 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:21.010869 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:22.004118 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:22.012548 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:23.004277 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:23.010848 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:24.004366 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:24.013002 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:25.004422 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:25.011354 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:26.004503 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:26.012808 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:27.000283 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:27.009016 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:28.002391 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:28.010490 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:29.004786 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:29.010844 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:30.005026 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:30.013602 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:31.005090 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:31.017544 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:32.002554 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:32.009039 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:33.002698 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:33.010923 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:34.003625 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:34.012336 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:35.004686 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:35.011996 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:36.004317 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:36.011633 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:37.001500 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:37.008305 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:38.003999 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:38.011287 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:39.000111 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:39.008287 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:40.001733 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:40.008683 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:41.004360 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:41.011105 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:42.002449 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:42.010248 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:43.005022 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:43.014100 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:44.000173 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:44.006939 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:45.001898 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:45.009732 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:46.002613 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:46.010932 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:47.004564 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:47.012812 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:48.004349 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:48.012762 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:49.005124 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:49.013668 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:50.004466 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:50.012956 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:51.003505 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:51.011863 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:51.377092 db.go:52: database ping sucess
+INFO : 2020/09/28 18:38:52.003764 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:52.012279 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:53.004658 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:53.013374 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:54.003823 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:54.013247 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:55.003414 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:55.013983 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:56.004060 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:56.011233 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:57.005013 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:57.015369 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:58.004047 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:58.011342 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:38:59.004738 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:38:59.013130 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:00.003597 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:00.012254 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:01.002329 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:01.010948 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:02.004884 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:02.012167 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:03.001687 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:03.008462 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:04.004919 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:04.013574 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:05.004002 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:05.011164 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:06.002668 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:06.011268 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:07.004010 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:07.012800 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:08.004711 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:08.013915 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:09.001699 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:09.010386 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:10.005144 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:10.013755 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:11.003950 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:11.012065 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:12.004464 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:12.011488 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:13.003074 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:13.010104 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:14.001521 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:14.009921 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:15.005008 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:15.014081 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:16.002406 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:16.010603 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:17.004716 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:17.013892 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:18.005035 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:18.011901 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:19.005137 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:19.013855 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:20.003512 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:20.011627 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:21.002293 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:21.009897 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:22.004509 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:22.012377 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:23.003690 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:23.013676 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:24.003359 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:24.010266 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:25.003169 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:25.010434 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:26.004385 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:26.014958 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:27.004112 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:27.010999 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:28.003757 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:28.012643 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:29.003522 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:29.012812 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:30.003306 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:30.011721 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:31.003342 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:31.011702 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:32.003643 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:32.012567 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:33.003473 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:33.011155 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:34.004769 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:34.013613 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:35.004486 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:35.011437 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:36.004125 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:36.010624 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:37.003822 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:37.012753 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:38.004012 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:38.010726 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:39.004745 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:39.012701 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:40.004408 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:40.012794 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:41.004345 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:41.013634 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:42.004738 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:42.012386 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:43.005175 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:43.013078 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:44.005039 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:44.012632 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:45.003878 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:45.011392 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:46.003733 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:46.012046 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:47.004408 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:47.013232 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:48.004944 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:48.012656 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:49.004258 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:49.011394 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:50.004562 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:50.013107 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:51.003147 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:51.011393 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:52.002479 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:52.010709 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:53.002195 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:53.010816 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:54.003529 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:54.012293 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:55.003188 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:55.011336 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:56.005047 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:56.013896 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:57.004859 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:57.013641 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:58.004217 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:58.012445 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:39:59.003053 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:39:59.011760 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:00.004713 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:00.012253 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:01.004233 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:01.012872 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:02.005054 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:02.013353 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:03.004825 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:03.012552 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:04.004223 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:04.011597 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:05.004950 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:05.011987 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:06.000815 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:06.009081 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:07.004394 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:07.012496 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:08.002793 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:08.011442 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:09.002258 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:09.010005 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:10.000206 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:10.008390 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:11.004063 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:11.010459 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:12.004006 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:12.011634 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:13.004470 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:13.013082 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:14.004037 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:14.012413 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:15.003406 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:15.011583 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:16.001923 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:16.009465 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:17.003716 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:17.011643 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:18.005137 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:18.013369 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:19.000687 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:19.008294 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:20.004081 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:20.012768 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:21.002891 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:21.012345 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:21.379289 db.go:52: database ping sucess
+INFO : 2020/09/28 18:40:22.003380 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:22.012626 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:23.004890 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:23.011838 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:24.004455 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:24.012672 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:25.003219 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:25.009352 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:26.004114 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:26.012647 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:27.002491 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:27.010685 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:28.003197 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:28.011215 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:29.003944 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:29.012542 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:30.004091 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:30.010936 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:31.005268 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:31.013701 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:32.005374 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:32.013980 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:33.004737 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:33.013761 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:34.003034 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:34.011618 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:35.004750 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:35.013757 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:36.001722 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:36.007505 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:37.000543 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:37.008364 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:38.002966 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:38.011153 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:39.003018 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:39.010817 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:40.005168 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:40.014109 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:41.000122 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:41.006179 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:42.004788 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:42.012861 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:43.003601 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:43.012325 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:44.003944 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:44.010771 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:45.002488 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:45.011403 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:46.003066 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:46.009334 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:47.004433 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:47.013410 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:48.004184 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:48.012353 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:49.004070 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:49.012538 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:50.003561 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:50.011829 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:51.004383 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:51.014209 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:52.004629 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:52.012782 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:53.002840 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:53.010305 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:54.002695 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:54.009900 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:55.004856 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:55.013441 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:56.003710 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:56.009778 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:57.002979 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:57.010582 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:58.003962 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:58.013005 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:40:59.004563 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:40:59.013412 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:00.001883 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:00.009876 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:01.002890 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:01.011205 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:02.002249 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:02.009220 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:03.003711 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:03.010129 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:04.002321 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:04.011197 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:05.002893 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:05.011159 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:06.005062 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:06.012560 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:07.003792 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:07.013079 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:08.002201 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:08.010722 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:09.003103 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:09.012257 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:10.004504 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:10.014182 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:11.003150 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:11.011886 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:12.003222 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:12.010003 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:13.004070 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:13.013100 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:14.005230 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:14.014068 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:15.003096 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:15.011802 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:16.002403 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:16.009927 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:17.005078 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:17.013561 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:18.004067 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:18.011449 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:19.003828 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:19.012351 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:20.003751 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:20.011323 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:21.004016 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:21.011567 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:22.004092 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:22.012560 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:23.002392 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:23.011526 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:24.004252 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:24.011300 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:25.004597 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:25.011624 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:26.004641 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:26.013252 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:27.004976 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:27.013361 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:28.004741 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:28.013708 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:29.004659 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:29.013420 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:30.004692 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:30.013502 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:31.004911 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:31.013429 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:32.004881 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:32.011000 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:33.005167 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:33.013588 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:34.005079 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:34.012620 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:35.005105 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:35.013422 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:36.002944 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:36.011398 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:37.001600 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:37.009162 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:38.004320 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:38.012779 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:39.005079 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:39.012267 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:40.003618 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:40.012264 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:41.004291 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:41.012873 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:42.003223 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:42.011541 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:43.003148 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:43.012312 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:44.003949 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:44.010975 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:45.005226 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:45.013709 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:46.003976 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:46.012764 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:47.004319 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:47.011342 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:48.002649 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:48.011364 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:49.003173 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:49.010594 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:50.003355 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:50.011335 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:51.004713 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:51.012775 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:51.376408 db.go:52: database ping sucess
+INFO : 2020/09/28 18:41:52.000113 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:52.007750 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:53.001321 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:53.009498 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:54.004829 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:54.013102 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:55.003587 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:55.011312 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:56.003877 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:56.012582 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:57.004310 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:57.013003 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:58.003334 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:58.010058 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:41:59.003923 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:41:59.011676 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:00.000630 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:00.007847 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:01.002320 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:01.010807 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:02.005107 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:02.014292 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:03.004191 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:03.011005 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:04.002198 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:04.010968 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:05.004336 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:05.012572 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:06.003025 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:06.011900 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:07.003313 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:07.010005 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:08.001883 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:08.010088 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:09.004251 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:09.010883 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:10.003082 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:10.011251 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:11.003067 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:11.010654 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:12.002577 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:12.009275 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:13.003156 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:13.012183 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:14.003662 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:14.011011 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:15.005094 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:15.013532 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:16.004825 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:16.012010 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:17.003332 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:17.010985 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:18.004114 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:18.010235 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:19.002699 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:19.010643 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:20.001636 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:20.009888 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:21.003010 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:21.011096 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:22.003394 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:22.010397 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:23.005075 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:23.012889 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:24.003842 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:24.009885 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:25.003886 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:25.011048 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:26.004184 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:26.013101 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:27.003662 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:27.011056 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:28.002564 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:28.011168 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:29.004275 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:29.012213 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:30.004340 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:30.012747 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:31.004529 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:31.012100 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:32.004032 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:32.012089 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:33.002888 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:33.011122 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:34.004644 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:34.012642 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:35.005242 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:35.013839 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:36.004255 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:36.012957 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:37.005228 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:37.013561 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:38.005142 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:38.012761 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:39.004212 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:39.012863 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:40.004337 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:40.012940 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:41.004516 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:41.014399 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:42.004156 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:42.011961 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:43.004945 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:43.012754 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:44.004099 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:44.012146 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:45.005061 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:45.012802 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:46.004144 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:46.011247 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:47.004073 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:47.011692 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:48.004839 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:48.012997 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:49.003243 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:49.010338 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:50.004764 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:50.013386 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:51.004813 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:51.013157 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:52.004570 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:52.011152 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:53.004686 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:53.012913 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:54.004954 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:54.014823 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:55.004873 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:55.012948 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:56.005130 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:56.013056 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:57.004480 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:57.012156 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:58.003988 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:58.011923 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:42:59.005393 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:42:59.013293 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:00.005448 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:00.013313 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:01.004741 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:01.012481 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:02.002257 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:02.011107 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:03.003907 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:03.009963 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:04.003804 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:04.011973 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:05.003569 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:05.011836 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:06.002660 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:06.011049 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:07.004373 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:07.012954 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:08.001468 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:08.008762 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:09.004913 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:09.012686 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:10.003343 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:10.011106 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:11.002574 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:11.011591 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:12.004054 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:12.012020 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:13.004657 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:13.012605 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:14.005306 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:14.013425 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:15.002653 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:15.011419 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:16.004499 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:16.012830 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:17.003914 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:17.012795 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:18.002328 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:18.011128 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:19.004785 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:19.013432 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:20.003180 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:20.012300 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:21.001866 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:21.010863 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:21.368021 db.go:52: database ping sucess
+INFO : 2020/09/28 18:43:22.002819 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:22.010001 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:23.004922 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:23.013753 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:24.004719 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:24.013820 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:25.002894 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:25.011726 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:26.002243 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:26.010751 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:27.005238 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:27.013842 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:28.002918 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:28.011465 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:29.003736 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:29.012729 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:30.003478 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:30.012159 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:31.005130 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:31.013401 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:32.003513 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:32.012540 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:33.001874 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:33.009268 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:34.003026 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:34.011718 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:35.001494 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:35.010387 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:36.001230 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:36.009883 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:37.001892 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:37.010855 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:38.002186 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:38.009753 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:39.004013 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:39.012734 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:40.003665 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:40.011536 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:41.000910 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:41.007989 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:42.001665 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:42.009204 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:43.005023 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:43.013787 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:44.002198 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:44.010972 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:45.004024 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:45.011266 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:46.004639 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:46.012973 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:47.003123 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:47.012481 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:48.001659 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:48.010028 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:49.002753 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:49.010168 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:50.002492 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:50.009852 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:51.001096 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:51.007635 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:52.001407 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:52.009422 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:53.002544 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:53.011437 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:54.003639 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:54.011208 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:55.002089 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:55.010367 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:56.003972 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:56.010126 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:57.003555 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:57.010572 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:58.000346 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:58.007606 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:43:59.002109 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:43:59.008710 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:00.001056 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:00.008348 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:01.004742 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:01.010846 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:02.002951 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:02.009648 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:03.004053 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:03.010881 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:04.004022 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:04.011933 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:05.004192 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:05.013292 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:06.003948 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:06.014650 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:07.002813 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:07.012506 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:08.004883 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:08.015091 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:09.003287 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:09.011979 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:10.000524 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:10.008959 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:11.003225 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:11.011718 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:12.003177 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:12.010161 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:13.003331 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:13.011812 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:14.000159 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:14.007717 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:15.003403 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:15.012309 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:16.003793 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:16.012126 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:17.003837 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:17.012418 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:18.005201 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:18.013904 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:19.003829 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:19.010086 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:20.003886 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:20.012116 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:21.003987 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:21.012173 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:22.003994 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:22.012087 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:23.004726 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:23.013030 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:24.004190 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:24.009998 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:25.001434 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:25.009312 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:26.004169 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:26.010173 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:27.004460 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:27.012275 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:28.004494 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:28.012337 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:29.000553 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:29.007910 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:30.005064 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:30.013764 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:31.004742 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:31.012162 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:32.004914 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:32.012267 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:33.004897 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:33.010591 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:34.000607 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:34.007330 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:35.005120 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:35.013670 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:36.005115 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:36.011460 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:37.002957 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:37.011549 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:38.004217 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:38.010450 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:39.002951 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:39.010784 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:40.003095 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:40.009854 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:41.002905 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:41.010815 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:42.001145 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:42.008213 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:43.004041 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:43.011122 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:44.001277 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:44.008642 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:45.004635 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:45.011731 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:46.003066 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:46.011644 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:47.004639 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:47.013156 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:48.004081 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:48.010555 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:49.001501 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:49.009091 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:50.000340 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:50.008725 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:51.004302 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:51.012686 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:51.367627 db.go:52: database ping sucess
+INFO : 2020/09/28 18:44:52.005281 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:52.013409 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:53.003672 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:53.012302 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:54.002428 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:54.009066 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:55.000705 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:55.009102 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:56.002002 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:56.009688 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:57.002471 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:57.011033 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:58.004609 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:58.013057 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:44:59.000634 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:44:59.008291 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:45:00.004224 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:00.012823 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:45:01.004502 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:01.011458 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:45:02.002853 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:02.009020 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]--233333
+INFO : 2020/09/28 18:45:03.004622 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:03.018392 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:04.002403 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:04.016242 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:05.004649 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:05.018371 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:06.004987 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:06.018850 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:07.004782 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:07.018195 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:08.004360 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:08.014892 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:09.003514 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:09.014418 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:10.003769 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:10.014471 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:11.004446 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:11.019087 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:12.002719 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:12.013620 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:13.001505 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:13.011421 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:14.002866 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:14.015805 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:15.004915 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:15.016705 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:16.002758 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:16.017577 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:17.002157 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:17.017109 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:18.003607 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:18.018604 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:19.003156 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:19.016768 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:20.003373 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:20.017703 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:21.004625 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:21.027037 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:22.004297 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:22.017478 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:23.002790 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:23.013440 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:24.003257 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:24.016425 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:25.003657 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:25.016984 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:26.003530 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:26.016934 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:27.005015 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:27.019819 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:28.003124 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:28.014334 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:29.004920 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:29.017269 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:30.003483 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:30.015621 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:31.004105 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:31.017865 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:32.003847 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:32.017362 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:33.002922 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:33.016247 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:34.003546 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:34.015880 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:35.004432 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:35.016991 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:36.004239 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:36.019287 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:37.004698 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:37.018332 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:38.004854 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:38.020291 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:39.003947 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:39.019298 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:40.004710 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:40.020264 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:41.004340 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:41.018472 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:42.003849 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:42.016926 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:43.004085 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:43.016871 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:44.004509 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:44.017276 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:45.004374 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:45.019804 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:46.003871 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:46.017730 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:47.004151 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:47.016085 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:48.004205 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:48.019054 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:49.004182 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:49.015754 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:50.004171 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:50.017710 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:51.005153 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:51.016863 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:52.004422 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:52.020049 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:53.004593 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:53.020015 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:54.004759 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:54.019484 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:55.004719 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:55.019915 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:56.004826 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:56.019596 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:57.004831 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:57.018348 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:58.004914 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:58.017875 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:45:59.005152 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:45:59.017341 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:00.005156 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:00.017232 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:01.003603 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:01.016944 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:02.001440 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:02.014136 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:03.004192 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:03.014890 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:04.003454 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:04.016765 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:05.001287 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:05.012938 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:06.004871 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:06.017307 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:07.003674 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:07.018654 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:08.003391 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:08.017181 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:09.004150 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:09.017932 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:10.002448 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:10.018771 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:11.004067 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:11.017945 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:12.003476 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:12.016363 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:13.005438 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:13.019260 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:14.003756 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:14.017383 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:15.002088 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:15.015437 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:16.004600 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:16.017355 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:17.003617 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:17.015615 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:18.001422 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:18.014708 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:19.005043 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:19.020557 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:20.005095 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:20.019746 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:21.004331 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:21.017678 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:21.365320 db.go:52: database ping sucess
+INFO : 2020/09/28 18:46:22.002895 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:22.016539 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:23.004744 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:23.019266 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:24.001614 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:24.011953 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:25.003115 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:25.017237 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:26.004136 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:26.016349 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:27.001986 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:27.014505 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:28.004835 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:28.017145 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:29.003394 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:29.018010 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:30.004797 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:30.017288 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:31.002453 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:31.015771 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:32.004258 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:32.018306 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:33.004860 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:33.015526 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:34.004626 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:34.017956 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:35.000193 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:35.012726 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:36.003855 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:36.014652 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:37.002214 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:37.014991 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:38.004919 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:38.017998 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:39.005210 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:39.019178 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:40.005146 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:40.018244 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:41.004365 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:41.019479 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:42.004480 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:42.019606 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:43.004575 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:43.019777 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:44.005033 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:44.020384 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:45.004128 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:45.019328 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:46.005122 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:46.017776 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:47.004147 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:47.017627 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:48.004584 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:48.015832 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:49.004860 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:49.017304 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:50.005252 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:50.020462 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:51.004778 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:51.018682 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:52.004681 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:52.019053 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:53.004764 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:53.019916 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:54.004743 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:54.016277 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:55.004612 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:55.017502 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:56.004678 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:56.019505 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:57.004540 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:57.019899 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:58.004099 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:58.019236 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:46:59.004448 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:46:59.019922 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:00.004593 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:00.018608 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:01.003783 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:01.019654 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:02.004452 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:02.020204 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:03.004885 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:03.016818 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:04.004339 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:04.015314 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:05.005006 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:05.017198 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:06.004792 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:06.017712 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:07.003951 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:07.018305 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:08.003609 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:08.016309 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:09.004112 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:09.016385 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:10.004177 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:10.016524 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:11.004150 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:11.018391 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:12.005143 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:12.017123 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:13.003637 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:13.016125 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:14.003182 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:14.015689 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:15.003081 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:15.016304 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:16.004616 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:16.019312 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:17.005274 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:17.018315 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:18.003854 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:18.018902 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:19.003918 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:19.017899 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:20.004292 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:20.019154 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:21.003904 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:21.019694 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:22.004623 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:22.018030 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:23.004288 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:23.016582 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:24.004352 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:24.017771 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:25.004055 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:25.016703 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:26.004251 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:26.016270 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:27.004680 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:27.018521 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:28.004435 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:28.015543 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:29.004649 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:29.018566 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:30.004610 cron.go:133: 开始执行任务#test cron#命令-echo 233333
+INFO : 2020/09/28 18:47:30.018532 cron.go:135: 任务完成#test cron#命令-echo 233333#执行结果-主机: [localhost-qiusnay:8088]-failed to call: dial tcp 127.0.0.1:8972: connect: connection refused-
+INFO : 2020/09/28 18:47:30.982656 cron.go:88: 收到信号 -- interrupt
+INFO : 2020/09/28 18:47:30.982770 cron.go:93: 应用准备退出

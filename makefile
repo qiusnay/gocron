@@ -5,16 +5,10 @@ build: gocron
 
 .PHONY: gocron
 gocron:
-	go build $(RACE) -o bin/gocron ./bash/
+	go build -o bin/server ./bash/server.go
+	go build -o bin/client ./bash/client.go
 
 .PHONY: clean
 clean:
-	rm bin/gocron
-
-.PHONY: test
-test:
-	go test $(RACE) ./...
-
-.PHONY: enable-race
-enable-race:
-	$(eval RACE = -race)
+	rm bin/server
+	rm bin/client
