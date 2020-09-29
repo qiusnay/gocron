@@ -37,7 +37,25 @@ func Dbinit()(*gorm.DB, error) {
 	db.DB().SetConnMaxLifetime(time.Hour)
 
 	go keepDbAlived(db)
+	go Automigrate()
+
 	return db, err
+}
+
+func Automigrate() {
+	if !DB.HasTable("tb_cron_schedule") {
+		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON作业表'").CreateTable(&FlCron{})
+		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON用户表'").CreateTable(&FlUser{})
+		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON任务调度日志表'").CreateTable(&FlLog{})
+		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'cron用户修改日志表'").CreateTable(&Fluserlog{})
+	} else {
+		// fmt.Println("检查更新.......")
+		DB.AutoMigrate(&FlCron{})
+		DB.AutoMigrate(&FlUser{})
+		DB.AutoMigrate(&FlLog{})
+		DB.AutoMigrate(&Fluserlog{})
+		// fmt.Println("数据已更新!")
+	}
 }
 
 func keepDbAlived(db *gorm.DB) {

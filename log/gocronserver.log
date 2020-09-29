@@ -1,1 +1,0 @@
-INFO : 2020/09/29 16:31:08.063421 functions.go:23: database connect erro : [map[database:map[charset:utf8 database:51fanli_cron host:192.168.100.60 password:root port:3306 username:root]] map[database_local:map[charset:utf8 database:beego host:127.0.0.1 password:123456 port:3306 username:root]]]

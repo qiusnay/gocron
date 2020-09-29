@@ -54,14 +54,14 @@ func Start() {
 }
 
 func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *Reply) error {
-	out, err := c.ExecShell(ctx, req.Params)
+	out, err := c.ExecShell(ctx, req.Cmd)
 	res.Output = out
 	if err != nil {
 		res.Err = err
 	} else {
 		res.Err = nil
 	}
-	logger.Info(fmt.Sprintf("execute cmd end: [id: %d cmd: %s err: %s, result : %s]", req.Id, req.Params, err, out))
+	logger.Info(fmt.Sprintf("execute cmd end: [id: %d cmd: %s err: %s, result : %s]", req.Id, req.Cmd, err, out))
 
 	return nil
 }

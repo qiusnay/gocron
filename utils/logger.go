@@ -13,7 +13,7 @@ package utils
 // 	taskLogModel.Name = taskModel.JobName
 // 	taskLogModel.Spec = taskModel.Rule
 // 	taskLogModel.Protocol = taskModel.Type
-// 	taskLogModel.Command = taskModel.Params
+// 	taskLogModel.Command = taskModel.Cmd
 // 	if taskModel.Protocol == models.TaskRPC {
 // 		aggregationHost := ""
 // 		for _, host := range taskModel.Hosts {

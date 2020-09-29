@@ -130,9 +130,9 @@ func createJob(taskModel model.FlCron) cron.FuncJob {
 		var  taskLogId int64 = 1;
 		// concurrencyQueue.Add()
 
-		logger.Info(fmt.Sprintf("开始执行任务#%s#命令-%s", taskModel.JobName, taskModel.Params))
+		logger.Info(fmt.Sprintf("开始执行任务#%s#命令-%s", taskModel.JobName, taskModel.Cmd))
 		taskResult := execJob(handler, taskModel, taskLogId)
-		logger.Info(fmt.Sprintf("任务完成#%s#命令-%s#执行结果-%s", taskModel.JobName, taskModel.Params, taskResult.Result))
+		logger.Info(fmt.Sprintf("任务完成#%s#命令-%s#执行结果-%s", taskModel.JobName, taskModel.Cmd, taskResult.Result))
 		//afterExecJob(taskModel, taskResult, taskLogId)
 	}
 	return taskFunc
@@ -161,7 +161,7 @@ func execJob(handler Handler, taskModel model.FlCron, taskUniqueId int64) TaskRe
 // 		logger.Error("任务开始执行#写入任务日志失败-", err)
 // 		return
 // 	}
-// 	logger.Info("任务命令-%s", taskModel.Params)
+// 	logger.Info("任务命令-%s", taskModel.Cmd)
 
 // 	return taskLogId
 // }

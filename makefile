@@ -5,8 +5,8 @@ build: gocron
 
 .PHONY: gocron
 gocron:
-	go build -o bin/server ./bash/server.go
-	go build -o bin/client ./bash/client.go
+	go build -o bin/server ./cmd/server.go
+	go build -o bin/client ./cmd/client.go
 
 .PHONY: clean
 clean:

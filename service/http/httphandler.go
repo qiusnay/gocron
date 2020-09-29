@@ -23,7 +23,7 @@ const HttpExecTimeout = 300
 
 func (h *HTTPHandler) Run(taskModel model.FlCron, taskUniqueId int64) (result string, err error) {
 	var resp ResponseWrapper
-	resp = h.Get(taskModel.Params, HttpExecTimeout)
+	resp = h.Get(taskModel.Cmd, HttpExecTimeout)
 	// 返回状态码非200，均为失败
 	if resp.StatusCode != http.StatusOK {
 		return resp.Body, fmt.Errorf("HTTP状态码非200-->%d", resp.StatusCode)
