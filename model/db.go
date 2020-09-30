@@ -24,7 +24,7 @@ func Dbinit()(*gorm.DB, error) {
 		//panic("连接数据库失败")
 	}
 	DB = db
-
+	
 	// db.LogMode(true)
 
 	// SetMaxIdleConns sets the maximum number of connections in the idle connection pool.

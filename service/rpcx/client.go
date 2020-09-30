@@ -3,24 +3,19 @@ package rpcx
 import (
 	"context"
 	"flag"
-	"fmt"
+	// "fmt"
 	"github.com/smallnest/rpcx/protocol"
 	"github.com/smallnest/rpcx/client"
 	"github.com/qiusnay/gocron/model"
+	"github.com/qiusnay/gocron/init"
 	// "github.com/qiusnay/gocron/service/cron"
-	// "github.com/google/logger"
+	"github.com/google/logger"
 )
 
 // RPC调用执行任务
 type RPCHandler struct{}
 
-type TaskResult struct {
-	Result     string
-	Err        error
-}
-
-
-func (h *RPCHandler) Run(taskModel model.FlCron, taskUniqueId int64) (result string, err error) {
+func (h *RPCHandler) Run(taskModel model.FlCron, taskUniqueId int64) (result croninit.TaskResult, err error) {
 	flag.Parse()
 
 	d := client.NewPeer2PeerDiscovery("tcp@"+*addr, "")
@@ -30,25 +25,18 @@ func (h *RPCHandler) Run(taskModel model.FlCron, taskUniqueId int64) (result str
 	xclient := client.NewXClient("RpcService", client.Failtry, client.RandomSelect, d, opt)
 	defer xclient.Close()
 
-	resultChan := make(chan TaskResult)
+	resultChan := make(chan croninit.TaskResult)
 	
 	go func() {
-		reply := &Reply{Output:"", Err : nil}
-		err := xclient.Call(context.Background(), "Run", taskModel, reply)
-		errorMessage := ""
-		if err != nil {
-			errorMessage = fmt.Sprintf("failed to call: %v", err)
-		}
-		outputMessage := fmt.Sprintf("主机: [%s-%s:%d]-%s-%s", "localhost", "qiusnay", 8088, errorMessage, reply.Output)
-		
-		resultChan <- TaskResult{Err: err, Result: outputMessage}
+		reply := &croninit.TaskResult{}
+		xclient.Call(context.Background(), "Run", taskModel, reply)
+		logger.Info("dsdsfsdfsdf-%s", reply)
+		resultChan <- croninit.TaskResult{Result: reply.Result, Err: reply.Err, Host : reply.Host, Status : reply.Status, Endtime : reply.Endtime}
 	}()
 	var aggregationErr error = nil
-	aggregationResult := ""
-	taskResult := <-resultChan
-	aggregationResult += taskResult.Result
-	if taskResult.Err != nil {
-		aggregationErr = taskResult.Err
+	rpcResult := <-resultChan
+	if rpcResult.Err != nil {
+		aggregationErr = rpcResult.Err
 	}
-	return aggregationResult, aggregationErr
+	return rpcResult, aggregationErr
 }

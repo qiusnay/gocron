@@ -42,12 +42,11 @@ func (FlUser) TableName() string {
 	return "tb_cron_user"
 }
 
-//用户表
+//CRON日志表
 type FlLog struct {
 	Id         uint   `gorm:"primary_key;AUTO_INCREMENT" json:"id"`
 	Jobid     int   `gorm:"type:int(50);comment:'作业ID';not null;index:IX_jobid" json:"jobid"`
 	JobName   string  `gorm:"type:varchar(550);comment:'作业名字';not null" json:"job_name"`
-	Taskid    int   `gorm:"type:int(50);comment:'任务ID';not null;index:IX_taskid" json:"taskid"`
 	Status    int   `gorm:"type:int(50);comment:'任务状态:10000:等待执行,10001:执行中,10002:执行成功,10006:超时锁定,其他:出错';not null;index:IX_taskid" json:"status"`
 	Starttime  time.Time `gorm:"type:varchar(50);comment:'开始时间';" json:"starttime"`
 	Endtime    time.Time `gorm:"type:varchar(50);comment:'结束时间';not null" json:"endtime"`
@@ -61,7 +60,7 @@ func (FlLog) TableName() string {
 	return "tb_cron_log"
 }
 
-//用户表
+//cron用户日志表
 type Fluserlog struct {
 	Id         uint   `gorm:"primary_key;AUTO_INCREMENT" json:"id"`
 	Jobid     int   `gorm:"type:int(50);comment:'作业ID';not null;index:IX_jobid" json:"jobid"`

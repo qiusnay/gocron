@@ -9,17 +9,16 @@ import (
 	"os/signal"
 	"flag"
 	"syscall"
+	"time"
 	"github.com/smallnest/rpcx/server"
 	"github.com/google/logger"
 	"github.com/qiusnay/gocron/model"
+	"github.com/qiusnay/gocron/utils"
+	"github.com/qiusnay/gocron/init"
 )
 
 type RpcService struct{}
 
-type Reply struct {
-	Output string
-	Err    error
-}
 
 var (
 	addr = flag.String("addr", "localhost:8972", "server address")
@@ -53,15 +52,19 @@ func Start() {
 
 }
 
-func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *Reply) error {
+func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *croninit.TaskResult) error {
 	out, err := c.ExecShell(ctx, req.Cmd)
-	res.Output = out
+	res.Result = out
+	res.Host = utils.GetLocalIP()
+	res.Endtime = time.Now().String()
 	if err != nil {
 		res.Err = err
+		res.Status = 10002
 	} else {
 		res.Err = nil
+		res.Status = 10003
 	}
-	logger.Info(fmt.Sprintf("execute cmd end: [id: %d cmd: %s err: %s, result : %s]", req.Id, req.Cmd, err, out))
+	logger.Info(fmt.Sprintf("execute cmd end: [id: %d cmd: %s err: %s, result : %s, host: %s]", req.Id, req.Cmd, err, out, res.Host))
 
 	return nil
 }
@@ -72,10 +75,10 @@ func (c *RpcService) ExecShell(ctx context.Context, command string) (string, err
 	cmd.SysProcAttr = &syscall.SysProcAttr{
 		Setpgid: true,
 	}
-	resultChan := make(chan Reply)
+	resultChan := make(chan croninit.TaskResult)
 	go func() {
-		output, err := cmd.Output()
-		resultChan <- Reply{string(output), err}
+		Result, err := cmd.Output()
+		resultChan <- croninit.TaskResult{string(Result), err, "", 0, ""}
 	}()
 	select {
 	case <-ctx.Done():
@@ -84,7 +87,7 @@ func (c *RpcService) ExecShell(ctx context.Context, command string) (string, err
 		}
 		return "", errors.New("timeout killed")
 	case result := <-resultChan:
-		return result.Output, result.Err
+		return result.Result, result.Err
 	}
 }
 

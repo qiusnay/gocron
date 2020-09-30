@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"os"
 	"os/signal"
-	"strconv"
 	"syscall"
 	"github.com/jakecoffman/cron"
 	"github.com/google/logger"
@@ -13,13 +12,14 @@ import (
 	"github.com/ouqiang/goutil"
 	"github.com/qiusnay/gocron/service/rpcx"
 	"github.com/qiusnay/gocron/service/http"
+	"github.com/qiusnay/gocron/init"
 )
 
 const (
 	Disabled int8 = 0 // 禁用
 	Failure  int8 = 0 // 失败
 	Enabled  int8 = 1 // 启用
-	Running  int8 = 1 // 运行中
+	Running  int = 10000 // 运行中
 	Finish   int8 = 2 // 完成
 	Cancel   int8 = 3 // 取消
 )
@@ -34,12 +34,7 @@ type TaskCount struct {
 }
 
 type Handler interface {
-	Run(taskModel model.FlCron, taskUniqueId int64) (string, error)
-}
-
-type TaskResult struct {
-	Result     string
-	Err        error
+	Run(taskModel model.FlCron, taskUniqueId int64) (croninit.TaskResult, error)
 }
 
 /****************************************/
@@ -73,6 +68,7 @@ func (fl FlCron) Initialize() {
 	logger.Info("开始初始化定时任务")
 	taskModel := new(model.FlCron)
 	taskList, err := taskModel.GetAllJobList()
+	logger.Infof("Initialize : %v", taskList)
 	if err != nil {
 		logger.Error("定时任务初始化,获取任务列表错误: %s", err)
 	}
@@ -102,9 +98,8 @@ func (fl FlCron) Add(taskModel model.FlCron) {
 	
 	taskFunc := createJob(taskModel)
 
-	cronName := strconv.Itoa(taskModel.Id)
 	err := goutil.PanicToError(func() {
-		mycron.AddFunc(taskModel.Rule, taskFunc, cronName)
+		mycron.AddFunc(taskModel.Rule, taskFunc, taskModel.JobName)
 	})
 	if err != nil {
 		logger.Error("添加任务到调度器失败#", err)
@@ -123,48 +118,43 @@ func createJob(taskModel model.FlCron) cron.FuncJob {
 		// taskCount.Add()
 		// defer taskCount.Done()
 
-		// taskLogId := beforeExecJob(taskModel)
-		// if taskLogId <= 0 {
-		// 	return
-		// }
-		var  taskLogId int64 = 1;
+		taskLogId := beforeExecJob(taskModel)
+		if taskLogId <= 0 {
+			return
+		}
 		// concurrencyQueue.Add()
 
 		logger.Info(fmt.Sprintf("开始执行任务#%s#命令-%s", taskModel.JobName, taskModel.Cmd))
 		taskResult := execJob(handler, taskModel, taskLogId)
-		logger.Info(fmt.Sprintf("任务完成#%s#命令-%s#执行结果-%s", taskModel.JobName, taskModel.Cmd, taskResult.Result))
+		logger.Info(fmt.Sprintf("任务完成#%s#命令-%s#执行结果-%s-执行机器-%s", taskModel.JobName, taskModel.Cmd, taskResult.Result, taskResult.Host))
 		//afterExecJob(taskModel, taskResult, taskLogId)
 	}
 	return taskFunc
 }
 
 // 执行具体任务
-func execJob(handler Handler, taskModel model.FlCron, taskUniqueId int64) TaskResult {
-	defer func() {
-		if err := recover(); err != nil {
-			logger.Error("panic#service/task.go:execJob#", err)
-		}
-	}()
-	var output string
-	var err error
-	output, err = handler.Run(taskModel, taskUniqueId)
-	if err == nil {
-		return TaskResult{Result: output, Err: err}
-	}
-	return TaskResult{Result: output, Err: err}
+func execJob(handler Handler, taskModel model.FlCron, taskUniqueId int64) croninit.TaskResult {
+	ret, err := handler.Run(taskModel, taskUniqueId)
+	logger.Info(fmt.Sprintf("执行结果%v, 错误信息 %v", ret, err))
+	return croninit.TaskResult{}
+	// if err == nil {
+	// 	return TaskResult{Result: ret.Result, Err: ret.Err, Host : ret.Host, status : ret.Status, endtime : ret.Endtime}
+	// }
+	// return TaskResult{Result: ret.Result, Err: ret.Err, Host : ret.Host, status : ret.Status, endtime : ret.Endtime}
 }
 
 // 任务前置操作
-// func beforeExecJob(taskModel model.FlCron) (taskLogId int64) {
-// 	taskLogId, err := createTaskLog(taskModel, Running)
-// 	if err != nil {
-// 		logger.Error("任务开始执行#写入任务日志失败-", err)
-// 		return
-// 	}
-// 	logger.Info("任务命令-%s", taskModel.Cmd)
+func beforeExecJob(taskModel model.FlCron) (taskLogId int64) {
+	logger.Infof("beforeExecJob : %v", taskModel)
+	taskLogId, err := createTaskLog(taskModel)
+	if err != nil {
+		logger.Error("任务开始执行#写入任务日志失败-", err)
+		return
+	}
+	logger.Info("任务命令-%s", taskModel.Cmd)
 
-// 	return taskLogId
-// }
+	return taskLogId
+}
 
 // 任务执行后置操作
 // func afterExecJob(taskModel model.FlCron, taskResult TaskResult, taskLogId int64) {
@@ -179,7 +169,7 @@ func execJob(handler Handler, taskModel model.FlCron, taskUniqueId int64) TaskRe
 
 func createHandler(taskModel model.FlCron) Handler {
 	var handler Handler = nil
-	switch taskModel.Type {
+	switch taskModel.Querytype {
 		case "wget":
 		case "curl":
 			handler = new(http.HTTPHandler)
