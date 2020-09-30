@@ -16,12 +16,12 @@ import (
 )
 
 const (
-	Disabled int8 = 0 // 禁用
-	Failure  int8 = 0 // 失败
-	Enabled  int8 = 1 // 启用
+	Disabled int = 0 // 禁用
+	Failure  int = 10001 // 失败
+	Enabled  int = 1 // 启用
 	Running  int = 10000 // 运行中
-	Finish   int8 = 2 // 完成
-	Cancel   int8 = 3 // 取消
+	Finish   int = 10002 // 完成
+	Cancel   int = 3 // 取消
 )
 
 //定义一个空结构体
@@ -127,7 +127,7 @@ func createJob(taskModel model.FlCron) cron.FuncJob {
 		logger.Info(fmt.Sprintf("开始执行任务#%s#命令-%s", taskModel.JobName, taskModel.Cmd))
 		taskResult := execJob(handler, taskModel, taskLogId)
 		logger.Info(fmt.Sprintf("任务完成#%s#命令-%s#执行结果-%s-执行机器-%s", taskModel.JobName, taskModel.Cmd, taskResult.Result, taskResult.Host))
-		//afterExecJob(taskModel, taskResult, taskLogId)
+		afterExecJob(taskModel, taskResult, taskLogId)
 	}
 	return taskFunc
 }
@@ -135,37 +135,34 @@ func createJob(taskModel model.FlCron) cron.FuncJob {
 // 执行具体任务
 func execJob(handler Handler, taskModel model.FlCron, taskUniqueId int64) croninit.TaskResult {
 	ret, err := handler.Run(taskModel, taskUniqueId)
-	logger.Info(fmt.Sprintf("执行结果%v, 错误信息 %v", ret, err))
-	return croninit.TaskResult{}
-	// if err == nil {
-	// 	return TaskResult{Result: ret.Result, Err: ret.Err, Host : ret.Host, status : ret.Status, endtime : ret.Endtime}
-	// }
-	// return TaskResult{Result: ret.Result, Err: ret.Err, Host : ret.Host, status : ret.Status, endtime : ret.Endtime}
+	if err == nil {
+		return croninit.TaskResult{Result: ret.Result, Err: ret.Err, Host : ret.Host, Status : ret.Status, Endtime : ret.Endtime}
+	}
+	return croninit.TaskResult{Result: ret.Result, Err: ret.Err, Host : ret.Host, Status : ret.Status, Endtime : ret.Endtime}
 }
 
 // 任务前置操作
 func beforeExecJob(taskModel model.FlCron) (taskLogId int64) {
-	logger.Infof("beforeExecJob : %v", taskModel)
 	taskLogId, err := createTaskLog(taskModel)
 	if err != nil {
 		logger.Error("任务开始执行#写入任务日志失败-", err)
 		return
 	}
-	logger.Info("任务命令-%s", taskModel.Cmd)
+	logger.Info("任务命令-", taskModel.Cmd)
 
 	return taskLogId
 }
 
 // 任务执行后置操作
-// func afterExecJob(taskModel model.FlCron, taskResult TaskResult, taskLogId int64) {
-// 	_, err := updateTaskLog(taskLogId, taskResult)
-// 	if err != nil {
-// 		logger.Error("任务结束#更新任务日志失败-", err)
-// 	}
+func afterExecJob(taskModel model.FlCron, taskResult croninit.TaskResult, taskLogId int64) {
+	_, err := updateTaskLog(taskLogId, taskResult)
+	if err != nil {
+		logger.Error("任务结束#更新任务日志失败-", err)
+	}
 
-// 	// 发送邮件
-// 	// go SendNotification(taskModel, taskResult)
-// }
+	// 发送邮件
+	// go SendNotification(taskModel, taskResult)
+}
 
 func createHandler(taskModel model.FlCron) Handler {
 	var handler Handler = nil

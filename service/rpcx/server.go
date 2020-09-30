@@ -17,7 +17,10 @@ import (
 	"github.com/qiusnay/gocron/init"
 )
 
-type RpcService struct{}
+type RpcService struct{
+	Result  string
+	Err  error
+}
 
 
 var (
@@ -56,7 +59,7 @@ func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *croninit.T
 	out, err := c.ExecShell(ctx, req.Cmd)
 	res.Result = out
 	res.Host = utils.GetLocalIP()
-	res.Endtime = time.Now().String()
+	res.Endtime = time.Now().Format("2006-01-02 15:04:05")
 	if err != nil {
 		res.Err = err
 		res.Status = 10002
@@ -75,10 +78,10 @@ func (c *RpcService) ExecShell(ctx context.Context, command string) (string, err
 	cmd.SysProcAttr = &syscall.SysProcAttr{
 		Setpgid: true,
 	}
-	resultChan := make(chan croninit.TaskResult)
+	resultChan := make(chan RpcService)
 	go func() {
 		Result, err := cmd.Output()
-		resultChan <- croninit.TaskResult{string(Result), err, "", 0, ""}
+		resultChan <- RpcService{string(Result), err}
 	}()
 	select {
 	case <-ctx.Done():
