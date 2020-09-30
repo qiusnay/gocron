@@ -94,7 +94,7 @@ func (fl FlCron) Initialize() {
 
 // 添加任务
 func (fl FlCron) Add(taskModel model.FlCron) {
-	taskModel.Rule = "* " + taskModel.Rule
+	taskModel.Rule = "1 " + taskModel.Rule
 	
 	taskFunc := createJob(taskModel)
 
@@ -176,7 +176,3 @@ func createHandler(taskModel model.FlCron) Handler {
 	}
 	return handler
 }
-
-
-
-
