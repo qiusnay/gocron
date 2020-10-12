@@ -4,8 +4,6 @@ import (
 	"context"
 	"fmt"
 	"os"
-	"errors"
-	"os/exec"
 	"os/signal"
 	"flag"
 	"syscall"
@@ -16,11 +14,6 @@ import (
 	"github.com/qiusnay/gocron/utils"
 	"github.com/qiusnay/gocron/init"
 )
-
-type RpcService struct{
-	Result  string
-	Err  error
-}
 
 
 var (
@@ -56,7 +49,16 @@ func Start() {
 }
 
 func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *croninit.TaskResult) error {
-	out, err := c.ExecShell(ctx, req.Cmd)
+	var out string
+	var err error
+	switch req.Querytype {
+		case "wget":
+		case "curl":
+			out, err := c.ExecCurl(ctx, req.Cmd)
+			break
+		default:
+			out, err := c.ExecShell(ctx, req.Cmd)
+	}
 	res.Result = out
 	res.Host = utils.GetLocalIP()
 	res.Endtime = time.Now().Format("2006-01-02 15:04:05")
@@ -71,30 +73,5 @@ func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *croninit.T
 
 	return nil
 }
-
-// 执行shell命令，可设置执行超时时间
-func (c *RpcService) ExecShell(ctx context.Context, command string) (string, error) {
-	cmd := exec.Command("/bin/bash", "-c", command)
-	cmd.SysProcAttr = &syscall.SysProcAttr{
-		Setpgid: true,
-	}
-	resultChan := make(chan RpcService)
-	go func() {
-		Result, err := cmd.Output()
-		resultChan <- RpcService{string(Result), err}
-	}()
-	select {
-	case <-ctx.Done():
-		if cmd.Process.Pid > 0 {
-			syscall.Kill(-cmd.Process.Pid, syscall.SIGKILL)
-		}
-		return "", errors.New("timeout killed")
-	case result := <-resultChan:
-		return result.Result, result.Err
-	}
-}
-
-
-
 
 

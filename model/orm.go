@@ -49,7 +49,7 @@ type FlLog struct {
 	JobName   string  `gorm:"type:varchar(550);comment:'作业名字';not null" json:"job_name"`
 	Status    int   `gorm:"type:int(50);comment:'任务状态:10000:等待执行,10001:执行中,10002:执行成功,10006:超时锁定,其他:出错';not null;index:IX_taskid" json:"status"`
 	Starttime  time.Time `gorm:"type:datetime;comment:'开始时间';" json:"starttime"`
-	Endtime    time.Time `gorm:"type:datetime;comment:'结束时间';not null" json:"endtime"`
+	Endtime    time.Time `gorm:"type:datetime;comment:'结束时间';" json:"endtime"`
 	Cmd     string `gorm:"type:varchar(200);comment:'执行命令';not null" json:"cmd"`
 	Runat       string `gorm:"type:varchar(50);comment:'执行机器'" json:"runat"`
 	Jobdata       string `gorm:"type:varchar(1000);comment:'Job data'" json:"jobdata"`

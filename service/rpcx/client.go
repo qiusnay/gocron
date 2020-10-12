@@ -9,7 +9,7 @@ import (
 	"github.com/qiusnay/gocron/model"
 	"github.com/qiusnay/gocron/init"
 	// "github.com/qiusnay/gocron/service/cron"
-	// "github.com/google/logger"
+	"github.com/google/logger"
 )
 
 // RPC调用执行任务
@@ -30,6 +30,7 @@ func (h *RPCHandler) Run(taskModel model.FlCron, taskUniqueId int64) (result cro
 	go func() {
 		reply := &croninit.TaskResult{}
 		xclient.Call(context.Background(), "Run", taskModel, reply)
+		logger.Error("任务开始执行#写入任务日志失败-", reply.Result)
 		resultChan <- croninit.TaskResult{Result: reply.Result, Err: reply.Err, Host : reply.Host, Status : reply.Status, Endtime : reply.Endtime}
 	}()
 	var aggregationErr error = nil

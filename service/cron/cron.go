@@ -11,7 +11,7 @@ import (
 	"github.com/qiusnay/gocron/model"
 	"github.com/ouqiang/goutil"
 	"github.com/qiusnay/gocron/service/rpcx"
-	"github.com/qiusnay/gocron/service/http"
+	// "github.com/qiusnay/gocron/service/http"
 	"github.com/qiusnay/gocron/init"
 )
 
@@ -110,10 +110,7 @@ func (fl FlCron) Add(taskModel model.FlCron) {
  * 创建任务
  **/
 func createJob(taskModel model.FlCron) cron.FuncJob {
-	handler := createHandler(taskModel)
-	if handler == nil {
-		return nil
-	}
+	handler := new(rpcx.RPCHandler)
 	taskFunc := func() {
 		// taskCount.Add()
 		// defer taskCount.Done()
@@ -162,17 +159,4 @@ func afterExecJob(taskModel model.FlCron, taskResult croninit.TaskResult, taskLo
 
 	// 发送邮件
 	// go SendNotification(taskModel, taskResult)
-}
-
-func createHandler(taskModel model.FlCron) Handler {
-	var handler Handler = nil
-	switch taskModel.Querytype {
-		case "wget":
-		case "curl":
-			handler = new(http.HTTPHandler)
-			break
-		default:
-			handler = new(rpcx.RPCHandler)
-	}
-	return handler
 }
