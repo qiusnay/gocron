@@ -5,10 +5,10 @@ build: gocron
 
 .PHONY: gocron
 gocron:
-	go build -o bin/server ./cmd/server.go
-	go build -o bin/client ./cmd/client.go
+	go build -o bin/executor ./cmd/executor.go
+	go build -o bin/dispacher ./cmd/dispacher.go
 
 .PHONY: clean
 clean:
-	rm bin/server
-	rm bin/client
+	rm bin/executor
+	rm bin/dispacher

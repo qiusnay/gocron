@@ -20,6 +20,11 @@ var (
 	addr = flag.String("addr", "localhost:8972", "server address")
 )
 
+type RpcService struct{
+	Result  string
+	Err  error
+}
+
 func Start() {
 	flag.Parse()
 	s := server.NewServer()
@@ -54,10 +59,12 @@ func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *croninit.T
 	switch req.Querytype {
 		case "wget":
 		case "curl":
-			out, err := c.ExecCurl(ctx, req.Cmd)
+			rpccurl := RpcServiceCurl{}
+			out, err = rpccurl.ExecCurl(ctx, req.Cmd)
 			break
 		default:
-			out, err := c.ExecShell(ctx, req.Cmd)
+			rpcshell := RpcServiceShell{}
+			out, err = rpcshell.ExecShell(ctx, req.Cmd)
 	}
 	res.Result = out
 	res.Host = utils.GetLocalIP()

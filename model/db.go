@@ -16,7 +16,7 @@ const (
 var DB *gorm.DB
 
 func Dbinit()(*gorm.DB, error) {
-	dbConf := utils.GetConfig("database_local", "")
+	dbConf := utils.GetConfig("database", "")
 	db, err := gorm.Open("mysql", fmt.Sprintf("%s:%s@(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local", dbConf["username"], dbConf["password"], dbConf["host"], dbConf["port"], dbConf["database"]))
 	if err != nil {
 		logger.Infof("database connect erro : %s", err)
