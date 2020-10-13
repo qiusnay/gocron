@@ -6,7 +6,7 @@ import(
 )
 func main() {
 	//1.cron项目初始化
-	const logPath = "/Users/qiusnay/project/golang/gocron/log/gocronserver.log"
+	const logPath = "../log/gocronserver.log"
 
 	croninit.Init(logPath);
 	
