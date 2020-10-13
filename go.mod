@@ -3,7 +3,7 @@ module github.com/qiusnay/gocron
 go 1.15
 
 require (
-	github.com/google/logger v1.1.0
+	github.com/google/logger
 	github.com/jakecoffman/cron v0.0.0-20190106200828-7e2009c226a5
 	github.com/jinzhu/gorm v1.9.16
 	github.com/ouqiang/gocron v1.5.3 // indirect
