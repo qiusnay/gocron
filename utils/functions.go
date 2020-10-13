@@ -7,9 +7,11 @@ import (
 	"bufio"
 	"io"
 	"net"
-	// "github.com/google/logger"
+	// "path/filepath"
+	"github.com/google/logger"
 )
 
+var BashPath, _ = os.Getwd()
 type Config struct {
 	filepath string
 	conflist []map[string]map[string]string
@@ -19,9 +21,9 @@ type Config struct {
 func GetConfig(section, feilds string) map[string]string {
 	//读取配置
 	c := new(Config)
-	c.filepath = "../conf/conf.ini"
+	c.filepath = BashPath + "/../conf/conf.ini"
 	conf := c.ReadList()
-	// logger.Infof("database connect erro : %v", conf)
+	logger.Infof("erro : %v", c.filepath)
 	if feilds == "" { //如果不传具体的feilds
 		for _, v := range conf {
 			for key, value := range v {

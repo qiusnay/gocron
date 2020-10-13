@@ -1,2 +1,6 @@
-INFO : 2020/10/12 17:58:56.141295 db.go:22: database connect erro : dial tcp :0: connect: can't assign requested address
-INFO : 2020/10/12 17:58:56.141458 cron.go:68: 开始初始化定时任务
+INFO : 2020/10/13 13:41:29.063804 functions.go:26: erro : /Users/qiusnay/project/golang/gocron/cmd/../conf/conf.ini
+INFO : 2020/10/13 13:41:29.079475 cron.go:68: 开始初始化定时任务
+INFO : 2020/10/13 13:41:30.226541 cron.go:71: Initialize : []
+INFO : 2020/10/13 13:41:30.226641 cron.go:78: 定时任务初始化完成
+INFO : 2020/10/13 13:42:51.122472 cron.go:84: 收到信号 -- interrupt
+INFO : 2020/10/13 13:42:51.122581 cron.go:89: 应用准备退出
