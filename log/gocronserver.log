@@ -1,8 +1,0 @@
-INFO : 2020/10/13 13:41:45.948839 functions.go:26: erro : /Users/qiusnay/project/golang/gocron/cmd/../conf/conf.ini
-INFO : 2020/10/13 13:41:45.967585 server.go:32: server listen on %s0xc000447ef0
-INFO : 2020/10/13 13:41:46.025746 server.go:44: 收到信号 -- interrupt
-INFO : 2020/10/13 13:41:46.025811 server.go:49: 应用准备退出
-INFO : 2020/10/13 13:41:49.080530 functions.go:26: erro : /Users/qiusnay/project/golang/gocron/cmd/../conf/conf.ini
-INFO : 2020/10/13 13:41:49.112426 server.go:32: server listen on %s0xc000487f10
-INFO : 2020/10/13 13:42:52.977242 server.go:44: 收到信号 -- interrupt
-INFO : 2020/10/13 13:42:52.977330 server.go:49: 应用准备退出

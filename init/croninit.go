@@ -30,4 +30,6 @@ func Init(logPath string) {
 
 	//defer db.Close()
 	model.Dbinit()
+
+	model.Redis.InitPool()
 }

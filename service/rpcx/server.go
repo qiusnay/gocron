@@ -3,10 +3,7 @@ package rpcx
 import (
 	"context"
 	"fmt"
-	"os"
-	"os/signal"
 	"flag"
-	"syscall"
 	"time"
 	"github.com/smallnest/rpcx/server"
 	"github.com/google/logger"
@@ -36,21 +33,6 @@ func Start() {
 			panic(err)
 		}
 	}()
-
-	c := make(chan os.Signal, 1)
-	signal.Notify(c, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM)
-	for {
-		s := <-c
-		logger.Info("收到信号 -- ", s)
-		switch s {
-		case syscall.SIGHUP:
-			logger.Info("收到终端断开信号, 忽略")
-		case syscall.SIGINT, syscall.SIGTERM:
-			logger.Info("应用准备退出")
-			return
-		}
-	}
-
 }
 
 func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *croninit.TaskResult) error {

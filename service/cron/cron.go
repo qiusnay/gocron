@@ -1,18 +1,15 @@
 package cron
 
 import (
-	"sync"
 	"fmt"
-	"os"
-	"os/signal"
-	"syscall"
+	"strings"
 	"github.com/jakecoffman/cron"
 	"github.com/google/logger"
 	"github.com/qiusnay/gocron/model"
 	"github.com/ouqiang/goutil"
 	"github.com/qiusnay/gocron/service/rpcx"
-	// "github.com/qiusnay/gocron/service/http"
 	"github.com/qiusnay/gocron/init"
+	"github.com/qiusnay/gocron/utils"
 )
 
 const (
@@ -27,38 +24,13 @@ const (
 //定义一个空结构体
 type FlCron struct{}
 
-// 任务计数
-type TaskCount struct {
-	wg   sync.WaitGroup
-	exit chan struct{}
-}
-
 type Handler interface {
 	Run(taskModel model.FlCron, taskUniqueId int64) (croninit.TaskResult, error)
 }
 
 /****************************************/
-
-func (tc *TaskCount) Add() {tc.wg.Add(1)}
-func (tc *TaskCount) Done() {tc.wg.Done()}
-func (tc *TaskCount) Exit() {
-	tc.wg.Done()
-	<-tc.exit
-}
-func (tc *TaskCount) Wait() {
-	tc.Add()
-	tc.wg.Wait()
-	close(tc.exit)
-}
-
-var (
-	// 定时任务调度管理器
-	mycron *cron.Cron
-
-	// 任务计数-正在运行的任务
-	taskCount TaskCount
-)
-
+// 定时任务调度管理器
+var mycron *cron.Cron
 
 // 初始化任务, 从数据库取出所有任务, 添加到定时任务并运行
 func (fl FlCron) Initialize() {
@@ -68,33 +40,36 @@ func (fl FlCron) Initialize() {
 	logger.Info("开始初始化定时任务")
 	taskModel := new(model.FlCron)
 	taskList, err := taskModel.GetAllJobList()
-	logger.Infof("Initialize : %v", taskList)
+	
 	if err != nil {
 		logger.Error("定时任务初始化,获取任务列表错误: %s", err)
 	}
 	for _, item := range taskList {
+		logger.Infof(fmt.Sprintf("Initialize : %+v", item))
+		//获取当前机器配置列表
+		machineList := utils.GetConfig("machine", item.Runat)
+		//获取当前机器ID
+		localIP := utils.GetLocalIP()
+		//判断当前作业是否可以在当前机器运行
+		if !utils.InArray(localIP, strings.Split(machineList[item.Runat], "|")) {
+			continue
+		}
 		fl.Add(item)
 	}
 	logger.Infof("定时任务初始化完成")
-
-	c := make(chan os.Signal, 1)
-	signal.Notify(c, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM)
-	for {
-		s := <-c
-		logger.Info("收到信号 -- ", s)
-		switch s {
-		case syscall.SIGHUP:
-			logger.Info("收到终端断开信号, 忽略")
-		case syscall.SIGINT, syscall.SIGTERM:
-			logger.Info("应用准备退出")
-			return
-		}
-	}
 }
 
 // 添加任务
 func (fl FlCron) Add(taskModel model.FlCron) {
 	taskModel.Rule = "1 " + taskModel.Rule
+	//锁判断
+	lock, _ := model.Redis.Int("setnx", "cronlock_" + taskModel.Jobid, 1)
+	if lock != 1 {
+		logger.Error("获取redis lock 失败 %d", lock)
+		return
+	}
+	localIP := utils.GetLocalIP()
+	logger.Info(fmt.Sprintf("jobid %d has run at machine %s", taskModel.Jobid, localIP))
 	
 	taskFunc := createJob(taskModel)
 
@@ -112,14 +87,10 @@ func (fl FlCron) Add(taskModel model.FlCron) {
 func createJob(taskModel model.FlCron) cron.FuncJob {
 	handler := new(rpcx.RPCHandler)
 	taskFunc := func() {
-		// taskCount.Add()
-		// defer taskCount.Done()
-
 		taskLogId := beforeExecJob(taskModel)
 		if taskLogId <= 0 {
 			return
 		}
-		// concurrencyQueue.Add()
 
 		logger.Info(fmt.Sprintf("开始执行任务#%s#命令-%s", taskModel.JobName, taskModel.Cmd))
 		taskResult := execJob(handler, taskModel, taskLogId)
