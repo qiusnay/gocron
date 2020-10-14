@@ -38,3 +38,26 @@ INFO : 2020/10/14 11:43:01.091336 cron.go:99: 开始执行任务#测试cron#命�
 INFO : 2020/10/14 11:43:01.098318 cron.go:102: 任务完成#测试cron#命令-echo  TEST HELLO#执行结果-TEST HELLO
 -执行机器-10.200.105.49
 ERROR: 2020/10/14 11:43:01.129195 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 11:44:01.054508 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 11:44:01.054658 cron.go:94: 获取redis lock 失败 %d0
+INFO : 2020/10/14 11:44:03.077384 db.go:70: database ping sucess
+INFO : 2020/10/14 11:45:01.111493 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 11:45:01.121736 cron.go:97: 获取redis lock 成功 %d1
+INFO : 2020/10/14 11:45:01.121836 cron.go:99: 开始执行任务#测试cron#命令-echo  TEST HELLO
+INFO : 2020/10/14 11:45:01.130788 cron.go:102: 任务完成#测试cron#命令-echo  TEST HELLO#执行结果-TEST HELLO
+-执行机器-10.200.105.49
+ERROR: 2020/10/14 11:45:01.157212 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 11:45:33.075182 db.go:70: database ping sucess
+INFO : 2020/10/14 11:46:01.058149 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 11:46:01.058282 cron.go:94: 获取redis lock 失败 %d0
+INFO : 2020/10/14 11:47:01.102197 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 11:47:01.110547 cron.go:97: 获取redis lock 成功 %d1
+INFO : 2020/10/14 11:47:01.110639 cron.go:99: 开始执行任务#测试cron#命令-echo  TEST HELLO
+INFO : 2020/10/14 11:47:01.117659 cron.go:102: 任务完成#测试cron#命令-echo  TEST HELLO#执行结果-TEST HELLO
+-执行机器-10.200.105.49
+ERROR: 2020/10/14 11:47:01.155462 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 11:47:03.072531 db.go:70: database ping sucess
+INFO : 2020/10/14 11:48:01.058638 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 11:48:01.058783 cron.go:94: 获取redis lock 失败 %d0
+INFO : 2020/10/14 11:48:08.269288 dispacher.go:23: 收到信号 -- interrupt
+INFO : 2020/10/14 11:48:08.271126 dispacher.go:28: 应用准备退出

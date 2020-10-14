@@ -62,7 +62,7 @@ func (fl FlCron) Initialize() {
 
 // 添加任务
 func (fl FlCron) Add(taskModel model.FlCron) {
-	taskModel.Rule = "1 " + taskModel.Rule
+	taskModel.Rule = "* " + taskModel.Rule
 
 	localIP := utils.GetLocalIP()
 	logger.Info(fmt.Sprintf("jobid %d has run at machine %s", taskModel.Jobid, localIP))
