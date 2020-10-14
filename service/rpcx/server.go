@@ -10,11 +10,14 @@ import (
 	"github.com/qiusnay/gocron/model"
 	"github.com/qiusnay/gocron/utils"
 	"github.com/qiusnay/gocron/init"
+	"github.com/smallnest/rpcx/serverplugin"
+	metrics "github.com/rcrowley/go-metrics"
 )
 
-
 var (
-	addr = flag.String("addr", "localhost:8972", "server address")
+	addr     = flag.String("addr", "localhost:8973", "server address")
+	etcdAddr = flag.String("etcdAddr", "10.200.105.49:2379", "etcd address")
+	basePath = flag.String("base", "/rpcx_test", "prefix path")
 )
 
 type RpcService struct{
@@ -25,6 +28,9 @@ type RpcService struct{
 func Start() {
 	flag.Parse()
 	s := server.NewServer()
+
+	addRegistryPlugin(s)
+
 	s.RegisterName("RpcService", new(RpcService), "")
 	logger.Info("server listen on %s", addr)
 	go func() {
@@ -33,6 +39,21 @@ func Start() {
 			panic(err)
 		}
 	}()
+}
+
+func addRegistryPlugin(s *server.Server) {
+	r := &serverplugin.EtcdRegisterPlugin{
+		ServiceAddress: "tcp@" + *addr,
+		EtcdServers:    []string{*etcdAddr},
+		BasePath:       *basePath,
+		Metrics:        metrics.NewRegistry(),
+		UpdateInterval: time.Minute,
+	}
+	err := r.Start()
+	if err != nil {
+		panic(err)
+	}
+	s.Plugins.Add(r)
 }
 
 func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *croninit.TaskResult) error {

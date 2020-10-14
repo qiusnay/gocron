@@ -4,7 +4,7 @@ import (
 	"context"
 	"flag"
 	// "fmt"
-	"github.com/smallnest/rpcx/protocol"
+	// "github.com/smallnest/rpcx/protocol"
 	"github.com/smallnest/rpcx/client"
 	"github.com/qiusnay/gocron/model"
 	"github.com/qiusnay/gocron/init"
@@ -18,11 +18,10 @@ type RPCHandler struct{}
 func (h *RPCHandler) Run(taskModel model.FlCron, taskUniqueId int64) (result croninit.TaskResult, err error) {
 	flag.Parse()
 
-	d := client.NewPeer2PeerDiscovery("tcp@"+*addr, "")
-	opt := client.DefaultOption
-	opt.SerializeType = protocol.JSON
-
-	xclient := client.NewXClient("RpcService", client.Failtry, client.RandomSelect, d, opt)
+	// d := client.NewPeer2PeerDiscovery("tcp@"+*addr, "")
+	d := client.NewEtcdDiscovery(*basePath, "RpcService", []string{*etcdAddr}, nil)
+	// xclient := client.NewXClient("RpcService", client.Failtry, client.RandomSelect, d, opt)
+	xclient := client.NewXClient("RpcService", client.Failover, client.RoundRobin, d, client.DefaultOption)
 	defer xclient.Close()
 
 	resultChan := make(chan croninit.TaskResult)
