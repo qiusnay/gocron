@@ -1,0 +1,407 @@
+INFO : 2020/10/14 12:20:38.111994 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:20:42.089195 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:20:45.053235 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:20:54.093316 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:20:56.063217 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:03.103738 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:04.088243 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:05.132068 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:06.065052 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:07.085817 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:08.108030 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:14.093387 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:15.066990 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:16.045533 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:23.105603 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:25.068319 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:26.070020 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:28.103789 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:30.067203 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:31.063328 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:32.085140 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:33.105917 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:34.096564 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:39.081715 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:43.108414 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:47.085219 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:50.051526 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:52.108155 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:56.074635 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:21:58.289629 db.go:70: database ping sucess
+INFO : 2020/10/14 12:22:00.061669 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:04.083978 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:05.128559 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:08.103198 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:17.094041 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:22.077189 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:25.069602 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:27.071818 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:32.079648 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:33.114198 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:35.049622 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:38.110579 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:41.046916 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:47.072547 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:48.100804 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:49.084584 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:51.057274 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:52.082156 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:53.109227 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:56.069404 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:57.075465 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:22:59.097638 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:01.069041 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:03.099732 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:05.263063 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:09.090203 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:11.065369 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:15.050129 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:16.051258 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:17.086998 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:20.094380 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:21.068965 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:22.083283 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:26.055674 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:28.086603 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:28.288161 db.go:70: database ping sucess
+INFO : 2020/10/14 12:23:29.089421 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:31.066135 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:33.107761 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:41.087484 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:48.099558 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:50.072441 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:51.052174 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:52.082838 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:23:54.091729 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:00.067776 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:01.072150 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:03.109553 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:06.090463 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:07.070085 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:08.088325 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:16.063310 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:17.087566 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:20.054114 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:22.079032 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:23.089605 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:24.098176 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:25.066568 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:26.061071 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:30.064369 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:31.056620 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:35.040358 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:43.102637 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:45.054885 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:47.093067 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:48.085556 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:49.089559 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:53.111823 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:24:58.286994 db.go:70: database ping sucess
+INFO : 2020/10/14 12:24:58.869814 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:01.077406 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:05.060922 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:06.171045 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:07.076303 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:08.085997 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:12.079833 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:14.090721 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:16.069781 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:24.106710 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:25.052730 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:26.071018 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:29.079640 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:32.070969 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:33.100331 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:34.100339 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:35.048079 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:36.055807 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:42.081873 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:46.061208 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:47.065650 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:50.056728 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:51.049287 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:53.107499 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:55.052890 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:56.051217 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:58.098738 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:25:59.083359 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:00.042807 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:02.062697 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:03.093302 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:04.080887 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:06.085419 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:07.072963 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:08.110844 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:11.061563 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:12.078236 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:13.108341 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:14.088763 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:17.077441 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:21.100012 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:23.083411 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:26.057580 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:28.110340 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:28.278247 db.go:70: database ping sucess
+INFO : 2020/10/14 12:26:29.075816 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:30.061095 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:32.081968 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:33.087914 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:34.084418 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:35.062596 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:38.100323 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:39.085069 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:40.048569 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:42.067036 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:43.112764 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:46.061150 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:47.065290 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:48.102279 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:50.090608 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:52.086486 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:54.098708 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:55.073750 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:56.065894 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:57.076590 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:26:59.082945 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:00.069391 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:01.076815 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:02.104678 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:04.087026 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:07.095284 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:08.468084 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:09.091047 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:10.159380 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:11.096956 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:12.074306 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:13.096449 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:15.052760 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:17.083521 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:21.061474 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:22.093704 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:23.112660 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:24.111838 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:25.064209 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:26.058245 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:27.085460 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:29.080906 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:32.085683 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:33.117945 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:34.096671 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:36.118263 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:37.127837 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:39.085915 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:46.062662 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:47.064356 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:49.081417 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:51.073572 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:52.088891 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:53.106890 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:54.118957 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:55.065129 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:56.050046 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:57.065735 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:58.088940 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:27:58.278046 db.go:70: database ping sucess
+INFO : 2020/10/14 12:27:59.088087 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]
+INFO : 2020/10/14 12:28:00.067786 server.go:61: execute cmd end: [id: 1 cmd: echo  TEST HELLO err: %!s(<nil>), result : TEST HELLO
+, host: 10.200.105.49]

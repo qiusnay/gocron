@@ -1,0 +1,1734 @@
+INFO : 2020/10/14 12:20:26.666949 functions.go:26: erro : /Users/qiusnay/project/golang/gocron/cmd/../conf/conf.ini
+INFO : 2020/10/14 12:20:26.688427 functions.go:26: erro : /Users/qiusnay/project/golang/gocron/cmd/../conf/conf.ini
+INFO : 2020/10/14 12:20:26.688490 redis.go:23: 收到终端断开信号, 忽略, %v192.168.100.60
+INFO : 2020/10/14 12:20:26.691603 cron.go:41: 开始初始化定时任务
+INFO : 2020/10/14 12:20:26.718746 cron.go:49: Initialize : {Id:1 Jobid:1 JobName:测试cron Cmd:echo  TEST HELLO Rule:* * * * * Runyear:1 Querytype:shell State:1 Author:1 AdminMobile:13333333 AdminEmail:usnay@qq.com Remark:1 Createtime:2020-10-13 16:14:14 +0800 CST Runat:phpgroup Overflow:}
+INFO : 2020/10/14 12:20:26.718870 functions.go:26: erro : /Users/qiusnay/project/golang/gocron/cmd/../conf/conf.ini
+INFO : 2020/10/14 12:20:26.719047 cron.go:68: jobid 1 has run at machine 10.200.105.49
+INFO : 2020/10/14 12:20:26.719098 cron.go:60: 定时任务初始化完成
+INFO : 2020/10/14 12:20:27.066691 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:27.076659 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:28.078758 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:28.085040 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:20:28.085104 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:20:28.099895 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果-  - 执行机器 - 
+ERROR: 2020/10/14 12:20:28.127831 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:20:29.072243 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:29.086494 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:20:29.086593 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:20:29.094176 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:20:29.145750 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:20:30.033566 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:30.035658 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:31.048759 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:31.057577 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:32.066914 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:32.071236 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:33.081396 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:33.085776 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:34.093029 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:34.096051 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:35.067241 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:35.072964 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:36.049013 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:36.056745 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:37.069580 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:37.073268 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:38.093194 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:38.104984 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:20:38.105076 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:20:38.112260 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:20:38.149370 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:20:39.098642 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:39.109412 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:40.074292 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:40.079542 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:41.046319 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:41.048344 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:42.077725 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:42.083144 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:20:42.083225 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:20:42.089398 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:20:42.118031 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:20:43.085529 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:43.089785 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:44.069837 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:44.073018 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:45.041978 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:45.046120 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:20:45.046256 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:20:45.053437 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:20:45.093273 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:20:46.042845 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:46.053282 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:47.070302 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:47.074948 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:48.085513 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:48.090197 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:49.069946 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:49.076406 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:50.042578 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:50.047797 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:51.041842 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:51.050624 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:52.062296 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:52.067037 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:53.089388 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:53.095929 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:54.081280 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:54.086896 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:20:54.086992 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:20:54.093533 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:20:54.122148 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:20:55.049939 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:55.052938 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:56.045287 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:56.054030 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:20:56.056819 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:20:56.064228 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:20:56.098406 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:20:57.063039 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:57.068377 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:58.085146 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:58.092409 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:20:59.067388 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:20:59.070598 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:00.046340 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:00.051722 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:01.048162 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:01.050720 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:02.066952 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:02.068916 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:03.092506 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:03.096674 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:03.096779 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:03.103964 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:03.145307 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:04.074967 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:04.081296 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:04.081411 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:04.088555 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:04.126538 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:05.114654 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:05.125153 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:05.125246 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:05.132285 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:05.168427 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:06.053375 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:06.058650 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:06.058743 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:06.065280 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:06.097062 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:07.072213 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:07.078823 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:07.078929 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:07.086052 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:07.119295 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:08.096983 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:08.102072 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:08.102124 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:08.108255 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:08.141000 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:09.073138 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:09.077638 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:10.049886 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:10.052049 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:11.078329 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:11.083967 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:12.088037 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:12.094365 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:13.084175 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:13.089109 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:14.081052 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:14.086710 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:14.086792 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:14.093612 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:14.116586 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:15.051256 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:15.060208 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:15.060277 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:15.067212 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:15.098371 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:16.035726 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:16.039397 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:16.039478 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:16.045762 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:16.060494 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:17.063384 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:17.068567 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:18.084363 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:18.090038 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:19.071527 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:19.075637 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:20.050323 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:20.054000 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:21.050825 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:21.054315 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:22.065104 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:22.069369 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:23.095204 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:23.099174 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:23.099270 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:23.105876 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:23.148111 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:24.067700 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:24.072957 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:25.051068 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:25.061057 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:25.061307 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:25.068544 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:25.098366 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:26.046660 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:26.064209 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:26.064256 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:26.070228 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:26.092307 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:27.063643 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:27.071914 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:28.090437 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:28.096917 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:28.097047 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:28.104017 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:28.161700 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:29.067683 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:29.074059 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:30.051346 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:30.060398 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:30.060490 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:30.067424 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:30.123873 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:31.051233 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:31.056414 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:31.056504 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:31.063545 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:31.106265 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:32.064974 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:32.078332 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:32.078415 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:32.085361 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:32.131188 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:33.089139 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:33.099750 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:33.099850 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:33.106144 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:33.147952 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:34.085267 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:34.089469 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:34.089559 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:34.096783 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:34.128312 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:35.068434 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:35.071622 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:36.046387 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:36.049731 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:37.060902 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:37.065267 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:38.082997 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:38.088509 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:39.070582 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:39.075057 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:39.075138 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:39.081930 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:39.110443 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:40.041380 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:40.046984 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:41.047207 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:41.052440 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:42.058969 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:42.064462 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:43.096678 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:43.100973 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:43.101075 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:43.108618 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:43.143400 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:44.068518 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:44.073961 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:45.050544 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:45.057065 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:46.049897 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:46.052041 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:47.076114 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:47.079174 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:47.079259 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:47.085433 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:47.125163 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:48.088604 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:48.093533 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:49.068495 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:49.074168 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:50.042536 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:50.044645 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:50.044738 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:50.051760 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:50.086103 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:51.051428 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:51.054784 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:52.066429 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:52.101142 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:52.101247 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:52.108353 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:52.140171 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:53.095738 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:53.098883 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:54.067871 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:54.072319 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:55.049225 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:55.054961 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:56.062729 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:56.068064 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:21:56.068152 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:21:56.074855 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:21:56.109708 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:21:56.693736 db.go:70: database ping sucess
+INFO : 2020/10/14 12:21:57.054865 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:57.060151 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:58.097361 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:58.100526 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:21:59.068413 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:21:59.072636 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:00.051094 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:00.054542 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:00.054627 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:00.061890 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:00.096018 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:01.053178 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:01.058594 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:02.045158 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:02.050936 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:03.096531 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:03.100053 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:04.074018 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:04.077398 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:04.077489 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:04.084200 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:04.113980 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:05.110392 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:05.121787 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:05.121877 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:05.128797 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:05.158631 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:06.056608 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:06.062045 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:07.060965 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:07.064248 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:08.094243 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:08.096307 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:08.096386 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:08.103426 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:08.116758 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:09.076961 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:09.089896 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:10.050649 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:10.054882 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:11.048532 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:11.051548 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:12.060344 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:12.067105 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:13.103803 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:13.108161 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:14.076072 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:14.078109 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:15.028393 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:15.033692 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:16.049480 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:16.053173 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:17.082871 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:17.087408 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:17.087490 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:17.094495 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:17.126357 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:18.092301 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:18.095568 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:19.069095 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:19.073621 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:20.049441 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:20.052999 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:21.048930 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:21.053846 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:22.066117 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:22.070603 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:22.070691 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:22.077424 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:22.108627 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:23.091142 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:23.093311 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:24.072204 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:24.074485 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:25.053887 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:25.063392 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:25.063468 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:25.069816 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:25.103001 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:26.050118 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:26.052297 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:27.059509 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:27.064897 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:27.064988 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:27.072075 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:27.106378 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:28.087717 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:28.091692 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:29.071832 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:29.073982 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:30.046211 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:30.049681 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:31.051313 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:31.057301 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:32.067204 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:32.073039 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:32.073122 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:32.079876 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:32.111340 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:33.105515 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:33.108233 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:33.108283 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:33.114405 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:33.148216 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:34.083514 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:34.088054 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:35.041026 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:35.042992 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:35.043085 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:35.049830 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:35.072943 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:36.047454 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:36.052818 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:37.060182 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:37.063571 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:38.099399 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:38.104448 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:38.104495 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:38.110776 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:38.138513 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:39.074721 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:39.082480 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:40.041596 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:40.047013 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:41.038016 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:41.039915 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:41.040076 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:41.047120 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:41.070271 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:42.067337 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:42.072959 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:43.095517 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:43.099280 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:44.065114 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:44.071164 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:45.045088 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:45.047198 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:46.046923 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:46.056083 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:47.063093 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:47.066388 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:47.066470 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:47.072781 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:47.088920 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:48.089255 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:48.094385 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:48.094467 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:48.101027 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:48.138968 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:49.072290 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:49.077977 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:49.078079 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:49.084775 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:49.112425 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:50.041458 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:50.045852 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:51.046845 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:51.051149 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:51.051229 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:51.057480 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:51.101443 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:52.071004 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:52.075441 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:52.075507 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:52.082369 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:52.151442 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:53.097681 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:53.102098 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:53.102195 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:53.109448 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:53.135785 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:54.072597 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:54.081856 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:55.056813 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:55.064192 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:56.054760 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:56.062622 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:56.062713 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:56.069642 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:56.120286 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:57.063480 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:57.068453 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:57.068544 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:57.075707 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:57.134283 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:22:58.097359 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:58.106401 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:22:59.084346 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:22:59.091094 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:22:59.091186 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:22:59.097851 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:22:59.113430 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:00.041562 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:00.047080 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:01.056264 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:01.062242 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:01.062332 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:01.069265 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:01.106896 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:02.046104 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:02.050108 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:03.088727 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:03.092922 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:03.092997 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:03.099970 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:03.130980 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:04.091704 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:04.097120 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:05.251397 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:05.256278 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:05.256357 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:05.263263 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:05.320004 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:06.051357 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:06.056570 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:07.066123 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:07.068257 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:08.089460 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:08.095392 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:09.073094 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:09.083895 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:09.083971 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:09.090418 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:09.119425 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:10.052325 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:10.057712 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:11.052803 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:11.055108 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:11.058527 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:11.065599 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:11.095468 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:12.073239 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:12.076630 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:13.091412 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:13.094481 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:14.071505 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:14.074720 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:15.040444 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:15.043778 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:15.043859 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:15.050447 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:15.066185 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:16.041449 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:16.044625 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:16.044706 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:16.051475 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:16.063490 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:17.074123 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:17.080270 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:17.080366 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:17.087183 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:17.167138 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:18.095513 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:18.098846 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:19.092912 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:19.096223 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:20.080095 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:20.087445 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:20.087549 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:20.094705 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:20.132340 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:21.059017 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:21.062302 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:21.062360 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:21.069169 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:21.102433 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:22.071945 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:22.076606 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:22.076687 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:22.083483 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:22.121666 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:23.096161 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:23.099539 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:24.072982 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:24.079224 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:25.041432 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:25.047175 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:26.047128 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:26.049187 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:26.049268 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:26.055898 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:26.080923 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:26.687989 db.go:70: database ping sucess
+INFO : 2020/10/14 12:23:27.069770 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:27.074419 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:28.076790 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:28.080186 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:28.080279 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:28.086849 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:28.104424 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:29.076820 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:29.082874 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:29.082957 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:29.089646 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:29.142278 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:30.054740 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:30.058187 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:31.055536 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:31.059841 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:31.060012 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:31.066343 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:31.097323 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:32.065463 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:32.068119 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:33.096016 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:33.100953 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:33.101036 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:33.107984 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:33.141214 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:34.080451 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:34.084365 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:35.050243 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:35.053466 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:36.053967 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:36.057306 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:37.068364 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:37.077472 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:38.094802 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:38.099678 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:39.072657 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:39.075110 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:40.054094 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:40.057430 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:41.073819 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:41.080602 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:41.080683 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:41.087693 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:41.111498 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:42.071360 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:42.074542 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:43.091166 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:43.096604 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:44.079870 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:44.082355 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:45.054084 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:45.057367 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:46.054276 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:46.057741 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:47.067150 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:47.069410 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:48.088357 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:48.092727 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:48.092810 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:48.099769 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:48.130384 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:49.079498 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:49.082705 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:50.062520 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:50.065590 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:50.065673 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:50.072659 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:50.124654 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:51.042963 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:51.045162 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:51.045243 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:51.052397 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:51.067694 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:52.072172 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:52.076333 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:52.076414 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:52.083062 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:52.114617 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:53.090974 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:53.093249 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:54.078928 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:54.085693 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:23:54.085773 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:23:54.091933 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:23:54.126772 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:23:55.054845 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:55.059412 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:56.054034 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:56.056331 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:57.066985 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:57.071454 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:58.096613 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:58.098867 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:23:59.072090 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:23:59.076800 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:00.051948 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:00.060605 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:00.060744 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:00.068043 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:00.112135 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:01.059697 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:01.065605 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:01.065680 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:01.072362 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:01.116741 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:02.062712 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:02.066604 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:03.096027 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:03.102474 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:03.102553 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:03.109788 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:03.151057 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:04.069157 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:04.076978 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:05.057187 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:05.062765 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:06.077087 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:06.084184 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:06.084266 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:06.090689 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:06.118421 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:07.060501 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:07.063510 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:07.063564 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:07.070339 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:07.107167 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:08.077784 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:08.082198 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:08.082273 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:08.088640 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:08.112727 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:09.075362 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:09.079818 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:10.049806 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:10.056140 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:11.046434 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:11.049319 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:12.063187 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:12.067569 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:13.096718 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:13.099645 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:14.072805 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:14.076841 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:15.044345 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:15.047422 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:16.051479 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:16.056723 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:16.056805 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:16.063515 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:16.095867 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:17.074714 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:17.081272 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:17.081355 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:17.087769 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:17.126498 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:18.094569 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:18.097703 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:19.076314 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:19.079434 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:20.043458 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:20.047814 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:20.047908 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:20.054331 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:20.076508 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:21.049472 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:21.055621 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:22.067393 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:22.071925 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:22.072005 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:22.079269 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:22.112319 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:23.080003 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:23.082959 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:23.083009 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:23.089830 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:23.120841 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:24.088727 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:24.092132 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:24.092208 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:24.098498 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:24.127021 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:25.056646 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:25.059819 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:25.059899 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:25.066818 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:25.083897 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:26.050664 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:26.054916 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:26.054998 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:26.061285 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:26.093884 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:27.050311 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:27.055624 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:28.114496 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:28.117899 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:29.072658 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:29.078429 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:30.053043 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:30.057304 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:30.057392 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:30.064592 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:30.101141 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:31.045238 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:31.049686 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:31.049775 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:31.056823 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:31.089240 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:32.072730 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:32.076769 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:33.087775 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:33.093172 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:34.073118 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:34.079035 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:35.031961 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:35.033992 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:35.034068 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:35.040530 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:35.065486 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:36.053172 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:36.057307 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:37.071015 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:37.080523 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:38.085998 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:38.089897 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:39.080811 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:39.085212 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:40.054152 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:40.057305 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:41.082808 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:41.087294 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:42.070207 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:42.072571 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:43.091634 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:43.096180 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:43.096284 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:43.102915 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:43.149759 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:44.080726 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:44.083598 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:45.045956 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:45.048097 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:45.048177 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:45.055101 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:45.096142 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:46.054467 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:46.057591 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:47.080045 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:47.086304 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:47.086401 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:47.093275 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:47.132623 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:48.076164 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:48.078413 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:48.078498 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:48.085778 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:48.118946 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:49.077040 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:49.082624 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:49.082709 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:49.089773 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:49.120528 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:50.052790 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:50.056035 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:51.051440 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:51.054961 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:52.070679 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:52.075739 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:53.094658 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:53.104721 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:53.104937 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:53.112025 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:53.142146 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:54.076853 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:54.081258 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:55.051696 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:55.054740 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:56.056263 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:56.062462 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:56.703503 db.go:70: database ping sucess
+INFO : 2020/10/14 12:24:57.059263 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:57.066251 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:24:58.857787 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:58.863548 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:24:58.863620 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:24:58.870032 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:24:58.927332 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:24:59.083183 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:24:59.085247 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:00.049274 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:00.052485 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:01.059267 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:01.070722 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:01.070802 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:01.077993 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:01.118053 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:02.084091 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:02.092724 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:03.083371 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:03.089195 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:04.076313 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:04.081347 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:05.049505 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:05.053966 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:05.054061 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:05.061153 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:05.289374 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:06.160721 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:06.164060 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:06.164152 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:06.171437 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:06.400249 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:07.065717 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:07.069931 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:07.070010 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:07.076510 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:07.100403 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:08.076295 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:08.078827 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:08.078920 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:08.086232 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:08.104622 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:09.081390 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:09.086799 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:10.053665 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:10.057348 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:11.053785 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:11.057835 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:12.067254 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:12.073300 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:12.073391 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:12.080059 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:12.135282 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:13.087349 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:13.091994 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:14.077333 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:14.083585 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:14.083670 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:14.090924 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:14.121127 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:15.056055 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:15.060193 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:16.060899 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:16.063202 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:16.063284 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:16.070041 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:16.110167 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:17.069529 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:17.074487 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:18.093582 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:18.098860 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:19.079240 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:19.084113 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:20.057413 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:20.062712 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:21.052786 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:21.058031 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:22.067765 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:22.073145 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:23.086961 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:23.091758 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:24.088588 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:24.099921 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:24.100013 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:24.106972 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:24.143148 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:25.044140 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:25.046359 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:25.046450 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:25.052921 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:25.079195 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:26.054552 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:26.064555 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:26.064641 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:26.071251 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:26.094141 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:27.069445 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:27.072803 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:28.097202 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:28.102323 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:29.068383 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:29.072813 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:29.072904 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:29.079866 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:29.098510 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:30.044094 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:30.047169 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:31.049383 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:31.052468 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:32.059313 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:32.063659 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:32.063775 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:32.071196 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:32.102709 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:33.089922 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:33.093724 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:33.093815 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:33.100552 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:33.130220 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:34.083695 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:34.093523 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:34.093613 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:34.100561 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:34.159418 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:35.037796 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:35.041024 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:35.041117 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:35.048313 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:35.068739 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:36.039136 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:36.048884 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:36.048985 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:36.056076 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:36.088531 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:37.067216 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:37.072847 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:38.091536 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:38.095808 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:39.085108 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:39.088335 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:40.049461 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:40.058729 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:41.049173 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:41.052296 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:42.072478 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:42.075663 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:42.075755 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:42.082119 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:42.123408 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:43.093436 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:43.095995 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:44.077375 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:44.084299 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:45.040235 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:45.044648 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:46.049241 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:46.053471 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:46.053587 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:46.061514 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:46.097021 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:47.056589 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:47.058850 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:47.058941 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:47.065866 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:47.083485 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:48.091497 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:48.096816 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:49.080107 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:49.084093 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:50.047695 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:50.049939 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:50.050026 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:50.057002 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:50.073273 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:51.040242 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:51.042796 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:51.042895 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:51.049490 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:51.071580 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:52.059443 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:52.068919 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:53.097588 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:53.100667 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:53.100753 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:53.107695 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:53.138904 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:54.079327 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:54.083626 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:55.042211 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:55.046412 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:55.046503 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:55.053120 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:55.084329 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:56.037819 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:56.044520 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:56.044604 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:56.051489 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:56.092319 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:57.071429 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:57.079099 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:25:58.088550 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:58.091761 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:58.091866 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:58.098980 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:58.128795 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:25:59.070648 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:25:59.076041 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:25:59.076170 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:25:59.083581 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:25:59.109032 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:00.034235 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:00.036566 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:00.036658 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:00.043021 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:00.065250 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:01.058404 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:01.061780 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:02.053946 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:02.056163 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:02.056253 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:02.062903 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:02.076716 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:03.083126 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:03.086250 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:03.086341 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:03.093542 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:03.125236 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:04.071518 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:04.073779 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:04.073868 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:04.081105 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:04.111827 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:05.048106 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:05.052100 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:06.064698 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:06.078504 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:06.078596 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:06.085626 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:06.160739 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:07.060392 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:07.065985 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:07.066077 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:07.073205 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:07.106786 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:08.097464 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:08.103961 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:08.104076 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:08.111062 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:08.145960 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:09.083763 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:09.088164 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:10.056774 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:10.060639 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:11.050140 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:11.054527 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:11.054640 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:11.061816 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:11.091915 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:12.064724 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:12.071431 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:12.071521 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:12.078463 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:12.112862 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:13.095857 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:13.101486 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:13.101578 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:13.108583 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:13.139869 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:14.077239 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:14.081489 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:14.081684 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:14.088967 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:14.118504 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:15.055800 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:15.061134 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:16.053774 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:16.057093 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:17.067644 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:17.070641 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:17.070746 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:17.077642 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:17.110123 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:18.088300 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:18.093453 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:19.079372 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:19.083827 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:20.043658 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:20.053262 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:21.082604 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:21.093470 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:21.093558 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:21.100216 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:21.132603 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:22.066118 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:22.070364 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:23.073835 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:23.077112 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:23.077207 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:23.083618 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:23.102875 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:24.083401 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:24.088859 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:25.067832 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:25.074302 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:26.048606 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:26.050652 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:26.050708 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:26.057852 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:26.075259 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:26.693176 db.go:70: database ping sucess
+INFO : 2020/10/14 12:26:27.089425 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:27.092645 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:28.101606 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:28.103742 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:28.103835 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:28.110587 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:28.128177 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:29.067579 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:29.069766 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:29.069818 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:29.076062 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:29.097672 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:30.049560 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:30.055291 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:30.055351 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:30.061398 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:30.082933 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:31.057250 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:31.061170 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:32.065062 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:32.075220 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:32.075312 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:32.082180 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:32.114607 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:33.079203 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:33.081457 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:33.081546 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:33.088131 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:33.124764 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:34.074649 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:34.078059 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:34.078152 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:34.084642 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:34.107465 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:35.051029 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:35.055445 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:35.055537 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:35.062832 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:35.102467 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:36.065652 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:36.068900 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:37.062266 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:37.066012 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:38.089010 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:38.093462 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:38.093522 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:38.100532 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:38.129061 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:39.074102 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:39.078306 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:39.078365 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:39.085289 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:39.107439 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:40.036473 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:40.042279 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:40.042371 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:40.048809 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:40.078400 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:41.057846 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:41.068029 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:42.057166 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:42.061083 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:42.061180 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:42.067214 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:42.116113 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:43.096058 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:43.105445 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:43.105645 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:43.112980 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:43.161057 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:44.075370 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:44.079904 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:45.053499 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:45.056733 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:46.048852 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:46.053870 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:46.053961 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:46.061392 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:46.096432 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:47.056172 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:47.058261 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:47.058353 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:47.065501 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:47.097288 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:48.090166 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:48.095392 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:48.095481 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:48.102485 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:48.153673 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:49.068005 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:49.072399 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:50.078030 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:50.083512 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:50.083594 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:50.091029 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:50.127688 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:51.054381 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:51.058608 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:52.076067 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:52.079661 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:52.079827 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:52.086739 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:52.118102 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:53.092872 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:53.095500 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:54.078196 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:54.091818 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:54.091914 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:54.098939 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:54.145521 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:55.060376 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:55.066904 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:55.067009 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:55.074007 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:55.133655 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:56.053926 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:56.058611 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:56.058691 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:56.066147 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:56.101010 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:57.065464 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:57.069978 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:57.070071 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:57.076823 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:57.120819 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:26:58.094652 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:58.098844 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:26:59.071718 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:26:59.076066 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:26:59.076155 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:26:59.083164 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:26:59.121818 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:00.058033 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:00.062416 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:00.062536 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:00.069585 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:00.099728 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:01.064844 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:01.070262 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:01.070353 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:01.077052 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:01.109922 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:02.094894 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:02.098127 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:02.098217 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:02.104895 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:02.137681 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:03.106494 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:03.108715 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:04.075962 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:04.080214 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:04.080308 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:04.087249 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:04.119842 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:05.055204 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:05.072598 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:06.058334 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:06.060167 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:07.080471 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:07.088847 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:07.088937 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:07.095503 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:07.136555 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:08.456229 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:08.461082 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:08.461170 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:08.468312 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:08.502756 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:09.079527 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:09.084236 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:09.084328 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:09.091250 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:09.119937 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:10.049825 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:10.052902 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:10.052986 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:10.159567 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:10.187309 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:11.083483 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:11.089855 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:11.089947 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:11.097175 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:11.146046 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:12.064046 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:12.067567 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:12.067658 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:12.074549 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:12.107818 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:13.085308 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:13.089800 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:13.089892 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:13.096647 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:13.126068 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:14.067913 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:14.073223 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:15.042698 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:15.045760 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:15.045850 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:15.052977 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:15.074316 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:16.057514 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:16.067018 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:17.072078 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:17.076933 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:17.077017 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:17.083701 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:17.121659 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:18.095346 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:18.099526 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:19.076243 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:19.082929 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:20.053193 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:20.056799 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:21.050535 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:21.054825 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:21.054914 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:21.061682 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:21.091733 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:22.071647 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:22.086449 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:22.086540 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:22.093924 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:22.130389 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:23.100794 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:23.104817 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:23.104909 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:23.112910 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:23.206815 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:24.088159 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:24.105581 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:24.105663 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:24.112057 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:24.147992 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:25.047929 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:25.057341 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:25.057427 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:25.064386 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:25.097898 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:26.040872 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:26.051300 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:26.051386 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:26.058436 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:26.095322 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:27.074642 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:27.078291 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:27.078386 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:27.085680 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:27.114651 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:28.094568 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:28.098799 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:29.071595 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:29.073786 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:29.073886 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:29.081125 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:29.102832 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:30.052681 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:30.054877 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:31.053794 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:31.060397 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:32.072870 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:32.078915 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:32.079031 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:32.085894 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:32.108390 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:33.100117 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:33.110226 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:33.110318 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:33.118175 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:33.152841 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:34.086110 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:34.089618 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:34.089702 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:34.096910 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:34.125224 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:35.072398 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:35.076647 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:36.100009 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:36.111031 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:36.111123 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:36.118503 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:36.151284 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:37.115079 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:37.120549 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:37.120652 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:37.128059 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:37.153205 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:38.091649 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:38.095617 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:39.073395 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:39.079524 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:39.079606 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:39.086150 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:39.120755 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:40.054122 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:40.058161 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:41.060148 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:41.062277 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:42.073252 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:42.077378 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:43.101712 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:43.104833 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:44.077210 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:44.082950 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:45.052626 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:45.057978 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:46.053478 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:46.056653 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:46.056702 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:46.062870 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:46.098291 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:47.055636 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:47.058182 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:47.058256 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:47.064547 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:47.095797 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:48.095074 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:48.099384 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:49.070579 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:49.074887 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:49.074950 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:49.081596 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:49.112429 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:50.047960 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:50.052448 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
+INFO : 2020/10/14 12:27:51.059665 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:51.066823 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:51.066937 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:51.073918 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:51.118009 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:52.070357 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:52.082800 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:52.082872 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:52.089073 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:52.129864 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:53.095951 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:53.100495 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:53.100571 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:53.107087 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:53.136522 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:54.106324 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:54.112238 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:54.112319 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:54.119182 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:54.163116 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:55.053816 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:55.058309 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:55.058399 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:55.065373 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:55.105361 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:56.041117 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:56.043193 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:56.043261 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:56.050285 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:56.067836 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:56.679712 db.go:70: database ping sucess
+INFO : 2020/10/14 12:27:57.057040 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:57.059226 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:57.059308 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:57.065991 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:57.091976 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:58.078768 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:58.080782 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:58.080877 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:58.089156 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:58.137028 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:27:59.076079 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:27:59.081308 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:27:59.081399 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:27:59.088274 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:27:59.121829 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:28:00.055298 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:28:00.060743 cron.go:97: 获取redis lock 成功 1
+INFO : 2020/10/14 12:28:00.060847 cron.go:99: 开始执行任务 - 测试cron - 命令-echo  TEST HELLO
+INFO : 2020/10/14 12:28:00.068036 cron.go:102: 任务完成 - 测试cron - 命令- echo  TEST HELLO - 执行结果- TEST HELLO
+ - 执行机器 - 10.200.105.49
+ERROR: 2020/10/14 12:28:00.102642 cron.go:108: 释放 redis lock 成功
+INFO : 2020/10/14 12:28:01.061404 cron.go:129: 任务命令-echo  TEST HELLO
+ERROR: 2020/10/14 12:28:01.065821 cron.go:94: 获取redis lock 失败 0, 跳过本机任务分发
