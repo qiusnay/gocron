@@ -83,11 +83,6 @@ func (fl FlCron) Add(taskModel model.FlCron) {
 func createJob(taskModel model.FlCron) cron.FuncJob {
 	handler := new(rpcx.RPCHandler)
 	taskFunc := func() {
-		taskLogId := beforeExecJob(taskModel)
-		if taskLogId <= 0 {
-			return
-		}
-
 		//获取锁
 		lock, _ := model.Redis.Int("setnx", "cronlock_" + strconv.Itoa(taskModel.Jobid), 1)
 		if lock != 1 {
@@ -95,6 +90,11 @@ func createJob(taskModel model.FlCron) cron.FuncJob {
 			return
 		}
 		logger.Error(fmt.Sprintf("获取redis lock 成功 %d", lock))
+		//创建TASK
+		taskLogId := beforeExecJob(taskModel)
+		if taskLogId <= 0 {
+			return
+		}
 
 		logger.Info(fmt.Sprintf("开始执行任务 - %s - 命令-%s", taskModel.JobName, taskModel.Cmd))
 		taskResult := execJob(handler, taskModel, taskLogId)
