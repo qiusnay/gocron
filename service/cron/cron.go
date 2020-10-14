@@ -3,6 +3,7 @@ package cron
 import (
 	"fmt"
 	"strings"
+	"strconv"
 	"github.com/jakecoffman/cron"
 	"github.com/google/logger"
 	"github.com/qiusnay/gocron/model"
@@ -62,12 +63,7 @@ func (fl FlCron) Initialize() {
 // 添加任务
 func (fl FlCron) Add(taskModel model.FlCron) {
 	taskModel.Rule = "1 " + taskModel.Rule
-	//锁判断
-	lock, _ := model.Redis.Int("setnx", "cronlock_" + taskModel.Jobid, 1)
-	if lock != 1 {
-		logger.Error("获取redis lock 失败 %d", lock)
-		return
-	}
+
 	localIP := utils.GetLocalIP()
 	logger.Info(fmt.Sprintf("jobid %d has run at machine %s", taskModel.Jobid, localIP))
 	
@@ -92,10 +88,24 @@ func createJob(taskModel model.FlCron) cron.FuncJob {
 			return
 		}
 
-		logger.Info(fmt.Sprintf("开始执行任务#%s#命令-%s", taskModel.JobName, taskModel.Cmd))
+		//获取锁
+		lock, _ := model.Redis.Int("setnx", "cronlock_" + strconv.Itoa(taskModel.Jobid), 1)
+		if lock != 1 {
+			logger.Error(fmt.Sprintf("获取redis lock 失败 %d, 跳过本机任务分发", lock))
+			return
+		}
+		logger.Error(fmt.Sprintf("获取redis lock 成功 %d", lock))
+
+		logger.Info(fmt.Sprintf("开始执行任务 - %s - 命令-%s", taskModel.JobName, taskModel.Cmd))
 		taskResult := execJob(handler, taskModel, taskLogId)
-		logger.Info(fmt.Sprintf("任务完成#%s#命令-%s#执行结果-%s-执行机器-%s", taskModel.JobName, taskModel.Cmd, taskResult.Result, taskResult.Host))
+
+		logger.Info(fmt.Sprintf("任务完成 - %s - 命令- %s - 执行结果- %s - 执行机器 - %s", taskModel.JobName, taskModel.Cmd, taskResult.Result, taskResult.Host))
 		afterExecJob(taskModel, taskResult, taskLogId)
+
+		//释放锁
+		model.Redis.Int("del", "cronlock_" + strconv.Itoa(taskModel.Jobid))
+
+		logger.Error("释放 redis lock 成功")
 	}
 	return taskFunc
 }
