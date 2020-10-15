@@ -3,7 +3,7 @@ package cron
 import (
 	"fmt"
 	"strings"
-	"strconv"
+	// "strconv"
 	"github.com/jakecoffman/cron"
 	"github.com/google/logger"
 	"github.com/qiusnay/gocron/model"
@@ -103,9 +103,9 @@ func createJob(taskModel model.FlCron) cron.FuncJob {
 		afterExecJob(taskModel, taskResult, taskLogId)
 
 		//释放锁
-		model.Redis.Int("del", "cronlock_" + strconv.Itoa(taskModel.Jobid))
+		// model.Redis.Int("del", "cronlock_" + strconv.Itoa(taskModel.Jobid))
 
-		logger.Error("释放 redis lock 成功")
+		// logger.Error("释放 redis lock 成功")
 	}
 	return taskFunc
 }
