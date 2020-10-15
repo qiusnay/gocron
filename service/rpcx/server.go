@@ -16,7 +16,7 @@ import (
 
 var (
 	addr     = flag.String("addr", "localhost:8973", "server address")
-	etcdAddr = flag.String("etcdAddr", "127.0.0.1:2379", "etcd address")
+	etcdAddr = flag.String("etcdAddr", "10.200.105.49:2379", "etcd address")
 	basePath = flag.String("base", "com/example/rpcx", "prefix path")
 )
 
