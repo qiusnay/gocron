@@ -19,7 +19,7 @@ func (h *RPCHandler) Run(taskModel model.FlCron, taskUniqueId int64) (result cro
 	flag.Parse()
 
 	// d := client.NewPeer2PeerDiscovery("tcp@"+*addr, "")
-	d := client.NewEtcdDiscovery(*basePath, "RpcService", []string{*etcdAddr}, nil)
+	d := client.NewEtcdV3Discovery(*basePath, "RpcService", []string{*etcdAddr}, nil)
 	// xclient := client.NewXClient("RpcService", client.Failtry, client.RandomSelect, d, opt)
 	xclient := client.NewXClient("RpcService", client.Failover, client.RoundRobin, d, client.DefaultOption)
 	defer xclient.Close()

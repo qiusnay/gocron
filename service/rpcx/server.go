@@ -16,8 +16,8 @@ import (
 
 var (
 	addr     = flag.String("addr", "localhost:8973", "server address")
-	etcdAddr = flag.String("etcdAddr", "10.200.105.49:2379", "etcd address")
-	basePath = flag.String("base", "/rpcx_test", "prefix path")
+	etcdAddr = flag.String("etcdAddr", "127.0.0.1:2379", "etcd address")
+	basePath = flag.String("base", "com/example/rpcx", "prefix path")
 )
 
 type RpcService struct{
@@ -32,7 +32,7 @@ func Start() {
 	addRegistryPlugin(s)
 
 	s.RegisterName("RpcService", new(RpcService), "")
-	logger.Info("server listen on %s", addr)
+	logger.Info("server listen on %s", *addr)
 	go func() {
 		err := s.Serve("tcp", *addr)
 		if err != nil {
@@ -42,7 +42,7 @@ func Start() {
 }
 
 func addRegistryPlugin(s *server.Server) {
-	r := &serverplugin.EtcdRegisterPlugin{
+	r := &serverplugin.EtcdV3RegisterPlugin{
 		ServiceAddress: "tcp@" + *addr,
 		EtcdServers:    []string{*etcdAddr},
 		BasePath:       *basePath,
