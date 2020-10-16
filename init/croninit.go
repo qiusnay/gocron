@@ -10,14 +10,6 @@ import(
 
 var verbose = flag.Bool("verbose", false, "print info level logs to stdout")
 
-type TaskResult struct {
-	Result     string
-	Err        error
-	Host     string
-	Status   int
-	Endtime   string
-}
-
 func Init(logPath string) {
 	lf, err := os.OpenFile(logPath, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0660)
 	if err != nil {

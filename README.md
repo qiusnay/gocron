@@ -15,10 +15,10 @@ gocron 任务调度系统基于coffman的cron库搭建.DB框架采用gorm,底层
 
 #### 运行步骤
 
-* 客户端启动
-`go run client.go`
-* 服务端启动
-`go run server.go`
+* cron作业分发者
+`go run dispacher.go`
+* cron作业执行者
+`go run executor.go`
 
 #### 配置: /conf/conf.ini
 [database]
@@ -53,11 +53,11 @@ rm -rf /tmp/etcd-data.tmp && mkdir -p /tmp/etcd-data.tmp && \
   --logger zap \
   --log-outputs stderr
 
-docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcd --version"
-docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl version"
-docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl endpoint health"
-docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl put foo bar"
-docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl get foo"
+ * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcd --version"
+ * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl version"
+ * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl endpoint health"
+ * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl put foo bar"
+ * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl get foo"
 
 
 #### 环境要求

@@ -6,7 +6,7 @@ import (
 	// "fmt"
 	"github.com/smallnest/rpcx/client"
 	"github.com/qiusnay/gocron/model"
-	"github.com/qiusnay/gocron/init"
+	// "github.com/qiusnay/gocron/init"
 	// "github.com/qiusnay/gocron/service/cron"
 	// "github.com/google/logger"
 )
@@ -14,7 +14,7 @@ import (
 // RPC调用执行任务
 type RPCHandler struct{}
 
-func (h *RPCHandler) Run(taskModel model.FlCron, taskUniqueId int64) (result croninit.TaskResult, err error) {
+func (h *RPCHandler) Run(taskModel model.FlCron, taskUniqueId int64) (result model.TaskResult, err error) {
 	flag.Parse()
 
 	// d := client.NewPeer2PeerDiscovery("tcp@"+*addr, "")
@@ -23,12 +23,12 @@ func (h *RPCHandler) Run(taskModel model.FlCron, taskUniqueId int64) (result cro
 	xclient := client.NewXClient("RpcService", client.Failover, client.RoundRobin, d, client.DefaultOption)
 	defer xclient.Close()
 
-	resultChan := make(chan croninit.TaskResult)
+	resultChan := make(chan model.TaskResult)
 	
 	go func() {
-		reply := &croninit.TaskResult{}
+		reply := &model.TaskResult{}
 		xclient.Call(context.Background(), "Run", taskModel, reply)
-		resultChan <- croninit.TaskResult{Result: reply.Result, Err: reply.Err, Host : reply.Host, Status : reply.Status, Endtime : reply.Endtime}
+		resultChan <- model.TaskResult{Result: reply.Result, Err: reply.Err, Host : reply.Host, Status : reply.Status, Endtime : reply.Endtime}
 	}()
 	var aggregationErr error = nil
 	rpcResult := <-resultChan

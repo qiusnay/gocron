@@ -9,7 +9,7 @@ import (
 	"github.com/google/logger"
 	"github.com/qiusnay/gocron/model"
 	"github.com/qiusnay/gocron/utils"
-	"github.com/qiusnay/gocron/init"
+	// "github.com/qiusnay/gocron/init"
 	"github.com/smallnest/rpcx/serverplugin"
 	metrics "github.com/rcrowley/go-metrics"
 )
@@ -55,7 +55,7 @@ func addRegistryPlugin(s *server.Server) {
 	s.Plugins.Add(r)
 }
 
-func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *croninit.TaskResult) error {
+func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *model.TaskResult) error {
 	var out string
 	var err error
 	switch req.Querytype {
