@@ -64,7 +64,7 @@ rm -rf /tmp/etcd-data.tmp && mkdir -p /tmp/etcd-data.tmp && \
 >  MySQL, MAC
 
 #### 程序使用的组件
-* Web框架 [Macaron](http://go-macaron.com/)
+* 服务发现与注册 [Etcd](https://github.com/etcd-io/etcd)
 * 定时任务调度 [Cron](https://github.com/jakecoffman/cron)
 * GORM [gorm](https://github.com/go-gorm/gorm)
 * RPCX框架 [gRPC](https://github.com/smallnest/rpcx)
