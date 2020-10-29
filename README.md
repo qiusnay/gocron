@@ -19,6 +19,8 @@ gocron 任务调度系统基于coffman的cron库搭建.DB框架采用gorm,底层
 `go run dispacher.go`
 * cron作业执行者
 `go run executor.go`
+* cron作业监控者
+`go run monitor.go`
 
 #### 配置: /conf/conf.ini
 [database]
@@ -28,12 +30,28 @@ gocron 任务调度系统基于coffman的cron库搭建.DB框架采用gorm,底层
   * port     = 3306
   * database = cron
   * charset  = utf8
+[redis]
+  * host     = 192.168.100.60
+  * port     = 6381
+  * max_idle = 10
+  * max_active = 60
 
+[machine]
+  * phpgroup     = 192.168.2.74|192.168.2.75|192.168.75.115|192.168.75.213
+  * pcrongroup   = 192.168.3.206|192.168.3.198
+  * cron74       = 192.168.100.74
+  * cron75       = 192.168.100.75
+
+[alarm_mail_list]
+  * cron_mail = admin@cron.com test@qq.com test2@qq.com
+  * from_mail = alarm@cron.it
+  * cron_url = http://cron.admin.it
 
 #### etcd docker 安装
-rm -rf /tmp/etcd-data.tmp && mkdir -p /tmp/etcd-data.tmp && \
-  docker rmi gcr.io/etcd-development/etcd:v3.4.13 || true && \
-  docker run \
+  * rm -rf /tmp/etcd-data.tmp
+  * mkdir -p /tmp/etcd-data.tmp
+  * docker rmi gcr.io/etcd-development/etcd:v3.4.13 
+  * docker run \
   -p 2379:2379 \
   -p 2380:2380 \
   --mount type=bind,source=/tmp/etcd-data.tmp,destination=/etcd-data \
@@ -53,11 +71,11 @@ rm -rf /tmp/etcd-data.tmp && mkdir -p /tmp/etcd-data.tmp && \
   --logger zap \
   --log-outputs stderr
 
- * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcd --version"
- * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl version"
- * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl endpoint health"
- * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl put foo bar"
- * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl get foo"
+  * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcd --version"
+  * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl version"
+  * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl endpoint health"
+  * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl put foo bar"
+  * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl get foo"
 
 
 #### 环境要求
