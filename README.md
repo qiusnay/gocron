@@ -1,17 +1,25 @@
 #### gocron 任务调度系统
-gocron 任务调度系统基于coffman的cron库搭建.DB框架采用gorm,底层的任务调度通过rpcx框架,client与server端的通信实现.
+cron任务调度系统分为dispacher(作业分发者),executor(作业执行者),monitor(作业监控者)
+> 任务分发者 主要负责对作业的rule规则解析出下一次执行时间.并将当前作业加入任务调度器中定时执行
+> 任务执行者 负责任务执行的主体.
+> 任务监控者 对当前的每一个作业做健康检查.并对新增的作业动态添加进任务调度器中执行.
+cron系统底层通过rpcx微服务调度框架以及etcd服务注册与发现.由多个dispacher生成cron任务.通过client发送至etcd服务中心,etcd接到服务后,按轮训的方式分配服务提供者来执行.服务提供者执行完后,返回给client端执行结果,写入DB.
+
+### gocron 系统的优点
+* 支持多台机器的client端任务分发,支持多台机器的服务提供者.
+* 通过etcd服务注册中心来达到客服端与服务端解耦的问题.
+* 通过redis分布式锁,实现同一个task只会被创建一次
+* 支持指定机器,指定机器组执行作业.
+* 支持执行日志的后台查看.
+* 支持邮件,短信等告警业务
+* 超时间机制的处理 : 放弃并告警,强制终止,同步运行
+* 支持平滑重启,发布迭代不影响具体业务
 
 #### todo
- * (完成)http命令支持
- * (完成)当新添加了一个作业后.一直在运行的进程不会退出.而且不会自动载入新的作业运行  A : 通过页面添加作业时,直接通过addFunc操作写入当前的作业定时器里.同时写入DB
- * 多机器,多个group功能支持,采用无中心化设计,多分发者多消费者,任何一台机器宕机,不影响整体系统的运行
- *    (己完成)1.多个任务分发者 - 采用redis锁实现.因为不同机器之间的routine无法通信.只能用分布式锁来实现.
- *    (己完成)2.多个任务消费者 - 采用rpcx服务注册发现机制(etcd)实现
- * 如何做到发布可以随意启动的问题,架构设计脱钩方案
- * 支持rabbitmq设计
- * 支持任务间耦合设计
- * go mod 机器变更后需要修改GOPROXY
- * sudo go env -w GOPROXY=https://goproxy.cn,https://mirrors.aliyun.com/goproxy/,direct
+ * monitor 功能实现
+ * k8s 引入平滑重启 , 文件描述符继承平滑重启
+ * 短信功能实现
+ * 超时机制的处理
 
 #### 运行步骤
 
@@ -77,6 +85,8 @@ gocron 任务调度系统基于coffman的cron库搭建.DB框架采用gorm,底层
   * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl put foo bar"
   * docker exec etcd-gcr-v3.4.13 /bin/sh -c "/usr/local/bin/etcdctl get foo"
 
+go mod 机器变更后需要修改GOPROXY
+sudo go env -w GOPROXY=https://goproxy.cn,https://mirrors.aliyun.com/goproxy/,direct
 
 #### 环境要求
 >  MySQL, MAC
