@@ -7,10 +7,9 @@ import (
 	"net"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
-
 	// "path/filepath"
-	"github.com/google/logger"
 )
 
 var BASEPATH, _ = filepath.Abs(filepath.Dir("../"))
@@ -20,13 +19,19 @@ type Config struct {
 	conflist []map[string]map[string]string
 }
 
+func PanicTrace(err interface{}) string {
+	stackBuf := make([]byte, 4096)
+	n := runtime.Stack(stackBuf, false)
+
+	return fmt.Sprintf("panic: %v %s", err, stackBuf[:n])
+}
+
 //To obtain corresponding value of the key values
 func GetConfig(section, feilds string) map[string]string {
 	//读取配置
 	c := new(Config)
 	c.filepath = BASEPATH + "/conf/conf.ini"
 	conf := c.ReadList()
-	logger.Infof("erro : %v", c.filepath)
 	if feilds == "" { //如果不传具体的feilds
 		for _, v := range conf {
 			for key, value := range v {

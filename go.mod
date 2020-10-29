@@ -11,6 +11,9 @@ require (
 	github.com/ouqiang/gocron v1.5.3
 	github.com/ouqiang/goutil v1.2.9
 	github.com/rcrowley/go-metrics v0.0.0-20200313005456-10cdbea86bc0
+	github.com/robfig/cron v1.2.0
+	github.com/robfig/cron/v3 v3.0.1
+	github.com/sirupsen/logrus v1.4.2
 	github.com/smallnest/rpcx v0.0.0-20200924044220-f2cdd4dea15a
 	gorm.io/gorm v1.20.5
 )

@@ -5,13 +5,12 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/google/logger"
 	croninit "github.com/qiusnay/gocron/init"
 	"github.com/qiusnay/gocron/model"
 	"github.com/qiusnay/gocron/utils"
 )
 
-func SendMail(result model.TaskResult, task model.FlCron) interface{} {
+func SendCronAlarmMail(result model.TaskResult, task model.FlCron) interface{} {
 	log := croninit.BASEPATH + "/log/mail.log"
 	emailConfig := utils.GetConfig("alarm_mail_list", "")
 	hostname, _ := os.Hostname()
@@ -24,7 +23,6 @@ func SendMail(result model.TaskResult, task model.FlCron) interface{} {
 	mailContent += "\ncron系统地址 : " + emailConfig["cron_url"]
 	command := fmt.Sprintf("echo -e \"%s\" | mail -s \"%s\" %s >> %s 2>&1", mailContent, "CRON ALARM MAIL", emailConfig["cron_mail"], log)
 	e := exec.Command("/bin/bash", "-c", command)
-	logger.Info("绝对路径 %+v", command)
 	resultChan := make(chan interface{})
 	go func() {
 		Result, err := e.Output()

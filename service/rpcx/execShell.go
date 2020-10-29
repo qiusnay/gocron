@@ -5,9 +5,8 @@ import (
 	"errors"
 	"os/exec"
 	"syscall"
-	// "github.com/qiusnay/gocron/model"
-	// "github.com/qiusnay/gocron/utils"
-	// "github.com/qiusnay/gocron/init"
+
+	"github.com/google/logger"
 )
 
 type RpcServiceShell struct {
@@ -16,23 +15,33 @@ type RpcServiceShell struct {
 }
 
 // 执行shell命令，可设置执行超时时间
-func (c *RpcServiceShell) ExecShell(ctx context.Context, command string) (string, error) {
+func (c *RpcServiceShell) ExecShell(ctx context.Context, command string, taskid string) (string, error) {
+	defer func() {
+		if err := recover(); err != nil {
+			logger.Error(err)
+		}
+	}()
+	// logger.Info(fmt.Sprintf("开始执行 exec pre %s, 当前时间 %s", taskid, time.Now().Format("2006-01-02 15:04:05")))
 	cmd := exec.Command("/bin/bash", "-c", command)
+	// logger.Info(fmt.Sprintf("开始执行 exec tail %s, 当前时间 %s", taskid, time.Now().Format("2006-01-02 15:04:05")))
 	cmd.SysProcAttr = &syscall.SysProcAttr{
 		Setpgid: true,
 	}
 	resultChan := make(chan CronService)
 	go func() {
-		Result, err := cmd.Output()
+		// logger.Info(fmt.Sprintf("go rountine %s, 当前时间 %s", taskid, time.Now().Format("2006-01-02 15:04:05")))
+		Result, err := cmd.CombinedOutput()
 		resultChan <- CronService{string(Result), err}
 	}()
 	select {
 	case <-ctx.Done():
+		// logger.Info(fmt.Sprintf("执行超时 %s, 当前时间 %s", taskid, time.Now().Format("2006-01-02 15:04:05")))
 		if cmd.Process.Pid > 0 {
 			syscall.Kill(-cmd.Process.Pid, syscall.SIGKILL)
 		}
 		return "", errors.New("timeout killed")
 	case result := <-resultChan:
+		// logger.Info(fmt.Sprintf("通道返回 %s, 当前时间 %s", taskid, time.Now().Format("2006-01-02 15:04:05")))
 		return result.Result, result.Err
 	}
 }

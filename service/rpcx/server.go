@@ -71,7 +71,7 @@ func (c *CronService) Run(ctx context.Context, req *model.FlCron, res *model.Tas
 		break
 	default:
 		rpcshell := RpcServiceShell{}
-		out, err = rpcshell.ExecShell(ctx, queryCmd)
+		out, err = rpcshell.ExecShell(ctx, queryCmd, req.Taskid)
 	}
 	res.Result = out
 	res.Host = utils.GetLocalIP()
@@ -94,7 +94,7 @@ func AssembleCmd(cron *model.FlCron) string {
 	// 	s, err := os.Stat(LogFile)
 	// 	s.Chmod(0664)
 	// }
-	return cron.Cmd + " > " + LogFile + " 2 > &1"
+	return "nohup " + cron.Cmd + " > " + LogFile + " 2>&1"
 }
 
 func GetLogFile(Jobid string, Taskid string) string {

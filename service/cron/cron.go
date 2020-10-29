@@ -6,14 +6,11 @@ import (
 	"strings"
 
 	"github.com/google/logger"
-	"github.com/jakecoffman/cron"
-	"github.com/ouqiang/goutil"
 	"github.com/qiusnay/gocron/model"
 	"github.com/qiusnay/gocron/service/notify"
 	"github.com/qiusnay/gocron/service/rpcx"
-
-	// "github.com/qiusnay/gocron/init"
 	"github.com/qiusnay/gocron/utils"
+	"github.com/robfig/cron"
 )
 
 //定义一个空结构体
@@ -55,20 +52,19 @@ func (fl FlCron) Initialize() {
 }
 
 // 添加任务
-func (fl FlCron) Add(taskModel model.FlCron) {
-	taskModel.Rule = "* " + taskModel.Rule
-
-	localIP := utils.GetLocalIP()
-	logger.Info(fmt.Sprintf("jobid %d has run at machine %s", taskModel.Jobid, localIP))
-
-	taskFunc := createJob(taskModel)
-
-	err := goutil.PanicToError(func() {
-		mycron.AddFunc(taskModel.Rule, taskFunc, taskModel.JobName)
-	})
+func (fl FlCron) Add(taskModel model.FlCron) (err error) {
+	defer func() {
+		if e := recover(); e != nil {
+			err = fmt.Errorf(utils.PanicTrace(e))
+		}
+	}()
+	taskModel.Rule = "1 " + taskModel.Rule
+	logger.Info(fmt.Sprintf("jobid %d has run at machine %s", taskModel.Jobid, utils.GetLocalIP()))
+	mycron.AddFunc(taskModel.Rule, createJob(taskModel))
 	if err != nil {
 		logger.Error("添加任务到调度器失败#", err)
 	}
+	return
 }
 
 /**
@@ -135,5 +131,5 @@ func SendNotification(taskModel model.FlCron, taskResult model.TaskResult) {
 		return // 执行失败才发送通知
 	}
 	//发送邮件
-	notify.SendMail(taskResult, taskModel)
+	notify.SendCronAlarmMail(taskResult, taskModel)
 }
