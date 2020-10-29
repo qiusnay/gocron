@@ -1,19 +1,20 @@
 package main
 
-import(
+import (
 	"os"
 	"os/signal"
 	"syscall"
-	"github.com/qiusnay/gocron/service/rpcx"
-	"github.com/qiusnay/gocron/init"
-	"github.com/google/logger"
-)
-func main() {
-	//1.cron项目初始化
-	const logPath = "../log/gocronserver.log"
+	"time"
 
-	croninit.Init(logPath);
-	
+	"github.com/google/logger"
+	croninit "github.com/qiusnay/gocron/init"
+	"github.com/qiusnay/gocron/service/rpcx"
+)
+
+var logPath = "../log/executor." + time.Now().Format("2006-01-02") + ".log"
+
+func main() {
+	croninit.Init(logPath)
 	//3.启动cron服务
 	rpcx.Start()
 

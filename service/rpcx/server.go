@@ -2,27 +2,31 @@ package rpcx
 
 import (
 	"context"
-	"fmt"
 	"flag"
+	"fmt"
+	"os"
+	"strconv"
 	"time"
-	"github.com/smallnest/rpcx/server"
+
 	"github.com/google/logger"
 	"github.com/qiusnay/gocron/model"
 	"github.com/qiusnay/gocron/utils"
-	// "github.com/qiusnay/gocron/init"
-	"github.com/smallnest/rpcx/serverplugin"
+	"github.com/smallnest/rpcx/server"
+
+	croninit "github.com/qiusnay/gocron/init"
 	metrics "github.com/rcrowley/go-metrics"
+	"github.com/smallnest/rpcx/serverplugin"
 )
 
 var (
-	addr     = flag.String("addr", utils.GetLocalIP() + ":8973", "server address")
+	addr     = flag.String("addr", utils.GetLocalIP()+":8973", "server address")
 	etcdAddr = flag.String("etcdAddr", "10.200.105.49:2379", "etcd address")
 	basePath = flag.String("base", "com/example/rpcx", "prefix path")
 )
 
-type RpcService struct{
-	Result  string
-	Err  error
+type CronService struct {
+	Result string
+	Err    error
 }
 
 func Start() {
@@ -31,7 +35,7 @@ func Start() {
 
 	addRegistryPlugin(s)
 
-	s.RegisterName("RpcService", new(RpcService), "")
+	s.RegisterName("CronService", new(CronService), "")
 	go func() {
 		err := s.Serve("tcp", *addr)
 		if err != nil {
@@ -55,18 +59,19 @@ func addRegistryPlugin(s *server.Server) {
 	s.Plugins.Add(r)
 }
 
-func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *model.TaskResult) error {
+func (c *CronService) Run(ctx context.Context, req *model.FlCron, res *model.TaskResult) error {
 	var out string
 	var err error
+	queryCmd := AssembleCmd(req)
 	switch req.Querytype {
-		case "wget":
-		case "curl":
-			rpccurl := RpcServiceCurl{}
-			out, err = rpccurl.ExecCurl(ctx, req.Cmd)
-			break
-		default:
-			rpcshell := RpcServiceShell{}
-			out, err = rpcshell.ExecShell(ctx, req.Cmd)
+	case "wget":
+	case "curl":
+		rpccurl := RpcServiceCurl{}
+		out, err = rpccurl.ExecCurl(ctx, queryCmd)
+		break
+	default:
+		rpcshell := RpcServiceShell{}
+		out, err = rpcshell.ExecShell(ctx, queryCmd)
 	}
 	res.Result = out
 	res.Host = utils.GetLocalIP()
@@ -78,9 +83,26 @@ func (c *RpcService) Run(ctx context.Context, req *model.FlCron, res *model.Task
 		res.Err = nil
 		res.Status = 10003
 	}
-	logger.Info(fmt.Sprintf("execute cmd end: [id: %d cmd: %s err: %s, result : %s, host: %s]", req.Id, req.Cmd, err, out, res.Host))
+	logger.Info(fmt.Sprintf("execute cmd end: [id: %d cmd: %s err: %s, result : %s, host: %s]", req.Id, queryCmd, err, out, res.Host))
 
 	return nil
 }
 
+func AssembleCmd(cron *model.FlCron) string {
+	LogFile := GetLogFile(strconv.Itoa(cron.Jobid), cron.Taskid)
+	// if utils.IsFile(LogFile) {
+	// 	s, err := os.Stat(LogFile)
+	// 	s.Chmod(0664)
+	// }
+	return cron.Cmd + " > " + LogFile + " 2 > &1"
+}
 
+func GetLogFile(Jobid string, Taskid string) string {
+	//设置日志目录
+	LogDir := croninit.BASEPATH + "/log/cronlog/" + time.Now().Format("2006-01-02")
+	if !utils.IsDir(LogDir) {
+		// mkdir($LogDir, 0777, true);
+		os.MkdirAll(LogDir, os.ModePerm)
+	}
+	return LogDir + "/cron-task-" + Jobid + "-" + Taskid + "-log.log"
+}

@@ -1,17 +1,20 @@
 package utils
 
 import (
-	"fmt"
-	"os"
-	"strings"
 	"bufio"
+	"fmt"
 	"io"
 	"net"
+	"os"
+	"path/filepath"
+	"strings"
+
 	// "path/filepath"
 	"github.com/google/logger"
 )
 
-var BashPath, _ = os.Getwd()
+var BASEPATH, _ = filepath.Abs(filepath.Dir("../"))
+
 type Config struct {
 	filepath string
 	conflist []map[string]map[string]string
@@ -21,7 +24,7 @@ type Config struct {
 func GetConfig(section, feilds string) map[string]string {
 	//读取配置
 	c := new(Config)
-	c.filepath = BashPath + "/../conf/conf.ini"
+	c.filepath = BASEPATH + "/conf/conf.ini"
 	conf := c.ReadList()
 	logger.Infof("erro : %v", c.filepath)
 	if feilds == "" { //如果不传具体的feilds
@@ -29,7 +32,7 @@ func GetConfig(section, feilds string) map[string]string {
 			for key, value := range v {
 				if key == section {
 					// fmt.Printf("%v", value)
-					return value;
+					return value
 				}
 			}
 		}
@@ -72,7 +75,7 @@ func (c *Config) ReadList() []map[string]map[string]string {
 		}
 		switch {
 		case len(line) == 0:
-		case string(line[0]) == "#":	//增加配置文件备注
+		case string(line[0]) == "#": //增加配置文件备注
 		case line[0] == '[' && line[len(line)-1] == ']':
 			section = strings.TrimSpace(line[1 : len(line)-1])
 			data = make(map[string]map[string]string)
@@ -111,26 +114,40 @@ func (c *Config) uniquappend(conf string) bool {
 	return true
 }
 
+// 判断目录是否存在
+func IsDir(fileAddr string) bool {
+	s, err := os.Stat(fileAddr)
+	if err != nil {
+		return false
+	}
+	return s.IsDir()
+}
+
+// 判断所给路径是否为文件
+func IsFile(path string) bool {
+	return !IsDir(path)
+}
+
 func GetLocalIP() string {
 	addrs, err := net.InterfaceAddrs()
-	if err != nil{
+	if err != nil {
 		return ""
 	}
-	for _, value := range addrs{
-		if ipnet, ok := value.(*net.IPNet); ok && !ipnet.IP.IsLoopback(){
-			if ipnet.IP.To4() != nil{
+	for _, value := range addrs {
+		if ipnet, ok := value.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
+			if ipnet.IP.To4() != nil {
 				return ipnet.IP.String()
 			}
 		}
 	}
-	return  "";
+	return ""
 }
 
 func InArray(need interface{}, needArr []string) bool {
-	for _,v := range needArr{
-	   if need == v{
-		   return true
-	   }
-   }
-   return false
+	for _, v := range needArr {
+		if need == v {
+			return true
+		}
+	}
+	return false
 }

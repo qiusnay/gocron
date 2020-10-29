@@ -1,18 +1,20 @@
 package main
 
-import(
+import (
 	"os"
 	"os/signal"
 	"syscall"
-	"github.com/qiusnay/gocron/service/cron"
+	"time"
+
 	"github.com/google/logger"
-	"github.com/qiusnay/gocron/init"
+	croninit "github.com/qiusnay/gocron/init"
+	"github.com/qiusnay/gocron/service/cron"
 )
 
-func main() {
-	const logPath = "../log/gocron.log"
+var logPath = "../log/dispacher." + time.Now().Format("2006-01-02") + ".log"
 
-	croninit.Init(logPath);
+func main() {
+	croninit.Init(logPath)
 	// 初始化定时任务
 	var serviceCron = cron.FlCron{}
 	serviceCron.Initialize()

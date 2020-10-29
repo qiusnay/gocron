@@ -5,17 +5,15 @@ import (
 	"errors"
 	"os/exec"
 	"syscall"
-	// "github.com/google/logger"
 	// "github.com/qiusnay/gocron/model"
 	// "github.com/qiusnay/gocron/utils"
 	// "github.com/qiusnay/gocron/init"
 )
 
-type RpcServiceShell struct{
-	Result  string
-	Err  error
+type RpcServiceShell struct {
+	Result string
+	Err    error
 }
-
 
 // 执行shell命令，可设置执行超时时间
 func (c *RpcServiceShell) ExecShell(ctx context.Context, command string) (string, error) {
@@ -23,10 +21,10 @@ func (c *RpcServiceShell) ExecShell(ctx context.Context, command string) (string
 	cmd.SysProcAttr = &syscall.SysProcAttr{
 		Setpgid: true,
 	}
-	resultChan := make(chan RpcService)
+	resultChan := make(chan CronService)
 	go func() {
 		Result, err := cmd.Output()
-		resultChan <- RpcService{string(Result), err}
+		resultChan <- CronService{string(Result), err}
 	}()
 	select {
 	case <-ctx.Done():
