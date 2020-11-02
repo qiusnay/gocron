@@ -8,16 +8,14 @@ import (
 
 	"github.com/google/logger"
 	croninit "github.com/qiusnay/gocron/init"
-	"github.com/qiusnay/gocron/service/rpcx"
+	"github.com/qiusnay/gocron/service/rpc"
 )
 
 var logPath = "../log/executor." + time.Now().Format("2006-01-02") + ".log"
 
 func main() {
 	croninit.Init(logPath)
-	//3.启动cron服务
-	rpcx.Start()
-
+	rpc.Start()
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM)
 	for {

@@ -1,20 +1,20 @@
-package rpcx
+package rpc
 
 import (
-	"fmt"
 	"bytes"
+	"context"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"time"
-	"context"
 	// "github.com/qiusnay/gocron/model"
 	// "github.com/qiusnay/gocron/init"
 	// "github.com/google/logger"
 )
 
-type RpcServiceCurl struct{
-	Result  string
-	Err  error
+type RpcServiceCurl struct {
+	Result string
+	Err    error
 }
 
 type ResponseWrapper struct {
@@ -35,7 +35,6 @@ func (h *RpcServiceCurl) ExecCurl(ctx context.Context, command string) (string, 
 	}
 	return resp.Body, nil
 }
-
 
 func (h *RpcServiceCurl) Get(url string, timeout int) ResponseWrapper {
 	req, err := http.NewRequest("GET", url, nil)

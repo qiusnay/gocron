@@ -1,0 +1,26 @@
+//protoc --go_out=plugins=grpc:.  gocron.proto 
+syntax = "proto3";
+
+package rpc;
+
+service Task {
+    rpc Run(TaskRequest) returns (TaskResponse) {}
+}
+
+option go_package = ".;protofile";
+
+message TaskRequest {
+    string command = 2; // 命令
+    int64 timeout = 3;  // 任务执行超时时间
+    int64 taskid = 4; // 执行任务唯一ID
+    int64 jobid = 5; // 执行任务唯一ID
+    string querytype = 6; //执行类型
+}
+
+message TaskResponse {
+    string output = 1; // 命令标准输出
+    string err = 2;  // 命令错误
+    int64 status = 3; //执行状态
+    string host = 4 ; //运行机器
+    string endtime = 5 ; //执行结束时间
+}

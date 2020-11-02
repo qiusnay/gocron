@@ -1,4 +1,4 @@
-package rpcx
+package rpc
 
 import (
 	"context"
@@ -16,7 +16,7 @@ type RpcServiceShell struct {
 }
 
 // 执行shell命令，可设置执行超时时间
-func (c *RpcServiceShell) ExecShell(ctx context.Context, command string, taskid string) (string, error) {
+func (c *RpcServiceShell) ExecShell(ctx context.Context, command string, taskid int64) (string, error) {
 	defer func() {
 		if err := recover(); err != nil {
 			logger.Error(err)

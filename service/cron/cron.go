@@ -7,7 +7,7 @@ import (
 
 	"github.com/google/logger"
 	"github.com/qiusnay/gocron/model"
-	"github.com/qiusnay/gocron/service/rpcx"
+	"github.com/qiusnay/gocron/service/rpc"
 	"github.com/qiusnay/gocron/utils"
 	cron "github.com/robfig/cron/v3"
 )
@@ -98,7 +98,8 @@ func (c FlCron) createJob(jobModel model.FlCron) cron.FuncJob {
 		logger.Info(fmt.Sprintf("任务完成 - %s - 命令- %s - 执行结果- %s - 执行机器 - %s - 结束时间 - %s", jobModel.JobName, jobModel.Cmd, taskResult.Result, taskResult.Host, taskResult.Endtime))
 		afterExecJob(jobModel, taskResult, taskId)
 		//释放锁
-		model.Redis.Int("del", "cronlock_"+strconv.Itoa(jobModel.Jobid))
+		StrJobid := strconv.FormatInt(jobModel.Jobid, 10)
+		model.Redis.Int("del", "cronlock_"+StrJobid)
 	}
 	return taskFunc
 }
@@ -116,8 +117,8 @@ func (fl FlCron) BeforeExecJob(jobModel model.FlCron) (taskLogId int64) {
 
 // 执行具体任务
 func execJob(jobModel model.FlCron, taskId int64) model.TaskResult {
-	ret, err := new(rpcx.CronClient).Run(jobModel, taskId)
-	if err == nil {
+	ret, err := new(rpc.CronClient).Run(jobModel, taskId)
+	if err == "" {
 		return model.TaskResult{Result: ret.Result, Err: ret.Err, Host: ret.Host, Status: ret.Status, Endtime: ret.Endtime}
 	}
 	return model.TaskResult{Result: ret.Result, Err: ret.Err, Host: ret.Host, Status: ret.Status, Endtime: ret.Endtime}
@@ -136,7 +137,7 @@ func afterExecJob(jobModel model.FlCron, taskResult model.TaskResult, taskLogId 
 
 //设置cron最小粒度为分钟
 func (fl FlCron) CronWithNoSeconds() cron.Option {
-	return cron.WithParser(rpcx.Parser)
+	return cron.WithParser(rpc.Parser)
 }
 
 //超时处理
@@ -164,7 +165,7 @@ func (fl FlCron) CronWithNoSeconds() cron.Option {
 
 // 发送任务结果通知
 func SendNotification(jobModel model.FlCron, taskResult model.TaskResult) {
-	if taskResult.Err == nil {
+	if taskResult.Err == "succss" {
 		return // 执行失败才发送通知
 	}
 	//发送邮件

@@ -10,9 +10,9 @@ import (
 
 type TaskResult struct {
 	Result  string
-	Err     error
+	Err     string
 	Host    string
-	Status  int
+	Status  int64
 	Endtime string
 }
 
@@ -80,7 +80,7 @@ func (task *FlLog) CreateTaskLog(taskModel FlCron) (int64, error) {
 func (task *FlLog) UpdateTaskLog(taskLogId int64, taskResult TaskResult) (int64, error) {
 	taskLogModel := new(FlLog)
 	var status int
-	if taskResult.Err != nil {
+	if taskResult.Err != "" {
 		status = Failure
 	} else {
 		status = Finish
