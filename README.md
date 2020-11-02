@@ -39,6 +39,7 @@ cron系统底层通过rpcx微服务调度框架以及etcd服务注册与发现.�
   * port     = 3306
   * database = cron
   * charset  = utf8
+
 [redis]
   * host     = 192.168.100.60
   * port     = 6381

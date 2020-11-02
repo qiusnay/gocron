@@ -3,6 +3,7 @@ package rpcx
 import (
 	"context"
 	"errors"
+	"fmt"
 	"os/exec"
 	"syscall"
 
@@ -35,13 +36,13 @@ func (c *RpcServiceShell) ExecShell(ctx context.Context, command string, taskid 
 	}()
 	select {
 	case <-ctx.Done():
-		// logger.Info(fmt.Sprintf("执行超时 %s, 当前时间 %s", taskid, time.Now().Format("2006-01-02 15:04:05")))
+		logger.Info(fmt.Sprintf("执行超时 %s, 被客户端强制终止", taskid))
 		if cmd.Process.Pid > 0 {
 			syscall.Kill(-cmd.Process.Pid, syscall.SIGKILL)
 		}
 		return "", errors.New("timeout killed")
 	case result := <-resultChan:
-		// logger.Info(fmt.Sprintf("通道返回 %s, 当前时间 %s", taskid, time.Now().Format("2006-01-02 15:04:05")))
+		logger.Info(fmt.Sprintf("通道正常返回 %s", taskid))
 		return result.Result, result.Err
 	}
 }

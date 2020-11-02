@@ -23,6 +23,11 @@ const (
 	Running  int = 10000 // 运行中
 	Finish   int = 10002 // 完成
 	Cancel   int = 3     // 取消
+
+	EmailNotify int = 1
+	ForceKill   int = 2
+	HealthCheck int = 3
+	BothRun     int = 4
 )
 
 // 获取所有激活任务
@@ -54,6 +59,7 @@ func (task *FlCron) GetDependencyTaskList(ids string) ([]FlCron, error) {
 // 创建任务日志
 func (task *FlLog) CreateTaskLog(taskModel FlCron) (int64, error) {
 	jobdata, _ := json.Marshal(taskModel)
+	ts, _ := time.ParseInLocation("2006-01-02 15:04:05", "2006-01-02 15:04:05", time.Local)
 	taskLogModel := FlLog{
 		Jobid:      taskModel.Jobid,
 		JobName:    taskModel.JobName,
@@ -61,6 +67,8 @@ func (task *FlLog) CreateTaskLog(taskModel FlCron) (int64, error) {
 		Runat:      taskModel.Runat,
 		Jobdata:    string(jobdata),
 		Createtime: time.Now(),
+		Updatetime: time.Now(),
+		Endtime:    ts,
 		Starttime:  time.Now(),
 		Status:     Running,
 	}

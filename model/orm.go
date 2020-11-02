@@ -19,9 +19,8 @@ type FlCron struct {
 	AdminEmail  string    `gorm:"type:varchar(100);comment:'属主邮箱';" json:"admin_email"`
 	Remark      string    `gorm:"type:varchar(500);comment:'备注';" json:"remark"`
 	Createtime  time.Time `gorm:"type:datetime;comment:'创建时间';" json:"create_time"`
-	RelyJob     string    `gorm:"type:varchar(100);comment:'依赖jobid';not null" json:"rely_job"`
 	Runat       string    `gorm:"type:varchar(50);comment:'执行机器'" json:"runat"`
-	Overflow    string    `gorm:"type:int(2);comment:'超时机制 1:放弃当前任务,继续执行上次(默认),2:强制终止上次,并启动新的任务,3:健康检查,不告警'" json:"overflow"`
+	Overflow    int       `gorm:"type:int(2);comment:'超时机制 1:放弃当前任务,继续执行上次(默认),2:强制终止上次,并启动新的任务,3:健康检查,不告警'" json:"overflow"`
 	Taskid      string    `gorm:"-"`
 }
 
@@ -52,7 +51,7 @@ type FlLog struct {
 	JobName    string    `gorm:"type:varchar(550);comment:'作业名字';not null" json:"job_name"`
 	Status     int       `gorm:"type:int(50);comment:'任务状态:10000:等待执行,10001:执行中,10002:执行成功,10006:超时锁定,其他:出错';not null;index:IX_taskid" json:"status"`
 	Starttime  time.Time `gorm:"type:datetime;comment:'开始时间';" json:"starttime"`
-	Endtime    time.Time `gorm:"type:datetime;comment:'结束时间';" json:"endtime"`
+	Endtime    time.Time `gorm:"type:datetime;default null;comment:'结束时间';" json:"endtime"`
 	Cmd        string    `gorm:"type:varchar(200);comment:'执行命令';not null" json:"cmd"`
 	Runat      string    `gorm:"type:varchar(50);comment:'执行机器'" json:"runat"`
 	Jobdata    string    `gorm:"type:varchar(1000);comment:'Job data'" json:"jobdata"`

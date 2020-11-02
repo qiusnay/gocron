@@ -20,7 +20,7 @@ import (
 
 var (
 	addr     = flag.String("addr", utils.GetLocalIP()+":8973", "server address")
-	etcdAddr = flag.String("etcdAddr", "10.200.105.49:2379", "etcd address")
+	etcdAddr = flag.String("etcdAddr", "127.0.0.1:2379", "etcd address")
 	basePath = flag.String("base", "com/example/rpcx", "prefix path")
 )
 
@@ -33,7 +33,7 @@ func Start() {
 	flag.Parse()
 	s := server.NewServer()
 
-	addRegistryPlugin(s)
+	// addRegistryPlugin(s)
 
 	s.RegisterName("CronService", new(CronService), "")
 	go func() {
@@ -60,6 +60,8 @@ func addRegistryPlugin(s *server.Server) {
 }
 
 func (c *CronService) Run(ctx context.Context, req *model.FlCron, res *model.TaskResult) error {
+	logger.Info(fmt.Sprintf("接收通道 : %+v", ctx))
+	logger.Info(fmt.Sprintf("接收到请求 [taskid: %d cmd: %s err: %s, result : %s, host: %s]", req.Jobid, req.Cmd))
 	var out string
 	var err error
 	queryCmd := AssembleCmd(req)
@@ -83,7 +85,7 @@ func (c *CronService) Run(ctx context.Context, req *model.FlCron, res *model.Tas
 		res.Err = nil
 		res.Status = 10003
 	}
-	logger.Info(fmt.Sprintf("execute cmd end: [id: %d cmd: %s err: %s, result : %s, host: %s]", req.Id, queryCmd, err, out, res.Host))
+	logger.Info(fmt.Sprintf("execute cmd end: [id: %d cmd: %s err: %s, endtime : %s, host: %s]", req.Id, queryCmd, err, res.Endtime, res.Host))
 
 	return nil
 }
@@ -94,7 +96,7 @@ func AssembleCmd(cron *model.FlCron) string {
 	// 	s, err := os.Stat(LogFile)
 	// 	s.Chmod(0664)
 	// }
-	return "nohup " + cron.Cmd + " > " + LogFile + " 2>&1"
+	return cron.Cmd + " > " + LogFile
 }
 
 func GetLogFile(Jobid string, Taskid string) string {

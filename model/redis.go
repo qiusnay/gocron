@@ -1,16 +1,18 @@
 package model
 
 import (
-	"time"
 	"strconv"
+	"time"
+
 	"github.com/gomodule/redigo/redis"
-	"github.com/qiusnay/gocron/utils"
 	"github.com/google/logger"
+	"github.com/qiusnay/gocron/utils"
 )
 
 type RedisDB struct {
 	Pool *redis.Pool
 }
+
 var Redis *RedisDB
 
 func init() {
@@ -18,12 +20,12 @@ func init() {
 }
 
 func (db *RedisDB) InitPool() {
-	redisConf := utils.GetConfig("redis", "")
-	host 		:= redisConf["host"]
+	redisConf := utils.GetConfig("redis_local", "")
+	host := redisConf["host"]
 	logger.Info("收到终端断开信号, 忽略, %v", host)
-	port 		:= redisConf["port"]
-	maxIdle, _ 	:= strconv.Atoi(redisConf["max_idle"])
-	maxActive , _	:= strconv.Atoi(redisConf["max_active"])
+	port := redisConf["port"]
+	maxIdle, _ := strconv.Atoi(redisConf["max_idle"])
+	maxActive, _ := strconv.Atoi(redisConf["max_active"])
 
 	db.Pool = &redis.Pool{
 		MaxIdle:     maxIdle,

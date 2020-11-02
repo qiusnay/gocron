@@ -1,11 +1,13 @@
 package model
+
 import (
-	"github.com/google/logger"
 	"fmt"
 	"time"
-	"github.com/qiusnay/gocron/utils"
+
+	"github.com/google/logger"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"github.com/qiusnay/gocron/utils"
 )
 
 const (
@@ -15,8 +17,8 @@ const (
 
 var DB *gorm.DB
 
-func Dbinit()(*gorm.DB, error) {
-	dbConf := utils.GetConfig("database", "")
+func Dbinit() (*gorm.DB, error) {
+	dbConf := utils.GetConfig("database_local", "")
 	db, err := gorm.Open("mysql", fmt.Sprintf("%s:%s@(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local", dbConf["username"], dbConf["password"], dbConf["host"], dbConf["port"], dbConf["database"]))
 	if err != nil {
 		logger.Infof("database connect erro : %s", err)
@@ -24,7 +26,7 @@ func Dbinit()(*gorm.DB, error) {
 		//panic("连接数据库失败")
 	}
 	DB = db
-	
+
 	// db.LogMode(true)
 
 	// SetMaxIdleConns sets the maximum number of connections in the idle connection pool.

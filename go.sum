@@ -457,6 +457,7 @@ github.com/smallnest/quick v0.0.0-20200501131359-9534f3d77602/go.mod h1:pCMr9YKz
 github.com/smallnest/rpcx v0.0.0-20200924044220-f2cdd4dea15a h1:iMmV6amZCcnxnkww4hvyZYouSO06IUXSkEnZtW8itW4=
 github.com/smallnest/rpcx v0.0.0-20200924044220-f2cdd4dea15a/go.mod h1:u1oIECFDvSTSOEadYXwh9lDNHi/I7kXi+mBx8TkgIPg=
 github.com/smallnest/rpcx v0.0.0-20201019093943-4119dd02e20f h1:R3eap4uN5nif/K72TSwlOp1KJcP2oko6kcLfvmflq9E=
+github.com/smallnest/rpcx v0.0.0-20201027145221-c31b15be63d4 h1:iZaitKEz6cEHww2roT4ssGJdNJtVUIBDFYK5FBMilL4=
 github.com/smallnest/valkeyrie v0.0.0-20200811110245-15a06a9896aa h1:4kHNiaDy/zWmWp8M/vjss1Y7bMIGqAT63SE0uceFyo4=
 github.com/smallnest/valkeyrie v0.0.0-20200811110245-15a06a9896aa/go.mod h1:C5s5pS7Xtix2kB4aX02jAPSQo6ZMgPieDEO20CNj25Q=
 github.com/smartystreets/assertions v0.0.0-20180927180507-b2de0cb4f26d/go.mod h1:OnSkiWE9lh6wB0YB77sQom3nweQdgAjqCqsofrRNTgc=
