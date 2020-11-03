@@ -53,6 +53,7 @@ type FlLog struct {
 	Starttime  time.Time `gorm:"type:datetime;comment:'开始时间';" json:"starttime"`
 	Endtime    time.Time `gorm:"type:datetime;default null;comment:'结束时间';" json:"endtime"`
 	Cmd        string    `gorm:"type:varchar(200);comment:'执行命令';not null" json:"cmd"`
+	Error      string    `gorm:"type:varchar(500);comment:'错误信息'" json:"error"`
 	Runat      string    `gorm:"type:varchar(50);comment:'执行机器'" json:"runat"`
 	Jobdata    string    `gorm:"type:varchar(1000);comment:'Job data'" json:"jobdata"`
 	Createtime time.Time `gorm:"type:datetime;comment:'创建时间';" json:"createtime"`

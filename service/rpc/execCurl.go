@@ -26,14 +26,14 @@ type ResponseWrapper struct {
 // http任务执行时间不超过300秒
 const HttpExecTimeout = 300
 
-func (h *RpcServiceCurl) ExecCurl(ctx context.Context, command string) (string, error) {
+func (h *RpcServiceCurl) ExecCurl(ctx context.Context, command string) CronResponse {
 	var resp ResponseWrapper
 	resp = h.Get(command, HttpExecTimeout)
 	// 返回状态码非200，均为失败
 	if resp.StatusCode != http.StatusOK {
-		return "", fmt.Errorf("HTTP状态码非200-->%d")
+		return CronResponse{"", CronError, "", fmt.Errorf("HTTP状态码非200-->%d")}
 	}
-	return resp.Body, nil
+	return CronResponse{"", CronSucess, resp.Body, nil}
 }
 
 func (h *RpcServiceCurl) Get(url string, timeout int) ResponseWrapper {

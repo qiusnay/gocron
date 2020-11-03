@@ -45,7 +45,7 @@ func Dbinit() (*gorm.DB, error) {
 }
 
 func Automigrate() {
-	if !DB.HasTable("tb_cron_schedule") {
+	if !DB.HasTable("tb_cron_log") {
 		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON作业表'").CreateTable(&FlCron{})
 		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON用户表'").CreateTable(&FlUser{})
 		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON任务调度日志表'").CreateTable(&FlLog{})

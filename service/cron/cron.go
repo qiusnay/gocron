@@ -3,7 +3,9 @@ package cron
 import (
 	"fmt"
 	"strconv"
+	"strings"
 	"sync"
+	"time"
 
 	"github.com/google/logger"
 	"github.com/qiusnay/gocron/model"
@@ -39,14 +41,14 @@ func (c FlCron) Initialize() {
 		logger.Error("定时任务初始化,获取任务列表错误: %s", err)
 	}
 	for _, item := range taskList {
-		// //获取当前机器配置列表
-		// machineList := utils.GetConfig("machine", item.Runat)
-		// //获取当前机器ID
-		// localIP := utils.GetLocalIP()
-		// //判断当前作业是否可以在当前机器运行
-		// if !utils.InArray(localIP, strings.Split(machineList[item.Runat], "|")) {
-		// 	continue
-		// }
+		//获取当前机器配置列表
+		machineList := utils.GetConfig("machine", item.Runat)
+		//获取当前机器ID
+		localIP := utils.GetLocalIP()
+		//判断当前作业是否可以在当前机器运行
+		if !utils.InArray(localIP, strings.Split(machineList[item.Runat], "|")) {
+			continue
+		}
 		c.Add(item)
 	}
 	logger.Infof("定时任务初始化完成")
@@ -72,34 +74,46 @@ func (c FlCron) Add(jobModel model.FlCron) (err error) {
  **/
 func (c FlCron) createJob(jobModel model.FlCron) cron.FuncJob {
 	taskFunc := func() {
-		//1.获取锁,这里是为了判断同一个作业在不同机器之间竞争时,防止多次被dispacher
-		// lock, _ := model.Redis.Int("setnx", "cronlock_"+strconv.Itoa(jobModel.Jobid), 1)
-		// if lock != 1 {
-		// 	logger.Error(fmt.Sprintf("获取redis lock 失败 %d, 跳过本机任务分发", lock))
-		// 	return
-		// }
-		// logger.Error(fmt.Sprintf("获取redis lock 成功 %d", lock))
+		//1.获取锁,这里是为了判断同一个作业在不同机器之间竞争时,
+		// jobid + nexttime 防止多次被dispacher,这里要考虑一下死锁问题
+		JobDupKey := c.getJobDuplicateRedisKey(jobModel)
+		lock, _ := model.Redis.Int("setnx", JobDupKey, 1)
+		if lock != 1 {
+			logger.Error(fmt.Sprintf("获取redis lock 失败 %d, 跳过本机任务分发", "cronlock_"+strconv.FormatInt(jobModel.Jobid, 10)))
+			return
+		}
 		//创建TASK
 		taskId := c.BeforeExecJob(jobModel)
 		if taskId <= 0 {
 			return
 		}
-		//2.上一个任务是否还在运行?这里判断是为了判断同一个job的不同task之间的执行超时问题
-		// preTaskid, _ := c.TaskRunStatus.Load("current_task_id")
-		// if preTaskid != nil { //如果上一个作业还没有执行完
-		// 	return
-		// }
+		//设置30天过期
+		model.Redis.Int("expire", JobDupKey, 30*86400)
 
-		// c.TaskRunStatus.Store("current_task_id", taskId)
-		// defer c.TaskRunStatus.Delete("current_task_id")
+		//2.上一个任务是否还在运行?这里判断是为了判断同一个job的不同task之间的执行超时问题
+		preTaskid, _ := c.TaskRunStatus.Load("current_task_id")
+		logger.Info(fmt.Sprintf("获取上一次执行的taskid - %v", preTaskid))
+		var contextWithDeadline int = 0
+		if preTaskid != nil && jobModel.Overflow != model.BothRun { //如果上一个作业还没有执行完,同时该作业并不是同时运行
+			taskTimeoutStatus, err := c.TaskTimeOut(jobModel, preTaskid)
+			if taskTimeoutStatus != "forcekill" {
+				taskResult := model.TaskResult{"", err, utils.GetLocalIP(), rpc.CronTimeOut, time.Now().Format("2006-01-02 15:04:05")}
+				c.afterExecJob(jobModel, taskResult, taskId) //结束当前Task
+				return
+			}
+			contextWithDeadline = 1 //标识当前作业需要向服务端传递一个带超时的context
+		}
+		c.TaskRunStatus.Store("current_task_id", taskId)
+		defer c.TaskRunStatus.Delete("current_task_id")
 
 		logger.Info(fmt.Sprintf("开始执行任务 - %s - 命令-%s", jobModel.JobName, jobModel.Cmd))
-		taskResult := execJob(jobModel, taskId)
+		taskResult, err := execJob(jobModel, taskId, contextWithDeadline)
+
+		logger.Info(fmt.Sprintf("执行结果 %+v, 错误信息 : %+v", taskResult, err))
+
 		logger.Info(fmt.Sprintf("任务完成 - %s - 命令- %s - 执行结果- %s - 执行机器 - %s - 结束时间 - %s", jobModel.JobName, jobModel.Cmd, taskResult.Result, taskResult.Host, taskResult.Endtime))
-		afterExecJob(jobModel, taskResult, taskId)
 		//释放锁
-		StrJobid := strconv.FormatInt(jobModel.Jobid, 10)
-		model.Redis.Int("del", "cronlock_"+StrJobid)
+		model.Redis.Int("del", JobDupKey)
 	}
 	return taskFunc
 }
@@ -116,23 +130,17 @@ func (fl FlCron) BeforeExecJob(jobModel model.FlCron) (taskLogId int64) {
 }
 
 // 执行具体任务
-func execJob(jobModel model.FlCron, taskId int64) model.TaskResult {
-	ret, err := new(rpc.CronClient).Run(jobModel, taskId)
-	if err == "" {
-		return model.TaskResult{Result: ret.Result, Err: ret.Err, Host: ret.Host, Status: ret.Status, Endtime: ret.Endtime}
-	}
-	return model.TaskResult{Result: ret.Result, Err: ret.Err, Host: ret.Host, Status: ret.Status, Endtime: ret.Endtime}
+func execJob(jobModel model.FlCron, taskId int64, contextWithDeadline int) (task model.TaskResult, err string) {
+	return new(rpc.CronClient).Run(jobModel, taskId, contextWithDeadline)
 }
 
 // 任务执行后置操作
-func afterExecJob(jobModel model.FlCron, taskResult model.TaskResult, taskLogId int64) {
+func (fl FlCron) afterExecJob(jobModel model.FlCron, taskResult model.TaskResult, taskLogId int64) {
 	taskLogModel := new(model.FlLog)
 	_, err := taskLogModel.UpdateTaskLog(taskLogId, taskResult)
 	if err != nil {
 		logger.Error("任务结束#更新任务日志失败-", err)
 	}
-	// 发送邮件
-	go SendNotification(jobModel, taskResult)
 }
 
 //设置cron最小粒度为分钟
@@ -140,28 +148,29 @@ func (fl FlCron) CronWithNoSeconds() cron.Option {
 	return cron.WithParser(rpc.Parser)
 }
 
-//超时处理
-// func (fl FlCron) TaskTimeOut(jobModel model.FlCron, preTaskid interface{}, ch chan rpcx.RequestCtx) int {
-// 	taskResult := model.TaskResult{Result: "", Err: nil}
+func (fl FlCron) getJobDuplicateRedisKey(jobModel model.FlCron) string {
+	s, _ := rpc.Parser.Parse(jobModel.Rule)
+	expreTime := strconv.FormatInt(s.Next(time.Now()).Unix(), 10)
+	return "cronlock_" + strconv.FormatInt(jobModel.Jobid, 10) + "_" + expreTime
+}
 
-// 	switch jobModel.Overflow {
-// 	case model.EmailNotify:
-// 		// taskResult.Err = "当前作业执行超时,若经常出现,请适当调整执行周期"
-// 		go SendNotification(jobModel, taskResult)
-// 		return -1
-// 	case model.ForceKill:
-// 		var cl = len(ch)
-// 		logger.Info(fmt.Sprintf("通道长度 : %d", cl))
-// 		if cl > 0 {
-// 			req := <-ch
-// 			logger.Info(fmt.Sprintf("通道内容 : %+v", req))
-// 			req.Cancel()
-// 		}
-// 		return 1
-// 	}
-// 	// case model.HealthCheck:
-// 	return 0
-// }
+//超时处理
+func (fl FlCron) TaskTimeOut(jobModel model.FlCron, preTaskid interface{}) (s string, e string) {
+	taskResult := model.TaskResult{Result: "", Err: ""}
+	switch jobModel.Overflow {
+	case model.EmailNotify:
+		taskResult.Err = "当前作业执行超时,若经常出现,请适当调整执行周期"
+		go SendNotification(jobModel, taskResult)
+		return "", taskResult.Err
+	case model.ForceKill:
+		taskResult.Err = "当前作业执行超时,系统己终止上一个任务的运行,请知晓."
+		go SendNotification(jobModel, taskResult)
+		return "forcekill", taskResult.Err
+	case model.HealthCheck:
+		return "healthcheck", ""
+	}
+	return "", ""
+}
 
 // 发送任务结果通知
 func SendNotification(jobModel model.FlCron, taskResult model.TaskResult) {

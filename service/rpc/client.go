@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/google/logger"
 	"github.com/qiusnay/gocron/model"
 	"github.com/qiusnay/gocron/service/rpc/etcd"
 	gocron "github.com/qiusnay/gocron/service/rpc/protofile"
@@ -23,7 +24,7 @@ type CronClient struct{}
 
 var Parser = cron.NewParser(cron.Minute | cron.Hour | cron.Dom | cron.Month | cron.Dow | cron.Descriptor)
 
-func (c *CronClient) Run(jobModel model.FlCron, taskId int64) (result model.TaskResult, err string) {
+func (c *CronClient) Run(jobModel model.FlCron, taskId int64, contextWithDeadline int) (result model.TaskResult, err string) {
 	flag.Parse()
 	r := etcd.NewResolver(*EtcdAddr)
 	resolver.Register(r)
@@ -33,31 +34,41 @@ func (c *CronClient) Run(jobModel model.FlCron, taskId int64) (result model.Task
 	if rpcerr != nil {
 		panic(err)
 	}
-
 	jobModel.Taskid = taskId
-	s, _ := Parser.Parse(jobModel.Rule)
-	expreTime := s.Next(time.Now()).Unix() - time.Now().Unix() - 5 // 5秒预留空间
 
 	resultChan := make(chan model.TaskResult)
 	go func() {
-		ctx, cancel := context.WithTimeout(context.Background(), time.Duration(expreTime)*time.Second)
-		defer cancel()
+		var expreTime int64
+		var cancel context.CancelFunc
+		ctx := context.Background() //正常作业
+		if contextWithDeadline == 1 {
+			//如果当前Task需要在周期内强制结束服务端正在运行的作业
+			s, _ := Parser.Parse(jobModel.Rule)
+			expreTime := s.Next(time.Now()).Unix() - time.Now().Unix() - 5 // 5秒预留空间
+			ctx, cancel = context.WithTimeout(context.Background(), time.Duration(expreTime)*time.Second)
+			defer cancel()
+		}
 		client := gocron.NewTaskClient(conn)
-		resp, err := client.Run(ctx, &gocron.TaskRequest{
+		resp, err := client.Run(ctx, &gocron.TaskRequest{ //发送请求
 			Command:   jobModel.Cmd,
 			Timeout:   expreTime,
 			Jobid:     jobModel.Jobid,
 			Taskid:    jobModel.Taskid,
 			Querytype: jobModel.Querytype,
 		})
-		if err == nil {
-			fmt.Printf("Reply is %+v\n", resp)
-			resultChan <- model.TaskResult{Result: resp.Output, Err: resp.Err, Host: resp.Host, Status: resp.Status, Endtime: resp.Endtime}
+		logger.Info(fmt.Sprintf("grpc 返回结果 : %+v, 错误信息 : %+v", resp, err))
+		//返回结构初始化
+		GrpcResult := model.TaskResult{Result: "", Err: "", Host: "", Status: 0, Endtime: ""}
+		if err != nil {
+			GrpcResult.Err = err.Error()
 		} else {
-			fmt.Printf("call server error:%s\n", err)
-			resultChan <- model.TaskResult{Result: "", Err: err.Error(), Host: "", Status: 10001, Endtime: time.Now().Format("2006-01-02 15:04:05")}
+			GrpcResult.Result = resp.Output
+			GrpcResult.Err = resp.Err
+			GrpcResult.Host = resp.Host
+			GrpcResult.Status = resp.Status
+			GrpcResult.Endtime = resp.Endtime
 		}
-
+		resultChan <- GrpcResult //写入通道
 	}()
 	var aggregationErr string = ""
 	rpcResult := <-resultChan

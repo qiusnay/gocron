@@ -2,10 +2,7 @@ package model
 
 import (
 	"encoding/json"
-	"strings"
 	"time"
-
-	"github.com/google/logger"
 )
 
 type TaskResult struct {
@@ -37,23 +34,10 @@ func (task *FlCron) GetAllJobList() ([]FlCron, error) {
 	return list, dberr
 }
 
-// 获取依赖任务列表
-func (task *FlCron) GetDependencyTaskList(ids string) ([]FlCron, error) {
-	list := make([]FlCron, 0)
-	if ids == "" {
-		return list, nil
-	}
-	idList := strings.Split(ids, ",")
-	taskIds := make([]interface{}, len(idList))
-	for i, v := range idList {
-		taskIds[i] = v
-	}
-	err := DB.Where("rely_job in (?)", taskIds).Find(&list).Error
-	if err != nil {
-		return list, err
-	}
-	logger.Infof("获取依赖作业-%+v", list)
-	return list, nil
+func (task *FlCron) GetJobInfo(Jobid int64) ([]FlCron, error) {
+	jobinfo := make([]FlCron, 0)
+	dberr := DB.Where("jobid = ?", Jobid).First(&jobinfo).Error
+	return jobinfo, dberr
 }
 
 // 创建任务日志
@@ -79,15 +63,10 @@ func (task *FlLog) CreateTaskLog(taskModel FlCron) (int64, error) {
 // 更新任务日志
 func (task *FlLog) UpdateTaskLog(taskLogId int64, taskResult TaskResult) (int64, error) {
 	taskLogModel := new(FlLog)
-	var status int
-	if taskResult.Err != "" {
-		status = Failure
-	} else {
-		status = Finish
-	}
 	ts, _ := time.ParseInLocation("2006-01-02 15:04:05", taskResult.Endtime, time.Local)
 	upResult := DB.Model(&taskLogModel).Where("id = ?", taskLogId).Updates(map[string]interface{}{
-		"status":     status,
+		"status":     taskResult.Status,
+		"error":      taskResult.Err,
 		"endtime":    ts, //taskResult.Endtime,
 		"runat":      taskResult.Host,
 		"updatetime": time.Now(),

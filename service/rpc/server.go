@@ -14,6 +14,8 @@ import (
 
 	"github.com/google/logger"
 	croninit "github.com/qiusnay/gocron/init"
+	"github.com/qiusnay/gocron/model"
+	"github.com/qiusnay/gocron/service/notify"
 	"github.com/qiusnay/gocron/service/rpc/etcd"
 	gocron "github.com/qiusnay/gocron/service/rpc/protofile"
 	"github.com/qiusnay/gocron/utils"
@@ -26,7 +28,16 @@ var (
 	ServiceName = flag.String("ServiceName", "task", "service name")
 )
 
-type CronService struct {
+const (
+	CronNormal  int64 = 10000 //正常
+	CronError   int64 = 10002 // 失败
+	CronSucess  int64 = 10001 // 成功
+	CronTimeOut int64 = 10003 // 超时
+)
+
+type CronResponse struct {
+	Host   string
+	Code   int64
 	Result string
 	Err    error
 }
@@ -70,43 +81,66 @@ func Start() {
 	//拉起rpc服务
 	if err := s.Serve(lis); err != nil {
 		fmt.Printf("failed to serve: %s", err)
-		//log.Fatalf("failed to serve: %s", err)
 	}
 }
 
-// server is used to implement helloworld.GreeterServer.
 type server struct{}
 
-// SayHello implements helloworld.GreeterServer
 func (s *server) Run(ctx context.Context, req *gocron.TaskRequest) (*gocron.TaskResponse, error) {
 	// logger.Info(fmt.Sprintf("接收通道 : %+v", ctx))
-	var out string
-	var err error
+	queryResult := CronResponse{}
 	queryCmd := AssembleCmd(req)
 	switch req.Querytype {
 	case "wget":
 	case "curl":
 		rpccurl := RpcServiceCurl{}
-		out, err = rpccurl.ExecCurl(ctx, queryCmd)
+		queryResult = rpccurl.ExecCurl(ctx, queryCmd)
 		break
 	default:
 		rpcshell := RpcServiceShell{}
-		out, err = rpcshell.ExecShell(ctx, queryCmd, req.Taskid)
+		queryResult = rpcshell.ExecShell(ctx, queryCmd, req.Taskid)
 	}
-	var rpcResponse = gocron.TaskResponse{}
-	rpcResponse.Output = out
-	rpcResponse.Host = utils.GetLocalIP()
-	rpcResponse.Endtime = time.Now().Format("2006-01-02 15:04:05")
-	if err != nil {
-		rpcResponse.Err = err.Error()
-		rpcResponse.Status = 10002
-	} else {
-		rpcResponse.Err = "success"
-		rpcResponse.Status = 10003
-	}
-	logger.Info(fmt.Sprintf("execute cmd end: [cmd: %s err: %s, endtime : %s, host: %s]", queryCmd, err, rpcResponse.Endtime, rpcResponse.Host))
+	queryResult.Host = utils.GetLocalIP()
+	//写入执行日志
+	s.AfterExecJob(queryResult, req)
 
-	return &rpcResponse, nil
+	logger.Info(fmt.Sprintf("execute cmd end: [cmd: %s err: %s, status : %d]",
+		queryCmd,
+		queryResult.Err,
+		queryResult.Code,
+	))
+	return &gocron.TaskResponse{Err: queryResult.Err.Error(), Output: queryResult.Result, Status: queryResult.Code, Host: queryResult.Host}, nil
+}
+
+func (s *server) AfterExecJob(queryResult CronResponse, req *gocron.TaskRequest) {
+	var TaskResult = model.TaskResult{}
+	TaskResult.Result = queryResult.Result
+	TaskResult.Host = queryResult.Host
+	TaskResult.Status = queryResult.Code
+	TaskResult.Endtime = time.Now().Format("2006-01-02 15:04:05")
+	if queryResult.Err != nil {
+		TaskResult.Err = queryResult.Err.Error()
+	} else {
+		TaskResult.Err = "success"
+	}
+	_, err := new(model.FlLog).UpdateTaskLog(req.Taskid, TaskResult)
+	if err != nil {
+		logger.Error("任务结束#更新任务日志失败-", err)
+	}
+	jobModel := model.FlCron{}
+	JobInfo, _ := jobModel.GetJobInfo(req.GetJobid())
+
+	// 发送邮件
+	go SendNotification(JobInfo[0], TaskResult)
+}
+
+// 发送任务结果通知
+func SendNotification(jobModel model.FlCron, taskResult model.TaskResult) {
+	if taskResult.Err == "succss" {
+		return // 执行失败才发送通知
+	}
+	//发送邮件
+	notify.SendCronAlarmMail(taskResult, jobModel)
 }
 
 func AssembleCmd(cron *gocron.TaskRequest) string {
