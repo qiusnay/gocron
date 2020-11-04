@@ -29,7 +29,11 @@ func (c *RpcServiceShell) ExecShell(ctx context.Context, command string, taskid 
 	resultChan := make(chan CronResponse)
 	go func() {
 		err, _ := cmd.CombinedOutput()
-		resultChan <- CronResponse{"", croninit.CronSucess, "", errors.New(string(err))} // 正常结束
+		CronRes := CronResponse{"", croninit.CronSucess, "", errors.New(string(err))} // 正常结束
+		if string(err) != "" {
+			CronRes.Code = croninit.CronError
+		}
+		resultChan <- CronRes
 	}()
 	select {
 	case <-ctx.Done():

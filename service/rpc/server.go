@@ -33,24 +33,22 @@ type CronResponse struct {
 	Err    error
 }
 
-func Start() {
+type MyServer struct{}
+
+func (s *MyServer) Start() {
 	flag.Parse()
 	//定义rpc服务端
 	lis, err := net.Listen("tcp", *addr)
 	if err != nil {
 		log.Fatalf("failed to listen: %s", err)
-	} else {
-		fmt.Printf("listen at:8973\n")
 	}
 	defer lis.Close()
 
-	s := grpc.NewServer()
-	defer s.GracefulStop()
-
-	gocron.RegisterTaskServer(s, &Server{})
-	fmt.Printf("server addr:%s\n", *addr)
-
-	//服务注册，go协程for循环定时往etcd上注册服务信息
+	GrpcServer := grpc.NewServer()
+	defer GrpcServer.GracefulStop()
+	//注册当前服务到grpc中
+	gocron.RegisterTaskServer(GrpcServer, &MyServer{})
+	//注册当前服务到etcd中
 	go etcd.Register(*EtcdAddr, *ServiceName, *addr, 5)
 
 	//进程终止信号，注销etcd上的服务
@@ -68,18 +66,18 @@ func Start() {
 	}()
 
 	//拉起rpc服务
-	if err := s.Serve(lis); err != nil {
+	if err := GrpcServer.Serve(lis); err != nil {
 		fmt.Printf("failed to serve: %s", err)
 	}
 }
 
-type Server struct{}
-
 //服务入口
-func (s *Server) Run(ctx context.Context, req *gocron.TaskRequest) (*gocron.TaskResponse, error) {
-	// logger.Info(fmt.Sprintf("接收通道 : %+v", ctx))
+func (s *MyServer) Run(ctx context.Context, req *gocron.TaskRequest) (*gocron.TaskResponse, error) {
+	// logger.Info(fmt.Sprintf("taskid : %s, 接收通道 : %+v", req.Taskid, ctx))
 	queryResult := CronResponse{}
 	queryCmd := AssembleCmd(req)
+	//执行前更新状态
+	s.BeforeExecJob(req.Taskid)
 	switch req.Querytype {
 	case "wget":
 	case "curl":
@@ -94,25 +92,30 @@ func (s *Server) Run(ctx context.Context, req *gocron.TaskRequest) (*gocron.Task
 	//更新DB执行日志
 	s.AfterExecJob(queryResult, req)
 	//写文件日志
-	logger.Info(fmt.Sprintf("execute cmd end: [cmd: %s err: %s, status : %d]",
-		queryCmd,
-		queryResult.Err,
-		queryResult.Code,
-	))
+	logger.Info(fmt.Sprintf("execute cmd end: [cmd: %s err: %s, status : %d]", queryCmd, queryResult.Err, queryResult.Code))
 	return &gocron.TaskResponse{Err: queryResult.Err.Error(), Output: queryResult.Result, Status: queryResult.Code, Host: queryResult.Host}, nil
 }
 
-//更新Cron执行日志
-func (s *Server) AfterExecJob(queryResult CronResponse, req *gocron.TaskRequest) {
+//开始执行任务
+func (s *MyServer) BeforeExecJob(TaskId int64) {
+	var TaskResult = model.TaskResult{}
+	TaskResult.Status = croninit.CronRunning
+	TaskResult.Err = "作业执行中"
+	new(model.VLog).UpdateTaskLog(TaskId, TaskResult)
+}
+
+//执行完后更新日志
+func (s *MyServer) AfterExecJob(queryResult CronResponse, req *gocron.TaskRequest) {
 	var TaskResult = model.TaskResult{}
 	TaskResult.Result = queryResult.Result
 	TaskResult.Host = queryResult.Host
 	TaskResult.Status = queryResult.Code
 	TaskResult.Endtime = time.Now().Format("2006-01-02 15:04:05")
-	if queryResult.Err != nil {
+	logger.Info(fmt.Sprintf("AfterExecJob : %v, taskid : %s", queryResult.Err, req.Taskid))
+	if queryResult.Err.Error() != "" {
 		TaskResult.Err = queryResult.Err.Error()
 	} else {
-		TaskResult.Err = "success"
+		TaskResult.Err = "执行成功"
 	}
 	_, err := new(model.VLog).UpdateTaskLog(req.Taskid, TaskResult)
 	if err != nil {

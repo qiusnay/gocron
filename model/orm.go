@@ -22,6 +22,7 @@ type VCron struct {
 	Runat       string    `gorm:"type:varchar(50);comment:'执行机器'" json:"runat"`
 	Overflow    int       `gorm:"type:int(2);comment:'超时机制 1:放弃当前任务,继续执行上次(默认),2:强制终止上次,并启动新的任务,3:健康检查,不告警'" json:"overflow"`
 	Taskid      int64     `gorm:"-"`
+	TaskStatus  int64     `gorm:"-"`
 }
 
 func (VCron) TableName() string {
@@ -49,7 +50,7 @@ type VLog struct {
 	Id         uint      `gorm:"primary_key;AUTO_INCREMENT" json:"id"`
 	Jobid      int64     `gorm:"type:int(50);comment:'作业ID';not null;index:IX_jobid" json:"jobid"`
 	JobName    string    `gorm:"type:varchar(550);comment:'作业名字';not null" json:"job_name"`
-	Status     int       `gorm:"type:int(50);comment:'任务状态:10000:等待执行,10001:执行中,10002:执行成功,10006:超时锁定,其他:出错';not null;index:IX_taskid" json:"status"`
+	Status     int64     `gorm:"type:int(50);comment:'任务状态:10000:等待执行,10001:执行中,10002:执行成功,10006:超时锁定,其他:出错';not null;index:IX_taskid" json:"status"`
 	Starttime  time.Time `gorm:"type:datetime;comment:'开始时间';" json:"starttime"`
 	Endtime    time.Time `gorm:"type:datetime;default null;comment:'结束时间';" json:"endtime"`
 	Cmd        string    `gorm:"type:varchar(200);comment:'执行命令';not null" json:"cmd"`

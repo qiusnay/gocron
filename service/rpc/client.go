@@ -3,10 +3,8 @@ package rpc
 import (
 	"context"
 	"flag"
-	"fmt"
 	"time"
 
-	"github.com/google/logger"
 	"github.com/qiusnay/gocron/model"
 	"github.com/qiusnay/gocron/service/rpc/etcd"
 	gocron "github.com/qiusnay/gocron/service/rpc/protofile"
@@ -21,7 +19,7 @@ var (
 // RPC调用执行任务
 type CronClient struct{}
 
-func (c *CronClient) Run(Job model.VCron, TaskId int64, NeedCtxTimeOut bool, ExpireTime int64) model.TaskResult {
+func (c *CronClient) Run(Job model.VCron, TaskId int64, ExpireTime int64) model.TaskResult {
 	flag.Parse()
 	r := etcd.NewResolver(*EtcdAddr)
 	resolver.Register(r)
@@ -35,11 +33,12 @@ func (c *CronClient) Run(Job model.VCron, TaskId int64, NeedCtxTimeOut bool, Exp
 	resultChan := make(chan model.TaskResult)
 	go func() {
 		ctx := context.Background() //正常作业
-		if NeedCtxTimeOut {
+		if Job.Overflow == model.ForceKill {
 			var cancel context.CancelFunc
 			ctx, cancel = context.WithTimeout(context.Background(), time.Duration(ExpireTime)*time.Second)
 			defer cancel()
 		}
+		// logger.Info(fmt.Sprintf("client taskid : %s, 发送ctx : %+v", Job.Taskid, ctx))
 		client := gocron.NewTaskClient(conn)
 		resp, err := client.Run(ctx, &gocron.TaskRequest{ //发送请求
 			Command:   Job.Cmd,
@@ -48,7 +47,7 @@ func (c *CronClient) Run(Job model.VCron, TaskId int64, NeedCtxTimeOut bool, Exp
 			Taskid:    Job.Taskid,
 			Querytype: Job.Querytype,
 		})
-		logger.Info(fmt.Sprintf("grpc 返回结果 : %+v, 错误信息 : %+v", resp, err))
+		// logger.Info(fmt.Sprintf("grpc 返回结果 : %+v, 错误信息 : %+v", resp, err))
 		//返回结构初始化
 		GrpcResult := model.TaskResult{Result: "", Err: "", Host: "", Status: 0, Endtime: ""}
 		if err != nil {

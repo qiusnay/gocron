@@ -14,13 +14,6 @@ type TaskResult struct {
 }
 
 const (
-	Disabled int = 0     // 禁用
-	Failure  int = 10001 // 失败
-	Enabled  int = 1     // 启用
-	Running  int = 10000 // 运行中
-	Finish   int = 10002 // 完成
-	Cancel   int = 3     // 取消
-
 	EmailNotify int = 1
 	ForceKill   int = 2
 	HealthCheck int = 3
@@ -41,23 +34,21 @@ func (task *VCron) GetJobInfo(Jobid int64) ([]VCron, error) {
 }
 
 // 创建任务日志
-func (task *VLog) CreateTaskLog(taskModel VCron) (int64, error) {
-	jobdata, _ := json.Marshal(taskModel)
-	ts, _ := time.ParseInLocation("2006-01-02 15:04:05", "2006-01-02 15:04:05", time.Local)
-	taskLogModel := VLog{
-		Jobid:      taskModel.Jobid,
-		JobName:    taskModel.JobName,
-		Cmd:        taskModel.Cmd,
-		Runat:      taskModel.Runat,
+func (task *VLog) CreateTaskLog(Job VCron) (int64, error) {
+	jobdata, _ := json.Marshal(Job)
+	TaskLog := VLog{
+		Jobid:      Job.Jobid,
+		JobName:    Job.JobName,
+		Cmd:        Job.Cmd,
+		Runat:      Job.Runat,
 		Jobdata:    string(jobdata),
 		Createtime: time.Now(),
 		Updatetime: time.Now(),
-		Endtime:    ts,
 		Starttime:  time.Now(),
-		Status:     Running,
+		Status:     Job.TaskStatus,
 	}
-	DB.Create(&taskLogModel)
-	return int64(taskLogModel.Id), nil
+	DB.Create(&TaskLog)
+	return int64(TaskLog.Id), nil
 }
 
 // 更新任务日志
