@@ -13,6 +13,16 @@ import (
 
 var verbose = flag.Bool("verbose", false, "print info level logs to stdout")
 
+const (
+	CronNormal      int64 = 10000 // 正常
+	CronRunning     int64 = 10006 //执行中
+	CronSucess      int64 = 10001 // 成功
+	CronError       int64 = 10002 // 失败
+	CronTimeOut     int64 = 10003 // 超时
+	CronForceKill   int64 = 10004 // 超时强杀
+	CronHealthCheck int64 = 10005 // 健康检查
+)
+
 var BASEPATH string
 
 func Init(logPath string) {

@@ -8,6 +8,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"strconv"
 	"strings"
 	// "path/filepath"
 )
@@ -19,6 +20,12 @@ type Config struct {
 	conflist []map[string]map[string]string
 }
 
+//int 64 to string
+func Int64toString(Numver int64) string {
+	return strconv.FormatInt(Numver, 10)
+}
+
+//返回执行路径
 func PanicTrace(err interface{}) string {
 	stackBuf := make([]byte, 4096)
 	n := runtime.Stack(stackBuf, false)

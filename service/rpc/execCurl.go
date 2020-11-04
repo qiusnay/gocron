@@ -7,8 +7,9 @@ import (
 	"io/ioutil"
 	"net/http"
 	"time"
+
+	croninit "github.com/qiusnay/gocron/init"
 	// "github.com/qiusnay/gocron/model"
-	// "github.com/qiusnay/gocron/init"
 	// "github.com/google/logger"
 )
 
@@ -31,9 +32,9 @@ func (h *RpcServiceCurl) ExecCurl(ctx context.Context, command string) CronRespo
 	resp = h.Get(command, HttpExecTimeout)
 	// 返回状态码非200，均为失败
 	if resp.StatusCode != http.StatusOK {
-		return CronResponse{"", CronError, "", fmt.Errorf("HTTP状态码非200-->%d")}
+		return CronResponse{"", croninit.CronError, "", fmt.Errorf("HTTP状态码非200-->%d")}
 	}
-	return CronResponse{"", CronSucess, resp.Body, nil}
+	return CronResponse{"", croninit.CronSucess, resp.Body, nil}
 }
 
 func (h *RpcServiceCurl) Get(url string, timeout int) ResponseWrapper {
@@ -42,7 +43,7 @@ func (h *RpcServiceCurl) Get(url string, timeout int) ResponseWrapper {
 		return createRequestError(err)
 	}
 
-	return request(req, timeout)
+	return h.Request(req, timeout)
 }
 
 func (h *RpcServiceCurl) PostParams(url string, params string, timeout int) ResponseWrapper {
@@ -53,10 +54,10 @@ func (h *RpcServiceCurl) PostParams(url string, params string, timeout int) Resp
 	}
 	req.Header.Set("Content-type", "application/x-www-form-urlencoded")
 
-	return request(req, timeout)
+	return h.Request(req, timeout)
 }
 
-func request(req *http.Request, timeout int) ResponseWrapper {
+func (h *RpcServiceCurl) Request(req *http.Request, timeout int) ResponseWrapper {
 	wrapper := ResponseWrapper{StatusCode: 0, Body: "", Header: make(http.Header)}
 	client := &http.Client{}
 	if timeout > 0 {

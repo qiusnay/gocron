@@ -7,6 +7,7 @@ import (
 	"syscall"
 
 	"github.com/google/logger"
+	croninit "github.com/qiusnay/gocron/init"
 )
 
 type RpcServiceShell struct {
@@ -28,14 +29,14 @@ func (c *RpcServiceShell) ExecShell(ctx context.Context, command string, taskid 
 	resultChan := make(chan CronResponse)
 	go func() {
 		err, _ := cmd.CombinedOutput()
-		resultChan <- CronResponse{"", CronSucess, "", errors.New(string(err))} // 正常结束
+		resultChan <- CronResponse{"", croninit.CronSucess, "", errors.New(string(err))} // 正常结束
 	}()
 	select {
 	case <-ctx.Done():
 		if cmd.Process.Pid > 0 {
 			syscall.Kill(-cmd.Process.Pid, syscall.SIGKILL)
 		}
-		return CronResponse{"", CronTimeOut, "", errors.New("timeout killed,kill the process")}
+		return CronResponse{"", croninit.CronTimeOut, "", errors.New("timeout killed,kill the process")}
 	case result := <-resultChan:
 		return result
 	}

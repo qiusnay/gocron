@@ -16,7 +16,7 @@ var logPath = "../log/dispacher." + time.Now().Format("2006-01-02") + ".log"
 func main() {
 	croninit.Init(logPath)
 	// 初始化定时任务
-	var serviceCron = cron.FlCron{}
+	var serviceCron = cron.VCron{}
 	serviceCron.Initialize()
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM)

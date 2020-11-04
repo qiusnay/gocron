@@ -8,14 +8,12 @@ import (
 	"net"
 	"os"
 	"os/signal"
-	"strconv"
 	"syscall"
 	"time"
 
 	"github.com/google/logger"
 	croninit "github.com/qiusnay/gocron/init"
 	"github.com/qiusnay/gocron/model"
-	"github.com/qiusnay/gocron/service/notify"
 	"github.com/qiusnay/gocron/service/rpc/etcd"
 	gocron "github.com/qiusnay/gocron/service/rpc/protofile"
 	"github.com/qiusnay/gocron/utils"
@@ -28,13 +26,6 @@ var (
 	ServiceName = flag.String("ServiceName", "task", "service name")
 )
 
-const (
-	CronNormal  int64 = 10000 //正常
-	CronError   int64 = 10002 // 失败
-	CronSucess  int64 = 10001 // 成功
-	CronTimeOut int64 = 10003 // 超时
-)
-
 type CronResponse struct {
 	Host   string
 	Code   int64
@@ -43,7 +34,6 @@ type CronResponse struct {
 }
 
 func Start() {
-	fmt.Println("grpc start")
 	flag.Parse()
 	//定义rpc服务端
 	lis, err := net.Listen("tcp", *addr)
@@ -57,7 +47,7 @@ func Start() {
 	s := grpc.NewServer()
 	defer s.GracefulStop()
 
-	gocron.RegisterTaskServer(s, &server{})
+	gocron.RegisterTaskServer(s, &Server{})
 	fmt.Printf("server addr:%s\n", *addr)
 
 	//服务注册，go协程for循环定时往etcd上注册服务信息
@@ -75,7 +65,6 @@ func Start() {
 		} else {
 			os.Exit(0)
 		}
-
 	}()
 
 	//拉起rpc服务
@@ -84,9 +73,10 @@ func Start() {
 	}
 }
 
-type server struct{}
+type Server struct{}
 
-func (s *server) Run(ctx context.Context, req *gocron.TaskRequest) (*gocron.TaskResponse, error) {
+//服务入口
+func (s *Server) Run(ctx context.Context, req *gocron.TaskRequest) (*gocron.TaskResponse, error) {
 	// logger.Info(fmt.Sprintf("接收通道 : %+v", ctx))
 	queryResult := CronResponse{}
 	queryCmd := AssembleCmd(req)
@@ -101,9 +91,9 @@ func (s *server) Run(ctx context.Context, req *gocron.TaskRequest) (*gocron.Task
 		queryResult = rpcshell.ExecShell(ctx, queryCmd, req.Taskid)
 	}
 	queryResult.Host = utils.GetLocalIP()
-	//写入执行日志
+	//更新DB执行日志
 	s.AfterExecJob(queryResult, req)
-
+	//写文件日志
 	logger.Info(fmt.Sprintf("execute cmd end: [cmd: %s err: %s, status : %d]",
 		queryCmd,
 		queryResult.Err,
@@ -112,7 +102,8 @@ func (s *server) Run(ctx context.Context, req *gocron.TaskRequest) (*gocron.Task
 	return &gocron.TaskResponse{Err: queryResult.Err.Error(), Output: queryResult.Result, Status: queryResult.Code, Host: queryResult.Host}, nil
 }
 
-func (s *server) AfterExecJob(queryResult CronResponse, req *gocron.TaskRequest) {
+//更新Cron执行日志
+func (s *Server) AfterExecJob(queryResult CronResponse, req *gocron.TaskRequest) {
 	var TaskResult = model.TaskResult{}
 	TaskResult.Result = queryResult.Result
 	TaskResult.Host = queryResult.Host
@@ -123,11 +114,11 @@ func (s *server) AfterExecJob(queryResult CronResponse, req *gocron.TaskRequest)
 	} else {
 		TaskResult.Err = "success"
 	}
-	_, err := new(model.FlLog).UpdateTaskLog(req.Taskid, TaskResult)
+	_, err := new(model.VLog).UpdateTaskLog(req.Taskid, TaskResult)
 	if err != nil {
 		logger.Error("任务结束#更新任务日志失败-", err)
 	}
-	jobModel := model.FlCron{}
+	jobModel := model.VCron{}
 	JobInfo, _ := jobModel.GetJobInfo(req.GetJobid())
 
 	// 发送邮件
@@ -135,23 +126,20 @@ func (s *server) AfterExecJob(queryResult CronResponse, req *gocron.TaskRequest)
 }
 
 // 发送任务结果通知
-func SendNotification(jobModel model.FlCron, taskResult model.TaskResult) {
+func SendNotification(jobModel model.VCron, taskResult model.TaskResult) {
 	if taskResult.Err == "succss" {
 		return // 执行失败才发送通知
 	}
 	//发送邮件
-	notify.SendCronAlarmMail(taskResult, jobModel)
+	// notify.SendCronAlarmMail(taskResult, jobModel)
 }
 
+//命令组装
 func AssembleCmd(cron *gocron.TaskRequest) string {
-	LogFile := GetLogFile(cron.Jobid, cron.Taskid)
-	// if utils.IsFile(LogFile) {
-	// 	s, err := os.Stat(LogFile)
-	// 	s.Chmod(0664)
-	// }
-	return cron.Command + " > " + LogFile
+	return cron.Command + " > " + GetLogFile(cron.Jobid, cron.Taskid)
 }
 
+//获取日志文件
 func GetLogFile(Jobid int64, Taskid int64) string {
 	//设置日志目录
 	LogDir := croninit.BASEPATH + "/log/cronlog/" + time.Now().Format("2006-01-02")
@@ -159,7 +147,5 @@ func GetLogFile(Jobid int64, Taskid int64) string {
 		// mkdir($LogDir, 0777, true);
 		os.MkdirAll(LogDir, os.ModePerm)
 	}
-	StrJobid := strconv.FormatInt(Jobid, 10)
-	StrTaskid := strconv.FormatInt(Taskid, 10)
-	return LogDir + "/cron-task-" + StrJobid + "-" + StrTaskid + "-log.log"
+	return LogDir + "/cron-task-" + utils.Int64toString(Jobid) + "-" + utils.Int64toString(Taskid) + "-log.log"
 }

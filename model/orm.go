@@ -5,7 +5,7 @@ import (
 )
 
 //作业表
-type FlCron struct {
+type VCron struct {
 	Id          uint      `gorm:"primary_key;AUTO_INCREMENT" json:"id"`
 	Jobid       int64     `gorm:"type:int(50);comment:'作业ID';not null;index:IX_jobid" json:"jobid"`
 	JobName     string    `gorm:"type:varchar(550);comment:'作业名字';not null" json:"job_name"`
@@ -24,12 +24,12 @@ type FlCron struct {
 	Taskid      int64     `gorm:"-"`
 }
 
-func (FlCron) TableName() string {
+func (VCron) TableName() string {
 	return "tb_cron_schedule"
 }
 
 //用户表
-type FlUser struct {
+type VUser struct {
 	Id         uint      `gorm:"primary_key;AUTO_INCREMENT" json:"id"`
 	Userid     int       `gorm:"type:int(50);comment:'用户ID';not null;index:IX_user_id" json:"user_id"`
 	Username   string    `gorm:"type:varchar(550);comment:'用户名字';not null" json:"user_name"`
@@ -40,12 +40,12 @@ type FlUser struct {
 	LastLogin  time.Time `gorm:"type:datetime;comment:'上次登录时间';" json:"last_login"`
 }
 
-func (FlUser) TableName() string {
+func (VUser) TableName() string {
 	return "tb_cron_user"
 }
 
 //CRON日志表
-type FlLog struct {
+type VLog struct {
 	Id         uint      `gorm:"primary_key;AUTO_INCREMENT" json:"id"`
 	Jobid      int64     `gorm:"type:int(50);comment:'作业ID';not null;index:IX_jobid" json:"jobid"`
 	JobName    string    `gorm:"type:varchar(550);comment:'作业名字';not null" json:"job_name"`
@@ -60,12 +60,12 @@ type FlLog struct {
 	Updatetime time.Time `gorm:"type:datetime;comment:'修改时间';" json:"updatetime"`
 }
 
-func (FlLog) TableName() string {
+func (VLog) TableName() string {
 	return "tb_cron_log"
 }
 
 //cron用户日志表
-type Fluserlog struct {
+type Vuserlog struct {
 	Id            uint      `gorm:"primary_key;AUTO_INCREMENT" json:"id"`
 	Jobid         int       `gorm:"type:int(50);comment:'作业ID';not null;index:IX_jobid" json:"jobid"`
 	JobName       string    `gorm:"type:varchar(550);comment:'作业名字';not null" json:"job_name"`
@@ -75,6 +75,6 @@ type Fluserlog struct {
 	Createtime    time.Time `gorm:"type:datetime;comment:'创建时间';" json:"createtime"`
 }
 
-func (Fluserlog) TableName() string {
+func (Vuserlog) TableName() string {
 	return "tb_cron_user_log"
 }

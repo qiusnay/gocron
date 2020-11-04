@@ -46,16 +46,16 @@ func Dbinit() (*gorm.DB, error) {
 
 func Automigrate() {
 	if !DB.HasTable("tb_cron_log") {
-		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON作业表'").CreateTable(&FlCron{})
-		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON用户表'").CreateTable(&FlUser{})
-		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON任务调度日志表'").CreateTable(&FlLog{})
-		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'cron用户修改日志表'").CreateTable(&Fluserlog{})
+		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON作业表'").CreateTable(&VCron{})
+		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON用户表'").CreateTable(&VUser{})
+		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'CRON任务调度日志表'").CreateTable(&VLog{})
+		DB.Set("gorm:table_options", "ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'cron用户修改日志表'").CreateTable(&Vuserlog{})
 	} else {
 		// fmt.Println("检查更新.......")
-		DB.AutoMigrate(&FlCron{})
-		DB.AutoMigrate(&FlUser{})
-		DB.AutoMigrate(&FlLog{})
-		DB.AutoMigrate(&Fluserlog{})
+		DB.AutoMigrate(&VCron{})
+		DB.AutoMigrate(&VUser{})
+		DB.AutoMigrate(&VLog{})
+		DB.AutoMigrate(&Vuserlog{})
 		// fmt.Println("数据已更新!")
 	}
 }

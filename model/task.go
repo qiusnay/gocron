@@ -28,23 +28,23 @@ const (
 )
 
 // 获取所有激活任务
-func (task *FlCron) GetAllJobList() ([]FlCron, error) {
-	list := make([]FlCron, 0)
+func (task *VCron) GetAllJobList() ([]VCron, error) {
+	list := make([]VCron, 0)
 	dberr := DB.Where("state = ?", "1").Find(&list).Error
 	return list, dberr
 }
 
-func (task *FlCron) GetJobInfo(Jobid int64) ([]FlCron, error) {
-	jobinfo := make([]FlCron, 0)
+func (task *VCron) GetJobInfo(Jobid int64) ([]VCron, error) {
+	jobinfo := make([]VCron, 0)
 	dberr := DB.Where("jobid = ?", Jobid).First(&jobinfo).Error
 	return jobinfo, dberr
 }
 
 // 创建任务日志
-func (task *FlLog) CreateTaskLog(taskModel FlCron) (int64, error) {
+func (task *VLog) CreateTaskLog(taskModel VCron) (int64, error) {
 	jobdata, _ := json.Marshal(taskModel)
 	ts, _ := time.ParseInLocation("2006-01-02 15:04:05", "2006-01-02 15:04:05", time.Local)
-	taskLogModel := FlLog{
+	taskLogModel := VLog{
 		Jobid:      taskModel.Jobid,
 		JobName:    taskModel.JobName,
 		Cmd:        taskModel.Cmd,
@@ -61,8 +61,8 @@ func (task *FlLog) CreateTaskLog(taskModel FlCron) (int64, error) {
 }
 
 // 更新任务日志
-func (task *FlLog) UpdateTaskLog(taskLogId int64, taskResult TaskResult) (int64, error) {
-	taskLogModel := new(FlLog)
+func (task *VLog) UpdateTaskLog(taskLogId int64, taskResult TaskResult) (int64, error) {
+	taskLogModel := new(VLog)
 	ts, _ := time.ParseInLocation("2006-01-02 15:04:05", taskResult.Endtime, time.Local)
 	upResult := DB.Model(&taskLogModel).Where("id = ?", taskLogId).Updates(map[string]interface{}{
 		"status":     taskResult.Status,
